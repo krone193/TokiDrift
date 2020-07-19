@@ -43,7 +43,7 @@ Partial Class TokiDrift
         '
         Me.TxtNum0101.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtNum0101.Cursor = System.Windows.Forms.Cursors.No
-        Me.TxtNum0101.Location = New System.Drawing.Point(3, 414)
+        Me.TxtNum0101.Location = New System.Drawing.Point(272, 273)
         Me.TxtNum0101.Name = "TxtNum0101"
         Me.TxtNum0101.Size = New System.Drawing.Size(35, 20)
         Me.TxtNum0101.TabIndex = 16
@@ -53,7 +53,7 @@ Partial Class TokiDrift
         'BtnInc0101
         '
         Me.BtnInc0101.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnInc0101.Location = New System.Drawing.Point(3, 394)
+        Me.BtnInc0101.Location = New System.Drawing.Point(272, 253)
         Me.BtnInc0101.Name = "BtnInc0101"
         Me.BtnInc0101.Size = New System.Drawing.Size(35, 21)
         Me.BtnInc0101.TabIndex = 17
@@ -64,7 +64,7 @@ Partial Class TokiDrift
         '
         Me.BtnDec0101.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnDec0101.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDec0101.Location = New System.Drawing.Point(3, 433)
+        Me.BtnDec0101.Location = New System.Drawing.Point(272, 292)
         Me.BtnDec0101.Name = "BtnDec0101"
         Me.BtnDec0101.Size = New System.Drawing.Size(35, 21)
         Me.BtnDec0101.TabIndex = 18
@@ -74,7 +74,7 @@ Partial Class TokiDrift
         'BtnInc0102
         '
         Me.BtnInc0102.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnInc0102.Location = New System.Drawing.Point(3, 266)
+        Me.BtnInc0102.Location = New System.Drawing.Point(209, 476)
         Me.BtnInc0102.Name = "BtnInc0102"
         Me.BtnInc0102.Size = New System.Drawing.Size(35, 21)
         Me.BtnInc0102.TabIndex = 20
@@ -85,7 +85,7 @@ Partial Class TokiDrift
         '
         Me.TxtNum0102.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtNum0102.Cursor = System.Windows.Forms.Cursors.No
-        Me.TxtNum0102.Location = New System.Drawing.Point(3, 286)
+        Me.TxtNum0102.Location = New System.Drawing.Point(209, 496)
         Me.TxtNum0102.Name = "TxtNum0102"
         Me.TxtNum0102.Size = New System.Drawing.Size(35, 20)
         Me.TxtNum0102.TabIndex = 19
@@ -96,7 +96,7 @@ Partial Class TokiDrift
         '
         Me.BtnDec0102.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnDec0102.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDec0102.Location = New System.Drawing.Point(3, 305)
+        Me.BtnDec0102.Location = New System.Drawing.Point(209, 515)
         Me.BtnDec0102.Name = "BtnDec0102"
         Me.BtnDec0102.Size = New System.Drawing.Size(35, 21)
         Me.BtnDec0102.TabIndex = 21
@@ -107,7 +107,7 @@ Partial Class TokiDrift
         '
         Me.TxtNum0103.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtNum0103.Cursor = System.Windows.Forms.Cursors.No
-        Me.TxtNum0103.Location = New System.Drawing.Point(3, 140)
+        Me.TxtNum0103.Location = New System.Drawing.Point(168, 496)
         Me.TxtNum0103.Name = "TxtNum0103"
         Me.TxtNum0103.Size = New System.Drawing.Size(35, 20)
         Me.TxtNum0103.TabIndex = 22
@@ -117,7 +117,7 @@ Partial Class TokiDrift
         'BtnInc0103
         '
         Me.BtnInc0103.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnInc0103.Location = New System.Drawing.Point(3, 120)
+        Me.BtnInc0103.Location = New System.Drawing.Point(168, 476)
         Me.BtnInc0103.Name = "BtnInc0103"
         Me.BtnInc0103.Size = New System.Drawing.Size(35, 21)
         Me.BtnInc0103.TabIndex = 23
@@ -128,7 +128,7 @@ Partial Class TokiDrift
         '
         Me.BtnDec0103.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnDec0103.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDec0103.Location = New System.Drawing.Point(3, 159)
+        Me.BtnDec0103.Location = New System.Drawing.Point(168, 515)
         Me.BtnDec0103.Name = "BtnDec0103"
         Me.BtnDec0103.Size = New System.Drawing.Size(35, 21)
         Me.BtnDec0103.TabIndex = 24
@@ -138,7 +138,7 @@ Partial Class TokiDrift
         'BtnInc0104
         '
         Me.BtnInc0104.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnInc0104.Location = New System.Drawing.Point(3, 3)
+        Me.BtnInc0104.Location = New System.Drawing.Point(250, 476)
         Me.BtnInc0104.Name = "BtnInc0104"
         Me.BtnInc0104.Size = New System.Drawing.Size(35, 21)
         Me.BtnInc0104.TabIndex = 26
@@ -149,7 +149,7 @@ Partial Class TokiDrift
         '
         Me.TxtNum0104.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtNum0104.Cursor = System.Windows.Forms.Cursors.No
-        Me.TxtNum0104.Location = New System.Drawing.Point(3, 23)
+        Me.TxtNum0104.Location = New System.Drawing.Point(250, 496)
         Me.TxtNum0104.Name = "TxtNum0104"
         Me.TxtNum0104.Size = New System.Drawing.Size(35, 20)
         Me.TxtNum0104.TabIndex = 25
@@ -160,7 +160,7 @@ Partial Class TokiDrift
         '
         Me.BtnDec0104.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnDec0104.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDec0104.Location = New System.Drawing.Point(3, 42)
+        Me.BtnDec0104.Location = New System.Drawing.Point(250, 515)
         Me.BtnDec0104.Name = "BtnDec0104"
         Me.BtnDec0104.Size = New System.Drawing.Size(35, 21)
         Me.BtnDec0104.TabIndex = 27
@@ -191,6 +191,8 @@ Partial Class TokiDrift
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.TokiDriftApplication.My.Resources.Resources.TokiDrift40
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(356, 554)
         Me.Controls.Add(Me.TxtNum0101)
         Me.Controls.Add(Me.BtnInc0101)
