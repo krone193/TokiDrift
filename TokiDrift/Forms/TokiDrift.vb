@@ -36,14 +36,14 @@
     Dim CoordinateXP2() = {3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318}
     Dim CoordinateYP2() = {204, 269, 251, 249, 185, 346, 339, 202, 332, 193, 434, 366, 247, 259, 266, 180, 181, 412, 259, 264, 258, 183, 252, 188, 256, 183, 252, 244, 351, 258, 245,
         433, 265, 265, 262, 190, 296, 188, 372, 304}
-    Dim CoordinateXP3() = {3, 318, 3, 318, 3, Nothing, Nothing, 318, Nothing, 318, Nothing, Nothing, 3, 318, 3, 318, 3, Nothing, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, Nothing, 318,
-        3, Nothing, 3, 318, 3, 318, 3, 318, Nothing, Nothing}
-    Dim CoordinateYP3() = {327, 424, 434, 423, 311, Nothing, Nothing, 316, Nothing, 422, Nothing, Nothing, 400, 422, 402, 312, 309, Nothing, 349, 430, 415, 291, 415, 305, 428, 428,
-        Nothing, 428, 428, Nothing, 429, 426, 429, 294, 437, 299, Nothing, Nothing}
-    Dim CoordinateXP4() = {3, Nothing, Nothing, Nothing, 3, Nothing, Nothing, 318, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, 318, 3, Nothing, Nothing, Nothing,
-        Nothing, 318, Nothing, 318, Nothing, 318, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, 318, Nothing, 318, Nothing, Nothing}
-    Dim CoordinateYP4() = {444, Nothing, Nothing, Nothing, 434, Nothing, Nothing, 437, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, 411, 439, Nothing, Nothing,
-        Nothing, Nothing, 435, Nothing, 441, Nothing, 437, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, Nothing, 444, Nothing, 442, Nothing, Nothing}
+    Dim CoordinateXP3() = {3, 318, 3, 318, 3, 0, 0, 318, 0, 318, 0, 0, 3, 318, 3, 318, 3, 0, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 0, 318, 3, 0, 3, 318, 3, 318, 3, 318, 0, 0}
+    Dim CoordinateYP3() = {327, 424, 434, 423, 311, 0, 0, 316, 0, 422, 0, 0, 400, 422, 402, 312, 309, 0, 349, 430, 415, 291, 415, 305, 428, 428, 0, 428, 428, 0, 429, 426, 429, 294, 437,
+        299, 0, 0}
+    Dim CoordinateXP4() = {3, 0, 0, 0, 3, 0, 0, 318, 0, 0, 0, 0, 0, 0, 0, 318, 3, 0, 0, 0, 0, 318, 0, 318, 0, 318, 0, 0, 0, 0, 0, 0, 0, 0, 0, 318, 0, 318, 0, 0}
+    Dim CoordinateYP4() = {444, 0, 0, 0, 434, 0, 0, 437, 0, 0, 0, 0, 0, 0, 0, 411, 439, 0, 0, 0, 0, 435, 0, 441, 0, 437, 0, 0, 0, 0, 0, 0, 0, 0, 0, 444, 0, 442, 0, 0}
+    Dim GruppoControlliInc As New List(Of Button)
+    Dim GruppoControlliTxt As New List(Of TextBox)
+    Dim GruppoControlliDec As New List(Of Button)
 
 
     '--- T O K I D R I F T | Variables -------------------------------------------------------------------------------------'
@@ -54,6 +54,20 @@
     '--- T O K I D R I F T | Private Functions -----------------------------------------------------------------------------'
     '-----------------------------------------------------------------------------------------------------------------------'
     Private Sub TokiDrift_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        GruppoControlliInc.Add(BtnInc0101)
+        GruppoControlliTxt.Add(TxtNum0101)
+        GruppoControlliDec.Add(BtnDec0101)
+        GruppoControlliInc.Add(BtnInc0102)
+        GruppoControlliTxt.Add(TxtNum0102)
+        GruppoControlliDec.Add(BtnDec0102)
+        GruppoControlliInc.Add(BtnInc0103)
+        GruppoControlliTxt.Add(TxtNum0103)
+        GruppoControlliDec.Add(BtnDec0103)
+        GruppoControlliInc.Add(BtnInc0104)
+        GruppoControlliTxt.Add(TxtNum0104)
+        GruppoControlliDec.Add(BtnDec0104)
+
+
         Me.BackgroundImage = My.Resources.TokiDrift01
         BtnInc0101.Location = New Point(CoordinateXP1(0), CoordinateYP1(0))
         TxtNum0101.Location = New Point(CoordinateXP1(0), CoordinateYP1(0) + 20)
@@ -83,9 +97,9 @@
     '--- T O K I D R I F T | Buttons Next and Prev functions ---------------------------------------------------------------'
     'Page 01 ---------------------------------------------------------------------------------------------------------------'
     '-----------------------------------------------------------------------------------------------------------------------'
-    Private Sub BtnNext01_Click(sender As Object, e As EventArgs)
-        ' PanMenuPage02.BringToFront()
-    End Sub
+    'Private Sub BtnNext01_Click(sender As Object, e As EventArgs)
+    '    ' PanMenuPage02.BringToFront()
+    'End Sub
     '-----------------------------------------------------------------------------------------------------------------------'
     Private Sub BtnPrev01_Click(sender As Object, e As EventArgs)
         Close()
@@ -150,7 +164,6 @@
     Private Sub BtnNext01_Click_1(sender As Object, e As EventArgs) Handles BtnNext01.Click
         PageIndex += 1
         BackgroundImage = SfondiMenu(PageIndex)
-
         Select Case NofPiattiPerPagePRANZO(PageIndex)
             Case 2
                 BtnInc0103.Visible = False
@@ -174,5 +187,29 @@
                 TxtNum0104.Visible = True
                 BtnDec0104.Visible = True
         End Select
+        RelocateButtons()
+    End Sub
+
+    Private Sub RelocateButtons()
+        For i As Integer = 0 To NofPiattiPerPagePRANZO(PageIndex)
+            Select Case i
+                Case 0
+                    GruppoControlliInc(i).Location = New Point(CoordinateXP1(PageIndex), CoordinateYP1(PageIndex))
+                    GruppoControlliTxt(i).Location = New Point(CoordinateXP1(PageIndex), CoordinateYP1(PageIndex) + 20)
+                    GruppoControlliDec(i).Location = New Point(CoordinateXP1(PageIndex), CoordinateYP1(PageIndex) + 39)
+                Case 1
+                    GruppoControlliInc(i).Location = New Point(CoordinateXP2(PageIndex), CoordinateYP2(PageIndex))
+                    GruppoControlliTxt(i).Location = New Point(CoordinateXP2(PageIndex), CoordinateYP2(PageIndex) + 20)
+                    GruppoControlliDec(i).Location = New Point(CoordinateXP2(PageIndex), CoordinateYP2(PageIndex) + 39)
+                Case 2
+                    GruppoControlliInc(i).Location = New Point(CoordinateXP3(PageIndex), CoordinateYP3(PageIndex))
+                    GruppoControlliTxt(i).Location = New Point(CoordinateXP3(PageIndex), CoordinateYP3(PageIndex) + 20)
+                    GruppoControlliDec(i).Location = New Point(CoordinateXP3(PageIndex), CoordinateYP3(PageIndex) + 39)
+                Case 3
+                    GruppoControlliInc(i).Location = New Point(CoordinateXP4(PageIndex), CoordinateYP4(PageIndex))
+                    GruppoControlliTxt(i).Location = New Point(CoordinateXP4(PageIndex), CoordinateYP4(PageIndex) + 20)
+                    GruppoControlliDec(i).Location = New Point(CoordinateXP4(PageIndex), CoordinateYP4(PageIndex) + 39)
+            End Select
+        Next
     End Sub
 End Class
