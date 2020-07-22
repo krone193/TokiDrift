@@ -197,8 +197,8 @@
 
     Private Sub Bt_StartOrdine_Click(sender As Object, e As EventArgs) Handles Bt_StartOrdine.Click
         Dim str_Order As String = ""
-        For i As Integer = 0 To ID_PiattiTot.Length
-            str_Order = str_Order & SelezioneTotale(i) & "."
+        For i As Integer = 0 To ID_PiattiTot.Length - 1
+            str_Order = str_Order & SelezioneTotale(i) & "." & ID_PiattiTot(i) & ";"
         Next
         MsgBox(str_Order)
     End Sub
