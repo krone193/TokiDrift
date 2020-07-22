@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property synthvaporwave() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("synthvaporwave", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property TokiDrift01() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("TokiDrift01", resourceCulture)

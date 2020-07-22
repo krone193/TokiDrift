@@ -185,6 +185,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Resources\logo.ico" />
+    <None Include="Resources\synthvaporwave.jpg" />
     <None Include="Resources\TokiDrift22.jpg" />
     <None Include="Resources\TokiDrift21.jpg" />
     <None Include="Resources\TokiDrift20.jpg" />

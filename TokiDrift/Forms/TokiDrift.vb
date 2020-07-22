@@ -6,19 +6,8 @@
 
     '--- T O K I D R I F T | Struct ----------------------------------------------------------------------------------------'
     '-----------------------------------------------------------------------------------------------------------------------'
-    'Structure DishSelStruct
-    '  Dim BtnInc As Button
-    '  Dim BtnDec As Button
-    '  Dim TxtNum As TextBox
-    '  Dim Number As UShort
-    'End Structure
+
     '-----------------------------------------------------------------------------------------------------------------------'
-    '  Public Structure MenuPageStruct
-    '  Dim DishNum As Byte
-    '  Dim DishSel As List(Of DishSelStruct)
-    '  Dim BtnNext As Button
-    '  Dim BtnPrev As Button
-    'End Structure
     Dim SfondiMenu() = {My.Resources.TokiDrift01, My.Resources.TokiDrift02, My.Resources.TokiDrift03, My.Resources.TokiDrift04, My.Resources.TokiDrift05, My.Resources.TokiDrift06,
         My.Resources.TokiDrift07, My.Resources.TokiDrift08, My.Resources.TokiDrift09, My.Resources.TokiDrift10, My.Resources.TokiDrift11, My.Resources.TokiDrift12,
         My.Resources.TokiDrift13, My.Resources.TokiDrift14, My.Resources.TokiDrift15, My.Resources.TokiDrift16, My.Resources.TokiDrift17, My.Resources.TokiDrift18,
@@ -26,7 +15,13 @@
         My.Resources.TokiDrift25, My.Resources.TokiDrift26, My.Resources.TokiDrift27, My.Resources.TokiDrift28, My.Resources.TokiDrift29, My.Resources.TokiDrift30,
         My.Resources.TokiDrift31, My.Resources.TokiDrift32, My.Resources.TokiDrift33, My.Resources.TokiDrift34, My.Resources.TokiDrift35, My.Resources.TokiDrift36,
         My.Resources.TokiDrift37, My.Resources.TokiDrift38, My.Resources.TokiDrift39, My.Resources.TokiDrift40}
-
+    Dim ID_PiattiTot() = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 17, 16, 20, 21, 30, 31, 32, 33, 40, 46, 41, 48, 42, 43, 45, 44, 47, 60, 61, 62, 63, 64, 65, 66, 67, 68,
+        80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 101, 102, 100, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 123, 122, 124, 125, 126, 127, 128, 129, 130, 131,
+        132, 133, 134, 135, 136, 137, 138, 150, 151, 152, 153, 154, 155, 156, 157, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 183, 190,
+        191, 192, 193}
+    Dim ArrayPagePointer() = {0, 4, 7, 10, 13, 17, 19, 21, 25, 27, 30, 32, 34, 37, 40, 43, 47, 51, 53, 56, 59, 62, 66, 6973, 76, 80, 83, 86, 88, 91, 94, 96, 99, 102, 105, 109, 112, 116,
+        118}
+    Dim SelezioneTotale(ID_PiattiTot.Length)
     Dim PagineLaunch As Integer = 40
     Dim NofPiattiPerPagePRANZO() = {4, 3, 3, 3, 4, 2, 2, 4, 2, 3, 2, 2, 3, 3, 3, 4, 4, 2, 3, 3, 3, 4, 3, 4, 3, 4, 3, 3, 2, 3, 3, 2, 3, 3, 3, 4, 3, 4, 2, 2}
     Dim PageIndex As Integer = 0
@@ -41,28 +36,27 @@
         294, 437, 299, 0, 0}
     Dim CoordinateXP4() = {3, 0, 0, 0, 3, 0, 0, 318, 0, 0, 0, 0, 0, 0, 0, 318, 3, 0, 0, 0, 0, 318, 0, 318, 0, 318, 0, 0, 0, 0, 0, 0, 0, 0, 0, 318, 0, 318, 0, 0}
     Dim CoordinateYP4() = {444, 0, 0, 0, 434, 0, 0, 437, 0, 0, 0, 0, 0, 0, 0, 411, 439, 0, 0, 0, 0, 435, 0, 441, 0, 437, 0, 0, 0, 0, 0, 0, 0, 0, 0, 444, 0, 442, 0, 0}
-    'Dim GruppoControlliInc As New List(Of Button)
-    'Dim GruppoControlliTxt As New List(Of TextBox)
-    'Dim GruppoControlliDec As New List(Of Button)
     Dim GruppoPannelli As New List(Of Panel)
     Dim indexchanged As Boolean = False
 
-
     '--- T O K I D R I F T | Variables -------------------------------------------------------------------------------------'
     '-----------------------------------------------------------------------------------------------------------------------'
-    'ReadOnly MenuPanel As New List(Of MenuPageStruct)
+
 
 
     '--- T O K I D R I F T | Private Functions -----------------------------------------------------------------------------'
     '-----------------------------------------------------------------------------------------------------------------------'
     Private Sub TokiDrift_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        For i As Integer = 0 To SelezioneTotale.Length - 1
+            SelezioneTotale(i) = 0
+        Next
         GruppoPannelli.Add(Pnl_1)
         GruppoPannelli.Add(Pnl_2)
         GruppoPannelli.Add(Pnl_3)
         GruppoPannelli.Add(Pnl_4)
 
 
-        Me.BackgroundImage = My.Resources.TokiDrift01
+        Pnl_pages.BackgroundImage = My.Resources.TokiDrift01
         Pnl_1.Location = New Point(CoordinateXP1(0), CoordinateYP1(0))
         Pnl_2.Location = New Point(CoordinateXP2(0), CoordinateYP2(0))
         Pnl_3.Location = New Point(CoordinateXP3(0), CoordinateYP3(0))
@@ -70,14 +64,14 @@
     End Sub
     '-----------------------------------------------------------------------------------------------------------------------'
     Private Sub TokiDrift_KeyPress(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
-    If e.KeyCode = Keys.Enter Then
-      If MsgBox("Inviare l'ordine?", vbOKCancel) = MsgBoxResult.Ok Then
-        Close()
-      Else
+        If e.KeyCode = Keys.Enter Then
+            If MsgBox("Inviare l'ordine?", vbOKCancel) = MsgBoxResult.Ok Then
+                Close()
+            Else
 
-      End If
-    End If
-  End Sub
+            End If
+        End If
+    End Sub
 
 
     '--- T O K I D R I F T | Buttons Next and Prev functions ---------------------------------------------------------------'
@@ -95,48 +89,63 @@
     '--- T O K I D R I F T | Buttons Inc and Dec functions -----------------------------------------------------------------'
     'Page 01 ---------------------------------------------------------------------------------------------------------------'
     '-----------------------------------------------------------------------------------------------------------------------'
-    Private Sub BtnInc0101_Click(sender As Object, e As EventArgs) Handles Bt_Inc1.Click
+    Private Sub BtnInc01_Click(sender As Object, e As EventArgs) Handles Bt_Inc1.Click
         Tb_Qnt1.Text += 1
+        SelezioneTotale(ArrayPagePointer(PageIndex)) = Convert.ToInt32(Tb_Qnt1.Text)
+
     End Sub
     '-----------------------------------------------------------------------------------------------------------------------'
-    Private Sub BtnDec0101_Click(sender As Object, e As EventArgs) Handles Tb_Dec1.Click
+    Private Sub BtnDec01_Click(sender As Object, e As EventArgs) Handles Tb_Dec1.Click
         If Tb_Qnt1.Text > 0 Then
             Tb_Qnt1.Text -= 1
+            SelezioneTotale(ArrayPagePointer(PageIndex)) = Convert.ToInt32(Tb_Qnt1.Text)
         End If
     End Sub
     '-----------------------------------------------------------------------------------------------------------------------'
-    Private Sub BtnInc0102_Click(sender As Object, e As EventArgs) Handles Bt_Inc2.Click
-        Tb_Qnt3.Text += 1
-    End Sub
-    '-----------------------------------------------------------------------------------------------------------------------'
-    Private Sub BtnDec0102_Click(sender As Object, e As EventArgs) Handles Bt_Dec2.Click
-        If Tb_Qnt3.Text > 0 Then
-            Tb_Qnt3.Text -= 1
-        End If
-    End Sub
-    '-----------------------------------------------------------------------------------------------------------------------'
-    Private Sub BtnInc0103_Click(sender As Object, e As EventArgs) Handles Bt_Inc3.Click
+    Private Sub BtnInc02_Click(sender As Object, e As EventArgs) Handles Bt_Inc2.Click
         Tb_Qnt2.Text += 1
+        SelezioneTotale(ArrayPagePointer(PageIndex) + 1) = Convert.ToInt32(Tb_Qnt2.Text)
     End Sub
     '-----------------------------------------------------------------------------------------------------------------------'
-    Private Sub BtnDec0103_Click(sender As Object, e As EventArgs) Handles Bt_Dec3.Click
+    Private Sub BtnDec02_Click(sender As Object, e As EventArgs) Handles Bt_Dec2.Click
         If Tb_Qnt2.Text > 0 Then
             Tb_Qnt2.Text -= 1
+            SelezioneTotale(ArrayPagePointer(PageIndex) + 1) = Convert.ToInt32(Tb_Qnt2.Text)
         End If
     End Sub
     '-----------------------------------------------------------------------------------------------------------------------'
-    Private Sub BtnInc0104_Click(sender As Object, e As EventArgs) Handles Bt_Inc4.Click
-
+    Private Sub BtnInc03_Click(sender As Object, e As EventArgs) Handles Bt_Inc3.Click
+        Tb_Qnt3.Text += 1
+        SelezioneTotale(ArrayPagePointer(PageIndex) + 2) = Convert.ToInt32(Tb_Qnt3.Text)
     End Sub
     '-----------------------------------------------------------------------------------------------------------------------'
-    Private Sub BtnDec0104_Click(sender As Object, e As EventArgs) Handles Bt_Dec4.Click
-
+    Private Sub BtnDec03_Click(sender As Object, e As EventArgs) Handles Bt_Dec3.Click
+        If Tb_Qnt3.Text > 0 Then
+            Tb_Qnt3.Text -= 1
+            SelezioneTotale(ArrayPagePointer(PageIndex) + 1) = Convert.ToInt32(Tb_Qnt3.Text)
+        End If
+    End Sub
+    '-----------------------------------------------------------------------------------------------------------------------'
+    Private Sub BtnInc04_Click(sender As Object, e As EventArgs) Handles Bt_Inc4.Click
+        Tb_Qnt4.Text += 1
+        SelezioneTotale(ArrayPagePointer(PageIndex) + 3) = Convert.ToInt32(Tb_Qnt4.Text)
+    End Sub
+    '-----------------------------------------------------------------------------------------------------------------------'
+    Private Sub BtnDec04_Click(sender As Object, e As EventArgs) Handles Bt_Dec4.Click
+        If Tb_Qnt4.Text > 0 Then
+            Tb_Qnt4.Text -= 1
+            SelezioneTotale(ArrayPagePointer(PageIndex) + 3) = Convert.ToInt32(Tb_Qnt4.Text)
+        End If
     End Sub
 
     Private Sub BtnNext01_Click_1(sender As Object, e As EventArgs) Handles BtnNext01.Click
         If PageIndex < PagineLaunch - 1 Then
             indexchanged = True
             PageIndex += 1
+            Tb_Qnt1.Text = SelezioneTotale(ArrayPagePointer(PageIndex))
+            Tb_Qnt2.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 1)
+            Tb_Qnt3.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 2)
+            Tb_Qnt4.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 3)
             RelocateButtons()
         End If
     End Sub
@@ -170,7 +179,7 @@
     Private Sub RefreshTimer_Tick(sender As Object, e As EventArgs) Handles RefreshTimer.Tick
         If indexchanged = True Then
             indexchanged = False
-            BackgroundImage = SfondiMenu(PageIndex)
+            Pnl_pages.BackgroundImage = SfondiMenu(PageIndex)
         End If
     End Sub
 
@@ -178,7 +187,19 @@
         If PageIndex > 0 Then
             indexchanged = True
             PageIndex -= 1
+            Tb_Qnt1.Text = SelezioneTotale(ArrayPagePointer(PageIndex))
+            Tb_Qnt2.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 1)
+            Tb_Qnt3.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 2)
+            Tb_Qnt4.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 3)
             RelocateButtons()
         End If
+    End Sub
+
+    Private Sub Bt_StartOrdine_Click(sender As Object, e As EventArgs) Handles Bt_StartOrdine.Click
+        Dim str_Order As String = ""
+        For i As Integer = 0 To ID_PiattiTot.Length
+            str_Order = str_Order & SelezioneTotale(i) & "."
+        Next
+        MsgBox(str_Order)
     End Sub
 End Class
