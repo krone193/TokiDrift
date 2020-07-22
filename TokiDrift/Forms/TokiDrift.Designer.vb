@@ -22,150 +22,168 @@ Partial Class TokiDrift
     'Non modificarla mediante l'editor del codice.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TokiDrift))
-        Me.TxtNum0101 = New System.Windows.Forms.TextBox()
-        Me.BtnInc0101 = New System.Windows.Forms.Button()
-        Me.BtnDec0101 = New System.Windows.Forms.Button()
-        Me.BtnInc0102 = New System.Windows.Forms.Button()
-        Me.TxtNum0102 = New System.Windows.Forms.TextBox()
-        Me.BtnDec0102 = New System.Windows.Forms.Button()
-        Me.TxtNum0103 = New System.Windows.Forms.TextBox()
-        Me.BtnInc0103 = New System.Windows.Forms.Button()
-        Me.BtnDec0103 = New System.Windows.Forms.Button()
-        Me.BtnInc0104 = New System.Windows.Forms.Button()
-        Me.TxtNum0104 = New System.Windows.Forms.TextBox()
-        Me.BtnDec0104 = New System.Windows.Forms.Button()
+        Me.Tb_Qnt1 = New System.Windows.Forms.TextBox()
+        Me.Bt_Inc1 = New System.Windows.Forms.Button()
+        Me.Tb_Dec1 = New System.Windows.Forms.Button()
+        Me.Bt_Inc3 = New System.Windows.Forms.Button()
+        Me.Tb_Qnt3 = New System.Windows.Forms.TextBox()
+        Me.Bt_Dec3 = New System.Windows.Forms.Button()
+        Me.Tb_Qnt2 = New System.Windows.Forms.TextBox()
+        Me.Bt_Inc2 = New System.Windows.Forms.Button()
+        Me.Bt_Dec2 = New System.Windows.Forms.Button()
+        Me.Bt_Inc4 = New System.Windows.Forms.Button()
+        Me.Tb_Qnt4 = New System.Windows.Forms.TextBox()
+        Me.Bt_Dec4 = New System.Windows.Forms.Button()
         Me.BtnPrev01 = New System.Windows.Forms.Button()
         Me.BtnNext01 = New System.Windows.Forms.Button()
+        Me.RefreshTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.Pnl_1 = New System.Windows.Forms.Panel()
+        Me.Pnl_3 = New System.Windows.Forms.Panel()
+        Me.Pnl_2 = New System.Windows.Forms.Panel()
+        Me.Pnl_4 = New System.Windows.Forms.Panel()
+        Me.Pnl_1.SuspendLayout()
+        Me.Pnl_3.SuspendLayout()
+        Me.Pnl_2.SuspendLayout()
+        Me.Pnl_4.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TxtNum0101
+        'Tb_Qnt1
         '
-        Me.TxtNum0101.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtNum0101.Cursor = System.Windows.Forms.Cursors.No
-        Me.TxtNum0101.Location = New System.Drawing.Point(272, 273)
-        Me.TxtNum0101.Name = "TxtNum0101"
-        Me.TxtNum0101.Size = New System.Drawing.Size(35, 20)
-        Me.TxtNum0101.TabIndex = 16
-        Me.TxtNum0101.Text = "0"
-        Me.TxtNum0101.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Tb_Qnt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Tb_Qnt1.Cursor = System.Windows.Forms.Cursors.No
+        Me.Tb_Qnt1.Location = New System.Drawing.Point(0, 20)
+        Me.Tb_Qnt1.Name = "Tb_Qnt1"
+        Me.Tb_Qnt1.Size = New System.Drawing.Size(35, 20)
+        Me.Tb_Qnt1.TabIndex = 16
+        Me.Tb_Qnt1.Text = "0"
+        Me.Tb_Qnt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'BtnInc0101
+        'Bt_Inc1
         '
-        Me.BtnInc0101.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnInc0101.Location = New System.Drawing.Point(272, 253)
-        Me.BtnInc0101.Name = "BtnInc0101"
-        Me.BtnInc0101.Size = New System.Drawing.Size(35, 21)
-        Me.BtnInc0101.TabIndex = 17
-        Me.BtnInc0101.Text = "▲"
-        Me.BtnInc0101.UseVisualStyleBackColor = True
+        Me.Bt_Inc1.BackColor = System.Drawing.SystemColors.Control
+        Me.Bt_Inc1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Bt_Inc1.Location = New System.Drawing.Point(0, 0)
+        Me.Bt_Inc1.Name = "Bt_Inc1"
+        Me.Bt_Inc1.Size = New System.Drawing.Size(35, 21)
+        Me.Bt_Inc1.TabIndex = 17
+        Me.Bt_Inc1.Text = "▲"
+        Me.Bt_Inc1.UseVisualStyleBackColor = False
         '
-        'BtnDec0101
+        'Tb_Dec1
         '
-        Me.BtnDec0101.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnDec0101.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDec0101.Location = New System.Drawing.Point(272, 292)
-        Me.BtnDec0101.Name = "BtnDec0101"
-        Me.BtnDec0101.Size = New System.Drawing.Size(35, 21)
-        Me.BtnDec0101.TabIndex = 18
-        Me.BtnDec0101.Text = "▼"
-        Me.BtnDec0101.UseVisualStyleBackColor = True
+        Me.Tb_Dec1.BackColor = System.Drawing.SystemColors.Control
+        Me.Tb_Dec1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Tb_Dec1.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Tb_Dec1.Location = New System.Drawing.Point(0, 39)
+        Me.Tb_Dec1.Name = "Tb_Dec1"
+        Me.Tb_Dec1.Size = New System.Drawing.Size(35, 21)
+        Me.Tb_Dec1.TabIndex = 18
+        Me.Tb_Dec1.Text = "▼"
+        Me.Tb_Dec1.UseVisualStyleBackColor = False
         '
-        'BtnInc0102
+        'Bt_Inc3
         '
-        Me.BtnInc0102.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnInc0102.Location = New System.Drawing.Point(209, 476)
-        Me.BtnInc0102.Name = "BtnInc0102"
-        Me.BtnInc0102.Size = New System.Drawing.Size(35, 21)
-        Me.BtnInc0102.TabIndex = 20
-        Me.BtnInc0102.Text = "▲"
-        Me.BtnInc0102.UseVisualStyleBackColor = True
+        Me.Bt_Inc3.BackColor = System.Drawing.SystemColors.Control
+        Me.Bt_Inc3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Bt_Inc3.Location = New System.Drawing.Point(0, 0)
+        Me.Bt_Inc3.Name = "Bt_Inc3"
+        Me.Bt_Inc3.Size = New System.Drawing.Size(35, 21)
+        Me.Bt_Inc3.TabIndex = 20
+        Me.Bt_Inc3.Text = "▲"
+        Me.Bt_Inc3.UseVisualStyleBackColor = False
         '
-        'TxtNum0102
+        'Tb_Qnt3
         '
-        Me.TxtNum0102.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtNum0102.Cursor = System.Windows.Forms.Cursors.No
-        Me.TxtNum0102.Location = New System.Drawing.Point(209, 496)
-        Me.TxtNum0102.Name = "TxtNum0102"
-        Me.TxtNum0102.Size = New System.Drawing.Size(35, 20)
-        Me.TxtNum0102.TabIndex = 19
-        Me.TxtNum0102.Text = "0"
-        Me.TxtNum0102.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Tb_Qnt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Tb_Qnt3.Cursor = System.Windows.Forms.Cursors.No
+        Me.Tb_Qnt3.Location = New System.Drawing.Point(0, 20)
+        Me.Tb_Qnt3.Name = "Tb_Qnt3"
+        Me.Tb_Qnt3.Size = New System.Drawing.Size(35, 20)
+        Me.Tb_Qnt3.TabIndex = 19
+        Me.Tb_Qnt3.Text = "0"
+        Me.Tb_Qnt3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'BtnDec0102
+        'Bt_Dec3
         '
-        Me.BtnDec0102.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnDec0102.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDec0102.Location = New System.Drawing.Point(209, 515)
-        Me.BtnDec0102.Name = "BtnDec0102"
-        Me.BtnDec0102.Size = New System.Drawing.Size(35, 21)
-        Me.BtnDec0102.TabIndex = 21
-        Me.BtnDec0102.Text = "▼"
-        Me.BtnDec0102.UseVisualStyleBackColor = True
+        Me.Bt_Dec3.BackColor = System.Drawing.SystemColors.Control
+        Me.Bt_Dec3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Bt_Dec3.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Bt_Dec3.Location = New System.Drawing.Point(0, 39)
+        Me.Bt_Dec3.Name = "Bt_Dec3"
+        Me.Bt_Dec3.Size = New System.Drawing.Size(35, 21)
+        Me.Bt_Dec3.TabIndex = 21
+        Me.Bt_Dec3.Text = "▼"
+        Me.Bt_Dec3.UseVisualStyleBackColor = False
         '
-        'TxtNum0103
+        'Tb_Qnt2
         '
-        Me.TxtNum0103.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtNum0103.Cursor = System.Windows.Forms.Cursors.No
-        Me.TxtNum0103.Location = New System.Drawing.Point(168, 496)
-        Me.TxtNum0103.Name = "TxtNum0103"
-        Me.TxtNum0103.Size = New System.Drawing.Size(35, 20)
-        Me.TxtNum0103.TabIndex = 22
-        Me.TxtNum0103.Text = "0"
-        Me.TxtNum0103.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Tb_Qnt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Tb_Qnt2.Cursor = System.Windows.Forms.Cursors.No
+        Me.Tb_Qnt2.Location = New System.Drawing.Point(0, 20)
+        Me.Tb_Qnt2.Name = "Tb_Qnt2"
+        Me.Tb_Qnt2.Size = New System.Drawing.Size(35, 20)
+        Me.Tb_Qnt2.TabIndex = 22
+        Me.Tb_Qnt2.Text = "0"
+        Me.Tb_Qnt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'BtnInc0103
+        'Bt_Inc2
         '
-        Me.BtnInc0103.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnInc0103.Location = New System.Drawing.Point(168, 476)
-        Me.BtnInc0103.Name = "BtnInc0103"
-        Me.BtnInc0103.Size = New System.Drawing.Size(35, 21)
-        Me.BtnInc0103.TabIndex = 23
-        Me.BtnInc0103.Text = "▲"
-        Me.BtnInc0103.UseVisualStyleBackColor = True
+        Me.Bt_Inc2.BackColor = System.Drawing.SystemColors.Control
+        Me.Bt_Inc2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Bt_Inc2.Location = New System.Drawing.Point(0, 0)
+        Me.Bt_Inc2.Name = "Bt_Inc2"
+        Me.Bt_Inc2.Size = New System.Drawing.Size(35, 21)
+        Me.Bt_Inc2.TabIndex = 23
+        Me.Bt_Inc2.Text = "▲"
+        Me.Bt_Inc2.UseVisualStyleBackColor = False
         '
-        'BtnDec0103
+        'Bt_Dec2
         '
-        Me.BtnDec0103.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnDec0103.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDec0103.Location = New System.Drawing.Point(168, 515)
-        Me.BtnDec0103.Name = "BtnDec0103"
-        Me.BtnDec0103.Size = New System.Drawing.Size(35, 21)
-        Me.BtnDec0103.TabIndex = 24
-        Me.BtnDec0103.Text = "▼"
-        Me.BtnDec0103.UseVisualStyleBackColor = True
+        Me.Bt_Dec2.BackColor = System.Drawing.SystemColors.Control
+        Me.Bt_Dec2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Bt_Dec2.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Bt_Dec2.Location = New System.Drawing.Point(0, 39)
+        Me.Bt_Dec2.Name = "Bt_Dec2"
+        Me.Bt_Dec2.Size = New System.Drawing.Size(35, 21)
+        Me.Bt_Dec2.TabIndex = 24
+        Me.Bt_Dec2.Text = "▼"
+        Me.Bt_Dec2.UseVisualStyleBackColor = False
         '
-        'BtnInc0104
+        'Bt_Inc4
         '
-        Me.BtnInc0104.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnInc0104.Location = New System.Drawing.Point(250, 476)
-        Me.BtnInc0104.Name = "BtnInc0104"
-        Me.BtnInc0104.Size = New System.Drawing.Size(35, 21)
-        Me.BtnInc0104.TabIndex = 26
-        Me.BtnInc0104.Text = "▲"
-        Me.BtnInc0104.UseVisualStyleBackColor = True
+        Me.Bt_Inc4.BackColor = System.Drawing.SystemColors.Control
+        Me.Bt_Inc4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Bt_Inc4.Location = New System.Drawing.Point(0, 0)
+        Me.Bt_Inc4.Name = "Bt_Inc4"
+        Me.Bt_Inc4.Size = New System.Drawing.Size(35, 21)
+        Me.Bt_Inc4.TabIndex = 26
+        Me.Bt_Inc4.Text = "▲"
+        Me.Bt_Inc4.UseVisualStyleBackColor = False
         '
-        'TxtNum0104
+        'Tb_Qnt4
         '
-        Me.TxtNum0104.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtNum0104.Cursor = System.Windows.Forms.Cursors.No
-        Me.TxtNum0104.Location = New System.Drawing.Point(250, 496)
-        Me.TxtNum0104.Name = "TxtNum0104"
-        Me.TxtNum0104.Size = New System.Drawing.Size(35, 20)
-        Me.TxtNum0104.TabIndex = 25
-        Me.TxtNum0104.Text = "0"
-        Me.TxtNum0104.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Tb_Qnt4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Tb_Qnt4.Cursor = System.Windows.Forms.Cursors.No
+        Me.Tb_Qnt4.Location = New System.Drawing.Point(0, 20)
+        Me.Tb_Qnt4.Name = "Tb_Qnt4"
+        Me.Tb_Qnt4.Size = New System.Drawing.Size(35, 20)
+        Me.Tb_Qnt4.TabIndex = 25
+        Me.Tb_Qnt4.Text = "0"
+        Me.Tb_Qnt4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'BtnDec0104
+        'Bt_Dec4
         '
-        Me.BtnDec0104.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnDec0104.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDec0104.Location = New System.Drawing.Point(250, 515)
-        Me.BtnDec0104.Name = "BtnDec0104"
-        Me.BtnDec0104.Size = New System.Drawing.Size(35, 21)
-        Me.BtnDec0104.TabIndex = 27
-        Me.BtnDec0104.Text = "▼"
-        Me.BtnDec0104.UseVisualStyleBackColor = True
+        Me.Bt_Dec4.BackColor = System.Drawing.SystemColors.Control
+        Me.Bt_Dec4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Bt_Dec4.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Bt_Dec4.Location = New System.Drawing.Point(0, 39)
+        Me.Bt_Dec4.Name = "Bt_Dec4"
+        Me.Bt_Dec4.Size = New System.Drawing.Size(35, 21)
+        Me.Bt_Dec4.TabIndex = 27
+        Me.Bt_Dec4.Text = "▼"
+        Me.Bt_Dec4.UseVisualStyleBackColor = False
         '
         'BtnPrev01
         '
@@ -187,49 +205,105 @@ Partial Class TokiDrift
         Me.BtnNext01.Text = "次"
         Me.BtnNext01.UseVisualStyleBackColor = True
         '
+        'RefreshTimer
+        '
+        Me.RefreshTimer.Enabled = True
+        Me.RefreshTimer.Interval = 50
+        '
+        'Pnl_1
+        '
+        Me.Pnl_1.BackColor = System.Drawing.Color.Transparent
+        Me.Pnl_1.Controls.Add(Me.Bt_Inc1)
+        Me.Pnl_1.Controls.Add(Me.Tb_Qnt1)
+        Me.Pnl_1.Controls.Add(Me.Tb_Dec1)
+        Me.Pnl_1.Location = New System.Drawing.Point(318, 12)
+        Me.Pnl_1.Name = "Pnl_1"
+        Me.Pnl_1.Size = New System.Drawing.Size(35, 62)
+        Me.Pnl_1.TabIndex = 28
+        '
+        'Pnl_3
+        '
+        Me.Pnl_3.BackColor = System.Drawing.Color.Transparent
+        Me.Pnl_3.Controls.Add(Me.Bt_Inc2)
+        Me.Pnl_3.Controls.Add(Me.Bt_Dec2)
+        Me.Pnl_3.Controls.Add(Me.Tb_Qnt2)
+        Me.Pnl_3.Location = New System.Drawing.Point(318, 99)
+        Me.Pnl_3.Name = "Pnl_3"
+        Me.Pnl_3.Size = New System.Drawing.Size(35, 62)
+        Me.Pnl_3.TabIndex = 29
+        '
+        'Pnl_2
+        '
+        Me.Pnl_2.BackColor = System.Drawing.Color.Transparent
+        Me.Pnl_2.Controls.Add(Me.Bt_Inc3)
+        Me.Pnl_2.Controls.Add(Me.Bt_Dec3)
+        Me.Pnl_2.Controls.Add(Me.Tb_Qnt3)
+        Me.Pnl_2.Location = New System.Drawing.Point(318, 199)
+        Me.Pnl_2.Name = "Pnl_2"
+        Me.Pnl_2.Size = New System.Drawing.Size(35, 62)
+        Me.Pnl_2.TabIndex = 30
+        '
+        'Pnl_4
+        '
+        Me.Pnl_4.BackColor = System.Drawing.Color.Transparent
+        Me.Pnl_4.Controls.Add(Me.Bt_Inc4)
+        Me.Pnl_4.Controls.Add(Me.Bt_Dec4)
+        Me.Pnl_4.Controls.Add(Me.Tb_Qnt4)
+        Me.Pnl_4.Location = New System.Drawing.Point(318, 284)
+        Me.Pnl_4.Name = "Pnl_4"
+        Me.Pnl_4.Size = New System.Drawing.Size(35, 62)
+        Me.Pnl_4.TabIndex = 30
+        '
         'TokiDrift
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.TokiDriftApplication.My.Resources.Resources.TokiDrift40
+        Me.BackgroundImage = Global.TokiDriftApplication.My.Resources.Resources.TokiDrift26
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(356, 554)
-        Me.Controls.Add(Me.TxtNum0101)
-        Me.Controls.Add(Me.BtnInc0101)
-        Me.Controls.Add(Me.BtnDec0101)
-        Me.Controls.Add(Me.BtnInc0102)
-        Me.Controls.Add(Me.TxtNum0102)
-        Me.Controls.Add(Me.BtnDec0102)
-        Me.Controls.Add(Me.TxtNum0103)
-        Me.Controls.Add(Me.BtnInc0103)
-        Me.Controls.Add(Me.BtnDec0103)
-        Me.Controls.Add(Me.BtnInc0104)
-        Me.Controls.Add(Me.TxtNum0104)
-        Me.Controls.Add(Me.BtnDec0104)
+        Me.Controls.Add(Me.Pnl_4)
+        Me.Controls.Add(Me.Pnl_2)
+        Me.Controls.Add(Me.Pnl_3)
+        Me.Controls.Add(Me.Pnl_1)
         Me.Controls.Add(Me.BtnPrev01)
         Me.Controls.Add(Me.BtnNext01)
         Me.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "TokiDrift"
         Me.Text = "T O K I   D R I F T"
+        Me.Pnl_1.ResumeLayout(False)
+        Me.Pnl_1.PerformLayout()
+        Me.Pnl_3.ResumeLayout(False)
+        Me.Pnl_3.PerformLayout()
+        Me.Pnl_2.ResumeLayout(False)
+        Me.Pnl_2.PerformLayout()
+        Me.Pnl_4.ResumeLayout(False)
+        Me.Pnl_4.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents TxtNum0101 As TextBox
-    Friend WithEvents BtnInc0101 As Button
-    Friend WithEvents BtnDec0101 As Button
-    Friend WithEvents BtnInc0102 As Button
-    Friend WithEvents TxtNum0102 As TextBox
-    Friend WithEvents BtnDec0102 As Button
-    Friend WithEvents TxtNum0103 As TextBox
-    Friend WithEvents BtnInc0103 As Button
-    Friend WithEvents BtnDec0103 As Button
-    Friend WithEvents BtnInc0104 As Button
-    Friend WithEvents TxtNum0104 As TextBox
-    Friend WithEvents BtnDec0104 As Button
+    Friend WithEvents Tb_Qnt1 As TextBox
+    Friend WithEvents Bt_Inc1 As Button
+    Friend WithEvents Tb_Dec1 As Button
+    Friend WithEvents Bt_Inc3 As Button
+    Friend WithEvents Tb_Qnt3 As TextBox
+    Friend WithEvents Bt_Dec3 As Button
+    Friend WithEvents Tb_Qnt2 As TextBox
+    Friend WithEvents Bt_Inc2 As Button
+    Friend WithEvents Bt_Dec2 As Button
+    Friend WithEvents Bt_Inc4 As Button
+    Friend WithEvents Tb_Qnt4 As TextBox
+    Friend WithEvents Bt_Dec4 As Button
     Friend WithEvents BtnPrev01 As Button
     Friend WithEvents BtnNext01 As Button
+    Friend WithEvents RefreshTimer As Timer
+    Friend WithEvents Pnl_1 As Panel
+    Friend WithEvents Pnl_3 As Panel
+    Friend WithEvents Pnl_2 As Panel
+    Friend WithEvents Pnl_4 As Panel
 End Class
