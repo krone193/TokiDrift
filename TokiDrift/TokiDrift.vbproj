@@ -184,6 +184,15 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\Uramaki.jpg" />
+    <None Include="Resources\Temaki.jpg" />
+    <None Include="Resources\Sashimi.jpg" />
+    <None Include="Resources\PiattiCaldi.jpg" />
+    <None Include="Resources\Nigiri.jpg" />
+    <None Include="Resources\Antipasti.jpg" />
+    <None Include="Resources\Chirashi.jpg" />
+    <None Include="Resources\Gunkan.png" />
+    <None Include="Resources\Hosomaki.jpg" />
     <Content Include="Resources\logo.ico" />
     <None Include="Resources\synthvaporwave.jpg" />
     <None Include="Resources\TokiDrift22.jpg" />

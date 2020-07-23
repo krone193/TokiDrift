@@ -41,7 +41,7 @@ Partial Class TokiDrift
         Dim TreeNode16 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 17")
         Dim TreeNode17 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 18")
         Dim TreeNode18 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 19")
-        Dim TreeNode19 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Nighiri", New System.Windows.Forms.TreeNode() {TreeNode16, TreeNode17, TreeNode18})
+        Dim TreeNode19 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Nigiri", New System.Windows.Forms.TreeNode() {TreeNode16, TreeNode17, TreeNode18})
         Dim TreeNode20 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Sashimi")
         Dim TreeNode21 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 22")
         Dim TreeNode22 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 23")
@@ -84,7 +84,7 @@ Partial Class TokiDrift
         Me.Pnl_2 = New System.Windows.Forms.Panel()
         Me.Pnl_4 = New System.Windows.Forms.Panel()
         Me.Pnl_pages = New System.Windows.Forms.Panel()
-        Me.TreeView1 = New System.Windows.Forms.TreeView()
+        Me.Tv_BookMark = New System.Windows.Forms.TreeView()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Bt_StartOrdine = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -317,108 +317,110 @@ Partial Class TokiDrift
         Me.Pnl_pages.Size = New System.Drawing.Size(356, 551)
         Me.Pnl_pages.TabIndex = 31
         '
-        'TreeView1
+        'Tv_BookMark
         '
-        Me.TreeView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TreeView1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.TreeView1.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TreeView1.HotTracking = True
-        Me.TreeView1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.TreeView1.Indent = 25
-        Me.TreeView1.ItemHeight = 15
-        Me.TreeView1.Location = New System.Drawing.Point(356, 0)
-        Me.TreeView1.Name = "TreeView1"
-        TreeNode1.Name = "Nodo9"
+        Me.Tv_BookMark.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Tv_BookMark.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Tv_BookMark.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Tv_BookMark.HotTracking = True
+        Me.Tv_BookMark.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Tv_BookMark.Indent = 25
+        Me.Tv_BookMark.ItemHeight = 15
+        Me.Tv_BookMark.Location = New System.Drawing.Point(356, 0)
+        Me.Tv_BookMark.Name = "Tv_BookMark"
+        TreeNode1.Name = "nd_Pag2"
         TreeNode1.Text = "Pagina 2"
-        TreeNode2.Name = "Nodo11"
+        TreeNode2.Name = "nd_Pag3"
         TreeNode2.Text = "Pagina 3"
-        TreeNode3.Name = "Nodo12"
+        TreeNode3.Name = "nd_Pag4"
         TreeNode3.Text = "Pagina 4"
-        TreeNode4.Name = "Nodo19"
+        TreeNode4.Name = "nd_pag5"
         TreeNode4.Text = "Pagina 5"
-        TreeNode5.Name = "Nodo20"
+        TreeNode5.Name = "nd_Pag6"
         TreeNode5.Text = "Pagina 6"
-        TreeNode6.Name = "Nodo21"
+        TreeNode6.Name = "nd_Pag7"
         TreeNode6.Text = "Pagina 7"
-        TreeNode7.Name = "Nodo0"
+        TreeNode7.Name = "nd_Antipasti"
         TreeNode7.Text = "Antipasti"
-        TreeNode8.Name = "Nodo1"
+        TreeNode8.Name = "nd_Chirashi"
         TreeNode8.Text = "Chirashi"
-        TreeNode9.Name = "Nodo22"
+        TreeNode9.Name = "nd_Pag10"
         TreeNode9.Text = "Pagina 10"
-        TreeNode10.Name = "Nodo23"
+        TreeNode10.Name = "nd_Pag11"
         TreeNode10.Text = "Pagina 11"
-        TreeNode11.Name = "Nodo24"
+        TreeNode11.Name = "nd_Pag12"
         TreeNode11.Text = "Pagina 12"
-        TreeNode12.Name = "Nodo2"
+        TreeNode12.Name = "nd_Gunkan"
         TreeNode12.Text = "Gunkan"
-        TreeNode13.Name = "Nodo25"
+        TreeNode13.Name = "nd_Pag14"
         TreeNode13.Text = "Pagina 14"
-        TreeNode14.Name = "Nodo26"
+        TreeNode14.Name = "nd_Pag15"
         TreeNode14.Text = "Pagina 15"
-        TreeNode15.Name = "Nodo3"
+        TreeNode15.Name = "nd_Hosomaki"
         TreeNode15.Text = "Hosomaki"
-        TreeNode16.Name = "Nodo27"
+        TreeNode16.Name = "nd_Pag17"
         TreeNode16.Text = "Pagina 17"
-        TreeNode17.Name = "Nodo28"
+        TreeNode17.Name = "nd_Pag18"
         TreeNode17.Text = "Pagina 18"
-        TreeNode18.Name = "Nodo29"
+        TreeNode18.Name = "nd_Pag19"
         TreeNode18.Text = "Pagina 19"
-        TreeNode19.Name = "Nodo4"
-        TreeNode19.Text = "Nighiri"
-        TreeNode20.Name = "Nodo5"
+        TreeNode19.Name = "nd_Nigiri"
+        TreeNode19.Text = "Nigiri"
+        TreeNode20.Name = "nd_Sashimi"
         TreeNode20.Text = "Sashimi"
-        TreeNode21.Name = "Nodo30"
+        TreeNode21.Name = "nd_Pag22"
         TreeNode21.Text = "Pagina 22"
-        TreeNode22.Name = "Nodo31"
+        TreeNode22.Name = "nd_Pag23"
         TreeNode22.Text = "Pagina 23"
-        TreeNode23.Name = "Nodo32"
+        TreeNode23.Name = "nd_Pag24"
         TreeNode23.Text = "Pagina 24"
-        TreeNode24.Name = "Nodo33"
+        TreeNode24.Name = "nd_Pag25"
         TreeNode24.Text = "Pagina 25"
-        TreeNode25.Name = "Nodo34"
+        TreeNode25.Name = "nd_Pag26"
         TreeNode25.Text = "Pagina 26"
-        TreeNode26.Name = "Nodo35"
+        TreeNode26.Name = "nd_Pag27"
         TreeNode26.Text = "Pagina 27"
-        TreeNode27.Name = "Nodo36"
+        TreeNode27.Name = "nd_Pag28"
         TreeNode27.Text = "Pagina 28"
-        TreeNode28.Name = "Nodo37"
+        TreeNode28.Name = "nd_Pag29"
         TreeNode28.Text = "Pagina 29"
-        TreeNode29.Name = "Nodo6"
+        TreeNode29.Name = "nd_Uramaki"
         TreeNode29.Text = "Uramaki"
         TreeNode30.Name = "Nodo38"
         TreeNode30.Text = "Pagina 31"
         TreeNode31.Name = "Nodo39"
         TreeNode31.Text = "Pagina 32"
-        TreeNode32.Name = "Nodo7"
+        TreeNode32.Name = "nd_Temaki"
         TreeNode32.Text = "Temaki"
-        TreeNode33.Name = "Nodo40"
+        TreeNode33.Name = "nd_Pag34"
         TreeNode33.Text = "Pagina 34"
-        TreeNode34.Name = "Nodo41"
+        TreeNode34.Name = "nd_Pag35"
         TreeNode34.Text = "Pagina 35"
-        TreeNode35.Name = "Nodo42"
+        TreeNode35.Name = "nd_Pag36"
         TreeNode35.Text = "Pagina 36"
-        TreeNode36.Name = "Nodo43"
+        TreeNode36.Name = "nd_Pag37"
         TreeNode36.Text = "Pagina 37"
-        TreeNode37.Name = "Nodo44"
+        TreeNode37.Name = "nd_Pag38"
         TreeNode37.Text = "Pagina 38"
-        TreeNode38.Name = "Nodo45"
+        TreeNode38.Name = "nd_Pag39"
         TreeNode38.Text = "Pagina 39"
-        TreeNode39.Name = "Nodo46"
+        TreeNode39.Name = "nd_Pag40"
         TreeNode39.Text = "Pagina 40"
-        TreeNode40.Name = "Nodo18"
+        TreeNode40.Name = "nd_PiattiCaldi"
         TreeNode40.Text = "Piatti caldi"
-        Me.TreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode7, TreeNode8, TreeNode12, TreeNode15, TreeNode19, TreeNode20, TreeNode29, TreeNode32, TreeNode40})
-        Me.TreeView1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.TreeView1.Size = New System.Drawing.Size(151, 307)
-        Me.TreeView1.TabIndex = 32
+        Me.Tv_BookMark.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode7, TreeNode8, TreeNode12, TreeNode15, TreeNode19, TreeNode20, TreeNode29, TreeNode32, TreeNode40})
+        Me.Tv_BookMark.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.Tv_BookMark.Size = New System.Drawing.Size(151, 307)
+        Me.Tv_BookMark.TabIndex = 32
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Location = New System.Drawing.Point(356, 307)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(151, 121)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 33
         Me.PictureBox1.TabStop = False
         '
@@ -450,7 +452,7 @@ Partial Class TokiDrift
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Bt_StartOrdine)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TreeView1)
+        Me.Controls.Add(Me.Tv_BookMark)
         Me.Controls.Add(Me.Pnl_pages)
         Me.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -494,7 +496,7 @@ Partial Class TokiDrift
     Friend WithEvents Pnl_2 As Panel
     Friend WithEvents Pnl_4 As Panel
     Friend WithEvents Pnl_pages As Panel
-    Friend WithEvents TreeView1 As TreeView
+    Friend WithEvents Tv_BookMark As TreeView
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Bt_StartOrdine As Button
     Friend WithEvents Button2 As Button

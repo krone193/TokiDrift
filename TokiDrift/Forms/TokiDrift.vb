@@ -38,6 +38,15 @@
     Dim CoordinateYP4() = {444, 0, 0, 0, 434, 0, 0, 437, 0, 0, 0, 0, 0, 0, 0, 411, 439, 0, 0, 0, 0, 435, 0, 441, 0, 437, 0, 0, 0, 0, 0, 0, 0, 0, 0, 444, 0, 442, 0, 0}
     Dim GruppoPannelli As New List(Of Panel)
     Dim indexchanged As Boolean = False
+    Dim PagAntipasti As Integer = 0
+    Dim PagChirashi As Integer = 7
+    Dim PagGunkan As Integer = 8
+    Dim PagHosomaki As Integer = 12
+    Dim PagNigiri As Integer = 15
+    Dim PagSashimi As Integer = 19
+    Dim PagUramaki As Integer = 20
+    Dim PagTemaki As Integer = 29
+    Dim PagPiattiCaldi As Integer = 32
 
     '--- T O K I D R I F T | Variables -------------------------------------------------------------------------------------'
     '-----------------------------------------------------------------------------------------------------------------------'
@@ -54,7 +63,7 @@
         GruppoPannelli.Add(Pnl_2)
         GruppoPannelli.Add(Pnl_3)
         GruppoPannelli.Add(Pnl_4)
-
+        Tv_BookMark.SelectedNode = Nothing
 
         Pnl_pages.BackgroundImage = My.Resources.TokiDrift01
         Pnl_1.Location = New Point(CoordinateXP1(0), CoordinateYP1(0))
@@ -142,10 +151,10 @@
         If PageIndex < PagineLaunch - 1 Then
             indexchanged = True
             PageIndex += 1
-            Tb_Qnt1.Text = SelezioneTotale(ArrayPagePointer(PageIndex))
-            Tb_Qnt2.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 1)
-            Tb_Qnt3.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 2)
-            Tb_Qnt4.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 3)
+            'Tb_Qnt1.Text = SelezioneTotale(ArrayPagePointer(PageIndex))
+            'Tb_Qnt2.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 1)
+            'Tb_Qnt3.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 2)
+            'Tb_Qnt4.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 3)
             RelocateButtons()
         End If
     End Sub
@@ -174,6 +183,10 @@
                     GruppoPannelli(i).Location = New Point(CoordinateXP4(PageIndex), CoordinateYP4(PageIndex))
             End Select
         Next
+        Tb_Qnt1.Text = SelezioneTotale(ArrayPagePointer(PageIndex))
+        Tb_Qnt2.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 1)
+        Tb_Qnt3.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 2)
+        Tb_Qnt4.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 3)
     End Sub
 
     Private Sub RefreshTimer_Tick(sender As Object, e As EventArgs) Handles RefreshTimer.Tick
@@ -187,10 +200,10 @@
         If PageIndex > 0 Then
             indexchanged = True
             PageIndex -= 1
-            Tb_Qnt1.Text = SelezioneTotale(ArrayPagePointer(PageIndex))
-            Tb_Qnt2.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 1)
-            Tb_Qnt3.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 2)
-            Tb_Qnt4.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 3)
+            'Tb_Qnt1.Text = SelezioneTotale(ArrayPagePointer(PageIndex))
+            'Tb_Qnt2.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 1)
+            'Tb_Qnt3.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 2)
+            'Tb_Qnt4.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 3)
             RelocateButtons()
         End If
     End Sub
@@ -201,5 +214,87 @@
             str_Order = str_Order & SelezioneTotale(i) & "." & ID_PiattiTot(i) & ";"
         Next
         MsgBox(str_Order)
+    End Sub
+
+    Private Sub TreeView1_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles Tv_BookMark.AfterSelect
+        Static PrimoClick As String = ""
+        Select Case e.Node.Name
+            Case "nd_Antipasti"
+                If PrimoClick <> "Antipasti" Then
+                    PrimoClick = "Antipasti"
+                    PictureBox1.Image = My.Resources.Antipasti
+                Else
+                    PageIndex = PagAntipasti
+                    indexchanged = True
+                End If
+            Case "nd_Chirashi"
+                If PrimoClick <> "Chirashi" Then
+                    PrimoClick = "Chirashi"
+                    PictureBox1.Image = My.Resources.Chirashi
+                Else
+                    PageIndex = PagChirashi
+                    indexchanged = True
+                End If
+            Case "nd_Gunkan"
+                If PrimoClick <> "Gunkan" Then
+                    PrimoClick = "Gunkan"
+                    PictureBox1.Image = My.Resources.Gunkan
+                Else
+                    PageIndex = PagGunkan
+                    indexchanged = True
+                End If
+            Case "nd_Hosomaki"
+                If PrimoClick <> "Hosomaki" Then
+                    PrimoClick = "Hosomaki"
+                    PictureBox1.Image = My.Resources.Hosomaki
+                Else
+                    PageIndex = PagHosomaki
+                    indexchanged = True
+                End If
+            Case "nd_Nigiri"
+                If PrimoClick <> "Nigiri" Then
+                    PrimoClick = "Nigiri"
+                    PictureBox1.Image = My.Resources.Nigiri
+                Else
+                    PageIndex = PagNigiri
+                    indexchanged = True
+                End If
+            Case "nd_Sashimi"
+                If PrimoClick <> "Sashimi" Then
+                    PrimoClick = "Sashimi"
+                    PictureBox1.Image = My.Resources.Sashimi
+                Else
+                    PageIndex = PagSashimi
+                    indexchanged = True
+                End If
+            Case "nd_Uramaki"
+                If PrimoClick <> "Uramaki" Then
+                    PrimoClick = "Uramaki"
+                    PictureBox1.Image = My.Resources.Uramaki
+                Else
+                    PageIndex = PagUramaki
+                    indexchanged = True
+                End If
+            Case "nd_Temaki"
+                If PrimoClick <> "Temaki" Then
+                    PrimoClick = "Temaki"
+                    PictureBox1.Image = My.Resources.Temaki
+                Else
+                    PageIndex = PagTemaki
+                    indexchanged = True
+                End If
+            Case "nd_PiattiCaldi"
+                If PrimoClick <> "Caldo" Then
+                    PrimoClick = "Caldo"
+                    PictureBox1.Image = My.Resources.PiattiCaldi
+                Else
+                    PageIndex = PagPiattiCaldi
+                    indexchanged = True
+                End If
+        End Select
+        If indexchanged = True Then
+            RelocateButtons()
+        End If
+        Tv_BookMark.SelectedNode = Nothing
     End Sub
 End Class
