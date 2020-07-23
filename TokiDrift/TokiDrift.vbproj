@@ -28,8 +28,8 @@
     <ProductName>V A P O R C H A T 2 0 2 0</ProductName>
     <PublisherName>kronelab</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>1.0.4.1</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.2.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -91,6 +91,9 @@
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MQTTnet">
+      <HintPath>..\packages\MQTTnet.3.0.11\lib\net452\MQTTnet.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -117,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code\ApplicationEvents.vb" />
+    <Compile Include="Code\Simple3Des.vb" />
     <Compile Include="Forms\TokiDrift.Designer.vb">
       <DependentUpon>TokiDrift.vb</DependentUpon>
     </Compile>
