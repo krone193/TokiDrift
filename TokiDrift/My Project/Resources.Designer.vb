@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property _161a6dd8fff8fad3852cdb992e16f102() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("161a6dd8fff8fad3852cdb992e16f102", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property Antipasti() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Antipasti", resourceCulture)
@@ -76,6 +86,16 @@ Namespace My.Resources
         Public ReadOnly Property Chirashi() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Chirashi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property f914c4c93bbdcd9d60995acda108a77d() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("f914c4c93bbdcd9d60995acda108a77d", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

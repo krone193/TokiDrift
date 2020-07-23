@@ -64,9 +64,6 @@ Public Class TokiDrift
   '--- T O K I D R I F T | Private Functions -----------------------------------------------------------------------------'
   '-----------------------------------------------------------------------------------------------------------------------'
   Private Sub TokiDrift_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    BackgroundImage = Image.FromFile("Resources/synthvaporwave.jpg")
-    BackgroundImageLayout = ImageLayout.Stretch
-
     For i As Integer = 0 To SelezioneTotale.Length - 1
       SelezioneTotale(i) = 0
     Next
@@ -397,5 +394,9 @@ Public Class TokiDrift
     For i As Integer = 0 To SelezioneTotale.Length - 1
       SelezioneTotale(i) = 0
     Next
+    Tb_Qnt1.Text = "0"
+    Tb_Qnt2.Text = "0"
+    Tb_Qnt3.Text = "0"
+    Tb_Qnt4.Text = "0"
   End Sub
 End Class
