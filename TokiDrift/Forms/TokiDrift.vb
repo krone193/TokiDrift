@@ -6,6 +6,9 @@ Public Class TokiDrift
   Private ReadOnly Factory As New MqttFactory
   Private WithEvents MqttClient As MqttClient
 
+
+  '--- T O K I D R I F T | Constants -------------------------------------------------------------------------------------'
+  '-----------------------------------------------------------------------------------------------------------------------'
   Private Const MQTTROOT As String = "kronelab/tokidrift/"
   Private Const MQTTHOST As String = "broker.hivemq.com"
   Private Const MQTTUSER As String = ""
@@ -15,50 +18,85 @@ Public Class TokiDrift
     Private Const SEPTCHAR As String = "♥"
 
 
-    '--- T O K I D R I F T | Variables -------------------------------------------------------------------------------------'
-    '-----------------------------------------------------------------------------------------------------------------------'
-    Dim SfondiMenu() = {My.Resources.TokiDrift01, My.Resources.TokiDrift02, My.Resources.TokiDrift03, My.Resources.TokiDrift04, My.Resources.TokiDrift05, My.Resources.TokiDrift06,
-        My.Resources.TokiDrift07, My.Resources.TokiDrift08, My.Resources.TokiDrift09, My.Resources.TokiDrift10, My.Resources.TokiDrift11, My.Resources.TokiDrift12,
-        My.Resources.TokiDrift13, My.Resources.TokiDrift14, My.Resources.TokiDrift15, My.Resources.TokiDrift16, My.Resources.TokiDrift17, My.Resources.TokiDrift18,
-        My.Resources.TokiDrift19, My.Resources.TokiDrift20, My.Resources.TokiDrift21, My.Resources.TokiDrift22, My.Resources.TokiDrift23, My.Resources.TokiDrift24,
-        My.Resources.TokiDrift25, My.Resources.TokiDrift26, My.Resources.TokiDrift27, My.Resources.TokiDrift28, My.Resources.TokiDrift29, My.Resources.TokiDrift30,
-        My.Resources.TokiDrift31, My.Resources.TokiDrift32, My.Resources.TokiDrift33, My.Resources.TokiDrift34, My.Resources.TokiDrift35, My.Resources.TokiDrift36,
-        My.Resources.TokiDrift37, My.Resources.TokiDrift38, My.Resources.TokiDrift39, My.Resources.TokiDrift40}
-  Dim ID_PiattiTot() = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 17, 16, 20, 21, 30, 31, 32, 33, 40, 46, 41, 48, 42, 43, 45, 44, 47, 60, 61, 62, 63, 64, 65, 66, 67, 68,
-        80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 101, 102, 100, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 123, 122, 124, 125, 126, 127, 128, 129, 130, 131,
-        132, 133, 134, 135, 136, 137, 138, 150, 151, 152, 153, 154, 155, 156, 157, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 183, 190,
-        191, 192, 193}
-  Dim ArrayPagePointer() = {0, 4, 7, 10, 13, 17, 19, 21, 25, 27, 30, 32, 34, 37, 40, 43, 47, 51, 53, 56, 59, 62, 66, 69, 73, 76, 80, 83, 86, 88, 91, 94, 96, 99, 102, 105, 109, 112, 116,
-        118}
-    Dim SelezioneTotale(ID_PiattiTot.Length - 1)
-    Dim PagineLaunch As Integer = 40
-  Dim NofPiattiPerPagePRANZO() = {4, 3, 3, 3, 4, 2, 2, 4, 2, 3, 2, 2, 3, 3, 3, 4, 4, 2, 3, 3, 3, 4, 3, 4, 3, 4, 3, 3, 2, 3, 3, 2, 3, 3, 3, 4, 3, 4, 2, 2}
+  '--- T O K I D R I F T | ReadOnly --------------------------------------------------------------------------------------'
+  '-----------------------------------------------------------------------------------------------------------------------'
+  ReadOnly SfondiMenu() = {
+    My.Resources.TokiDrift01, My.Resources.TokiDrift02, My.Resources.TokiDrift03, My.Resources.TokiDrift04, My.Resources.TokiDrift05, My.Resources.TokiDrift06,
+    My.Resources.TokiDrift07, My.Resources.TokiDrift08, My.Resources.TokiDrift09, My.Resources.TokiDrift10, My.Resources.TokiDrift11, My.Resources.TokiDrift12,
+    My.Resources.TokiDrift13, My.Resources.TokiDrift14, My.Resources.TokiDrift15, My.Resources.TokiDrift16, My.Resources.TokiDrift17, My.Resources.TokiDrift18,
+    My.Resources.TokiDrift19, My.Resources.TokiDrift20, My.Resources.TokiDrift21, My.Resources.TokiDrift22, My.Resources.TokiDrift23, My.Resources.TokiDrift24,
+    My.Resources.TokiDrift25, My.Resources.TokiDrift26, My.Resources.TokiDrift27, My.Resources.TokiDrift28, My.Resources.TokiDrift29, My.Resources.TokiDrift30,
+    My.Resources.TokiDrift31, My.Resources.TokiDrift32, My.Resources.TokiDrift33, My.Resources.TokiDrift34, My.Resources.TokiDrift35, My.Resources.TokiDrift36,
+    My.Resources.TokiDrift37, My.Resources.TokiDrift38, My.Resources.TokiDrift39, My.Resources.TokiDrift40
+  }
+  '-----------------------------------------------------------------------------------------------------------------------'
+  ReadOnly ID_PiattiTot() = {
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 17, 16, 20, 21, 30, 31, 32, 33, 40, 46, 41, 48, 42, 43, 45, 44, 47, 60, 61, 62, 63, 64, 65, 66, 67, 68, 80, 81, 82,
+    83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 101, 102, 100, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 123, 122, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134,
+    135, 136, 137, 138, 150, 151, 152, 153, 154, 155, 156, 157, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 183, 190, 191, 192, 193
+  }
+  '-----------------------------------------------------------------------------------------------------------------------'
+  ReadOnly ArrayPagePointer() = {
+    0, 4, 7, 10, 13, 17, 19, 21, 25, 27, 30, 32, 34, 37, 40, 43, 47, 51, 53, 56, 59, 62, 66, 69, 73, 76, 80, 83, 86, 88, 91, 94, 96, 99, 102, 105, 109, 112, 116, 118
+  }
+  '-----------------------------------------------------------------------------------------------------------------------'
+  ReadOnly NofPiattiPerPagePRANZO() = {
+    4, 3, 3, 3, 4, 2, 2, 4, 2, 3, 2, 2, 3, 3, 3, 4, 4, 2, 3, 3, 3, 4, 3, 4, 3, 4, 3, 3, 2, 3, 3, 2, 3, 3, 3, 4, 3, 4, 2, 2
+  }
+  '-----------------------------------------------------------------------------------------------------------------------'
+  ReadOnly CoordinateXP1() = {
+    3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318
+  }
+  '-----------------------------------------------------------------------------------------------------------------------'
+  ReadOnly CoordinateYP1() = {
+    80, 118, 110, 93, 67, 176, 163, 76, 162, 34, 118, 92, 93, 113, 100, 57, 57, 129, 85, 99, 97, 44, 102, 46, 92, 39, 87, 69, 133, 99, 75, 141, 107, 96, 100,
+    59, 112, 56, 118, 83
+  }
+  '-----------------------------------------------------------------------------------------------------------------------'
+  ReadOnly CoordinateXP2() = {
+    3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318
+  }
+  '-----------------------------------------------------------------------------------------------------------------------'
+  ReadOnly CoordinateYP2() = {
+    204, 269, 251, 249, 185, 346, 339, 202, 332, 193, 434, 366, 247, 259, 266, 180, 181, 412, 259, 264, 258, 183, 252, 188, 256, 183, 252, 244, 351, 258, 245,
+    433, 265, 265, 262, 190, 296, 188, 372, 304
+  }
+  '-----------------------------------------------------------------------------------------------------------------------'
+  ReadOnly CoordinateXP3() = {
+    3, 318, 3, 318, 3, 0, 0, 318, 0, 318, 0, 0, 3, 318, 3, 318, 3, 0, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 0, 318, 3, 0, 3, 318, 3, 318, 3, 318, 0, 0
+  }
+  '-----------------------------------------------------------------------------------------------------------------------'
+  ReadOnly CoordinateYP3() = {
+    327, 424, 434, 423, 311, 0, 0, 316, 0, 422, 0, 0, 400, 422, 402, 312, 309, 0, 446, 430, 415, 291, 415, 311, 415, 305, 428, 428, 0, 428, 428, 0, 429, 426, 429,
+    294, 437, 299, 0, 0
+  }
+  '-----------------------------------------------------------------------------------------------------------------------'
+  ReadOnly CoordinateXP4() = {
+    3, 0, 0, 0, 3, 0, 0, 318, 0, 0, 0, 0, 0, 0, 0, 318, 3, 0, 0, 0, 0, 318, 0, 318, 0, 318, 0, 0, 0, 0, 0, 0, 0, 0, 0, 318, 0, 318, 0, 0
+  }
+  '-----------------------------------------------------------------------------------------------------------------------'
+  ReadOnly CoordinateYP4() = {
+    444, 0, 0, 0, 434, 0, 0, 437, 0, 0, 0, 0, 0, 0, 0, 411, 439, 0, 0, 0, 0, 435, 0, 441, 0, 437, 0, 0, 0, 0, 0, 0, 0, 0, 0, 444, 0, 442, 0, 0
+  }
+  '-----------------------------------------------------------------------------------------------------------------------'
+  ReadOnly GruppoPannelli As New List(Of Panel)
+  ReadOnly SelezioneTotale(ID_PiattiTot.Length)
+  ReadOnly PagineLaunch As Integer = 40
+  ReadOnly PagAntipasti As Integer = 0
+  ReadOnly PagChirashi As Integer = 7
+  ReadOnly PagGunkan As Integer = 8
+  ReadOnly PagHosomaki As Integer = 12
+  ReadOnly PagNigiri As Integer = 15
+  ReadOnly PagSashimi As Integer = 19
+  ReadOnly PagUramaki As Integer = 20
+  ReadOnly PagTemaki As Integer = 29
+  ReadOnly PagPiattiCaldi As Integer = 32
+
+
+  '--- T O K I D R I F T | Variables -------------------------------------------------------------------------------------'
+  '-----------------------------------------------------------------------------------------------------------------------'
   Dim PageIndex As Integer = 0
-  Dim CoordinateXP1() = {3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318}
-  Dim CoordinateYP1() = {80, 118, 110, 93, 67, 176, 163, 76, 162, 34, 118, 92, 93, 113, 100, 57, 57, 129, 85, 99, 97, 44, 102, 46, 92, 39, 87, 69, 133, 99, 75, 141, 107, 96, 100,
-        59, 112, 56, 118, 83}
-  Dim CoordinateXP2() = {3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318}
-  Dim CoordinateYP2() = {204, 269, 251, 249, 185, 346, 339, 202, 332, 193, 434, 366, 247, 259, 266, 180, 181, 412, 259, 264, 258, 183, 252, 188, 256, 183, 252, 244, 351, 258, 245,
-        433, 265, 265, 262, 190, 296, 188, 372, 304}
-  Dim CoordinateXP3() = {3, 318, 3, 318, 3, 0, 0, 318, 0, 318, 0, 0, 3, 318, 3, 318, 3, 0, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 0, 318, 3, 0, 3, 318, 3, 318, 3, 318, 0, 0}
-  Dim CoordinateYP3() = {327, 424, 434, 423, 311, 0, 0, 316, 0, 422, 0, 0, 400, 422, 402, 312, 309, 0, 446, 430, 415, 291, 415, 311, 415, 305, 428, 428, 0, 428, 428, 0, 429, 426, 429,
-        294, 437, 299, 0, 0}
-  Dim CoordinateXP4() = {3, 0, 0, 0, 3, 0, 0, 318, 0, 0, 0, 0, 0, 0, 0, 318, 3, 0, 0, 0, 0, 318, 0, 318, 0, 318, 0, 0, 0, 0, 0, 0, 0, 0, 0, 318, 0, 318, 0, 0}
-  Dim CoordinateYP4() = {444, 0, 0, 0, 434, 0, 0, 437, 0, 0, 0, 0, 0, 0, 0, 411, 439, 0, 0, 0, 0, 435, 0, 441, 0, 437, 0, 0, 0, 0, 0, 0, 0, 0, 0, 444, 0, 442, 0, 0}
-  Dim GruppoPannelli As New List(Of Panel)
   Dim indexchanged As Boolean = False
-  Dim PagAntipasti As Integer = 0
-  Dim PagChirashi As Integer = 7
-  Dim PagGunkan As Integer = 8
-  Dim PagHosomaki As Integer = 12
-  Dim PagNigiri As Integer = 15
-  Dim PagSashimi As Integer = 19
-  Dim PagUramaki As Integer = 20
-  Dim PagTemaki As Integer = 29
-  Dim PagPiattiCaldi As Integer = 32
-
-
-
 
 
   '--- T O K I D R I F T | Private Functions -----------------------------------------------------------------------------'
@@ -92,11 +130,6 @@ Public Class TokiDrift
 
 
   '--- T O K I D R I F T | Buttons Next and Prev functions ---------------------------------------------------------------'
-  'Page 01 ---------------------------------------------------------------------------------------------------------------'
-  '-----------------------------------------------------------------------------------------------------------------------'
-  'Private Sub BtnNext01_Click(sender As Object, e As EventArgs)
-  '    ' PanMenuPage02.BringToFront()
-  'End Sub
   '-----------------------------------------------------------------------------------------------------------------------'
   Private Sub BtnPrev01_Click(sender As Object, e As EventArgs)
     Close()
@@ -104,7 +137,6 @@ Public Class TokiDrift
 
 
     '--- T O K I D R I F T | Buttons Inc and Dec functions -----------------------------------------------------------------'
-    'Page 01 ---------------------------------------------------------------------------------------------------------------'
     '-----------------------------------------------------------------------------------------------------------------------'
     Private Sub BtnInc01_Click(sender As Object, e As EventArgs) Handles Bt_Inc1.Click
         If (ArrayPagePointer(PageIndex) <> 17) And (ArrayPagePointer(PageIndex) <> 56) Then
@@ -118,7 +150,6 @@ Public Class TokiDrift
                 MessageBox.Show(My.Settings.Str_NmaxTxt, My.Settings.Str_NmaxTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             End If
         End If
-
     End Sub
     '-----------------------------------------------------------------------------------------------------------------------'
     Private Sub BtnDec01_Click(sender As Object, e As EventArgs) Handles Tb_Dec1.Click
@@ -185,10 +216,10 @@ Public Class TokiDrift
   End Sub
 
     Private Sub BtnNext01_Click_1(sender As Object, e As EventArgs) Handles BtnNext01.Click
-        If PictureBox1.Image IsNot My.Resources.f914c4c93bbdcd9d60995acda108a77d Then
-            PictureBox1.Image = My.Resources.f914c4c93bbdcd9d60995acda108a77d
-        End If
-        If PageIndex < PagineLaunch - 1 Then
+    'If PictureBox1.Image IsNot My.Resources.f914c4c93bbdcd9d60995acda108a77d Then
+    '    PictureBox1.Image = My.Resources.f914c4c93bbdcd9d60995acda108a77d
+    'End If
+    If PageIndex < PagineLaunch - 1 Then
             indexchanged = True
             PageIndex += 1
             RelocateButtons()
@@ -226,41 +257,51 @@ Public Class TokiDrift
       Tb_Qnt4.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 3)
     End If
   End Sub
-
+  '-----------------------------------------------------------------------------------------------------------------------'
   Private Sub RefreshTimer_Tick(sender As Object, e As EventArgs) Handles RefreshTimer.Tick
     If indexchanged = True Then
       indexchanged = False
       Pnl_pages.BackgroundImage = SfondiMenu(PageIndex)
     End If
   End Sub
-
-    Private Sub BtnPrev01_Click_1(sender As Object, e As EventArgs) Handles BtnPrev01.Click
-        If PictureBox1.Image IsNot My.Resources.f914c4c93bbdcd9d60995acda108a77d Then
-            PictureBox1.Image = My.Resources.f914c4c93bbdcd9d60995acda108a77d
-        End If
-        If PageIndex > 0 Then
-            indexchanged = True
-            PageIndex -= 1
-            RelocateButtons()
-        End If
-    End Sub
-
-    Private Sub Bt_StartOrdine_Click(sender As Object, e As EventArgs) Handles Bt_StartOrdine.Click
+  '-----------------------------------------------------------------------------------------------------------------------'
+  Private Sub BtnPrev01_Click_1(sender As Object, e As EventArgs) Handles BtnPrev01.Click
+    If PictureBox1.Image IsNot My.Resources.TokiDriftFoodBkg Then
+      PictureBox1.Image = My.Resources.TokiDriftFoodBkg
+    End If
+    If PageIndex > 0 Then
+      indexchanged = True
+      PageIndex -= 1
+      RelocateButtons()
+    End If
+  End Sub
+  '-----------------------------------------------------------------------------------------------------------------------'
+  Private Sub Bt_CancellaOrdine_Click(sender As Object, e As EventArgs) Handles Bt_CancellaOrdine.Click
+    For i As Integer = 0 To SelezioneTotale.Length - 1
+      SelezioneTotale(i) = 0
+    Next
+    Tb_Qnt1.Text = "0"
+    Tb_Qnt2.Text = "0"
+    Tb_Qnt3.Text = "0"
+    Tb_Qnt4.Text = "0"
+  End Sub
+  '-----------------------------------------------------------------------------------------------------------------------'
+  Private Sub Bt_StartOrdine_Click(sender As Object, e As EventArgs) Handles Bt_StartOrdine.Click
     If Txt_User.Text <> "inserisci utente" And Txt_User.Text <> "" Then
       Dim str_Order As String = ""
       For i As Integer = 0 To ID_PiattiTot.Length - 1
-        str_Order = str_Order & SelezioneTotale(i) & "." & ID_PiattiTot(i) & ";"
+        str_Order = str_Order & ID_PiattiTot(i) & "." & SelezioneTotale(i) & ";"
       Next
       If Connect(Txt_User.Text) Then
         SendMessage(Txt_User.Text, str_Order)
       End If
       MsgBox(str_Order)
     Else
-      MsgBox("Plz insert thy name")
+      MsgBox("Insert thy name")
       Txt_User.Focus()
     End If
   End Sub
-
+  '-----------------------------------------------------------------------------------------------------------------------'
   Private Sub TreeView1_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles Tv_BookMark.AfterSelect
     Static PrimoClick As String = ""
     Select Case e.Node.Name
@@ -417,26 +458,16 @@ Public Class TokiDrift
     End If
   End Function
 
-    Private Sub Bt_CancellaOrdine_Click(sender As Object, e As EventArgs) Handles Bt_CancellaOrdine.Click
-        For i As Integer = 0 To SelezioneTotale.Length - 1
-            SelezioneTotale(i) = 0
-        Next
-        Tb_Qnt1.Text = "0"
-        Tb_Qnt2.Text = "0"
-        Tb_Qnt3.Text = "0"
-        Tb_Qnt4.Text = "0"
-    End Sub
-
-    Private Sub bt_Resoconto_Click(sender As Object, e As EventArgs) Handles bt_Resoconto.Click
-        For i As Integer = 0 To SelezioneTotale.Length - 1
-            frm_Resoconto.dgv_Resoconto.Rows.Add()
-        Next
-        For i As Integer = 0 To SelezioneTotale.Length - 1
-            frm_Resoconto.dgv_Resoconto.Item(frm_Resoconto.clm_IdPiatto.Index, i).Value = ID_PiattiTot(i)
-        Next
-        For i As Integer = 0 To SelezioneTotale.Length - 1
-            frm_Resoconto.dgv_Resoconto.Item(frm_Resoconto.clm_Qnt.Index, i).Value = SelezioneTotale(i)
-        Next
-        frm_Resoconto.ShowDialog()
-    End Sub
+  Private Sub Bt_Resoconto_Click(sender As Object, e As EventArgs) Handles bt_Resoconto.Click
+    For i As Integer = 0 To SelezioneTotale.Length - 1
+      Resoconto.dgv_Resoconto.Rows.Add()
+    Next
+    For i As Integer = 0 To SelezioneTotale.Length - 1
+      Resoconto.dgv_Resoconto.Item(Resoconto.clm_IdPiatto.Index, i).Value = ID_PiattiTot(i)
+    Next
+    For i As Integer = 0 To SelezioneTotale.Length - 1
+      Resoconto.dgv_Resoconto.Item(Resoconto.clm_Qnt.Index, i).Value = SelezioneTotale(i)
+    Next
+    Resoconto.ShowDialog()
+  End Sub
 End Class

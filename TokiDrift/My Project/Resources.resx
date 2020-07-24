@@ -127,14 +127,14 @@
   <data name="TokiDrift22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TokiDrift04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TokiDrift04.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TokiDrift10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Uramaki" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Uramaki.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hosomaki" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hosomaki.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TokiDrift26" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift26.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,23 +148,23 @@
   <data name="TokiDrift33" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift33.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TokiDrift16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TokiDrift16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TokiDrift01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="161a6dd8fff8fad3852cdb992e16f102" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\161a6dd8fff8fad3852cdb992e16f102.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TokiDrift06" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift06.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TokiDrift39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TokiDrift39.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TokiDrift30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift30.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TokiDrift02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TokiDrift24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TokiDrift24.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TokiDrift14" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift14.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -174,9 +174,6 @@
   </data>
   <data name="TokiDrift11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TokiDrift05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TokiDrift05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TokiDrift25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift25.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,8 +187,11 @@
   <data name="TokiDrift08" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift08.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="synthvaporwave" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\synthvaporwave.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TokiDrift32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TokiDrift32.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TokiDrift09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TokiDrift09.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TokiDrift12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,8 +199,8 @@
   <data name="TokiDrift31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TokiDrift24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TokiDrift24.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TokiDrift23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TokiDrift23.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TokiDrift21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,23 +223,20 @@
   <data name="TokiDrift36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift36.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hosomaki" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hosomaki.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Antipasti" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Antipasti.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Chirashi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chirashi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TokiDrift29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift29.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TokiDrift07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TokiDrift07.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Temaki" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Temaki.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TokiDrift09" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TokiDrift09.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TokiDrift23" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TokiDrift23.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TokiDrift04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TokiDrift04.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TokiDrift35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift35.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,8 +244,8 @@
   <data name="TokiDrift28" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift28.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Chirashi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Chirashi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Antipasti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Antipasti.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TokiDrift38" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift38.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,22 +253,28 @@
   <data name="TokiDrift17" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift17.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TokiDrift39" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TokiDrift39.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TokiDrift05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TokiDrift05.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TokiDrift19" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift19.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TokiDrift32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TokiDrift32.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TokiDrift16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TokiDrift16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TokiDrift27" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift27.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TokiDrift07" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TokiDrift07.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="161a6dd8fff8fad3852cdb992e16f102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\161a6dd8fff8fad3852cdb992e16f102.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="f914c4c93bbdcd9d60995acda108a77d" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\f914c4c93bbdcd9d60995acda108a77d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="31719f8b43290f8b0c42cbb0d2bbf1d3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\31719f8b43290f8b0c42cbb0d2bbf1d3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StartScreenBkg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\startscreenbkg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TokiDriftFoodBkg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TokiDriftFoodBkg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

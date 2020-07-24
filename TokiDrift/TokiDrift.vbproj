@@ -29,7 +29,7 @@
     <PublisherName>kronelab</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>0.2.1.0</ApplicationVersion>
+    <ApplicationVersion>0.4.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -121,10 +121,22 @@
   <ItemGroup>
     <Compile Include="Code\ApplicationEvents.vb" />
     <Compile Include="Code\Simple3Des.vb" />
-    <Compile Include="Forms\Resoconto.Designer.vb">
+    <Compile Include="Forms\CommandCenter.Designer.vb">
+      <DependentUpon>CommandCenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CommandCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Resoconto.designer.vb">
       <DependentUpon>Resoconto.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Resoconto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StartScreen.Designer.vb">
+      <DependentUpon>StartScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StartScreen.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\TokiDrift.Designer.vb">
@@ -152,8 +164,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\CommandCenter.resx">
+      <DependentUpon>CommandCenter.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Resoconto.resx">
       <DependentUpon>Resoconto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StartScreen.resx">
+      <DependentUpon>StartScreen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TokiDrift.resx">
       <DependentUpon>TokiDrift.vb</DependentUpon>
@@ -196,7 +214,11 @@
     <Content Include="Resources\161a6dd8fff8fad3852cdb992e16f102.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\f914c4c93bbdcd9d60995acda108a77d.jpg">
+    <None Include="Resources\31719f8b43290f8b0c42cbb0d2bbf1d3.jpg" />
+    <Content Include="Resources\StartScreenBkg.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\TokiDriftFoodBkg.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\Uramaki.jpg">
@@ -227,9 +249,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\logo.ico">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\synthvaporwave.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\TokiDrift22.jpg">

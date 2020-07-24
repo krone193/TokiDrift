@@ -73,6 +73,16 @@ Namespace My.Resources
         '''<summary>
         '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property _31719f8b43290f8b0c42cbb0d2bbf1d3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("31719f8b43290f8b0c42cbb0d2bbf1d3", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property Antipasti() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Antipasti", resourceCulture)
@@ -86,16 +96,6 @@ Namespace My.Resources
         Public ReadOnly Property Chirashi() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Chirashi", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        '''</summary>
-        Public ReadOnly Property f914c4c93bbdcd9d60995acda108a77d() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("f914c4c93bbdcd9d60995acda108a77d", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -153,9 +153,9 @@ Namespace My.Resources
         '''<summary>
         '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         '''</summary>
-        Public ReadOnly Property synthvaporwave() As System.Drawing.Bitmap
+        Public ReadOnly Property StartScreenBkg() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("synthvaporwave", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("StartScreenBkg", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -566,6 +566,16 @@ Namespace My.Resources
         Public ReadOnly Property TokiDrift40() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("TokiDrift40", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDriftFoodBkg() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDriftFoodBkg", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
