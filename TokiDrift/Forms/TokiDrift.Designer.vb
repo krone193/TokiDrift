@@ -22,517 +22,530 @@ Partial Class TokiDrift
     'Non modificarla mediante l'editor del codice.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-		Me.components = New System.ComponentModel.Container()
-		Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 2")
-		Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 3")
-		Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 4")
-		Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 5")
-		Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 6")
-		Dim TreeNode6 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 7")
-		Dim TreeNode7 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Antipasti", New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2, TreeNode3, TreeNode4, TreeNode5, TreeNode6})
-		Dim TreeNode8 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Chirashi")
-		Dim TreeNode9 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 10")
-		Dim TreeNode10 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 11")
-		Dim TreeNode11 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 12")
-		Dim TreeNode12 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gunkan", New System.Windows.Forms.TreeNode() {TreeNode9, TreeNode10, TreeNode11})
-		Dim TreeNode13 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 14")
-		Dim TreeNode14 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 15")
-		Dim TreeNode15 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Hosomaki", New System.Windows.Forms.TreeNode() {TreeNode13, TreeNode14})
-		Dim TreeNode16 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 17")
-		Dim TreeNode17 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 18")
-		Dim TreeNode18 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 19")
-		Dim TreeNode19 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Nigiri", New System.Windows.Forms.TreeNode() {TreeNode16, TreeNode17, TreeNode18})
-		Dim TreeNode20 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Sashimi")
-		Dim TreeNode21 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 22")
-		Dim TreeNode22 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 23")
-		Dim TreeNode23 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 24")
-		Dim TreeNode24 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 25")
-		Dim TreeNode25 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 26")
-		Dim TreeNode26 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 27")
-		Dim TreeNode27 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 28")
-		Dim TreeNode28 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 29")
-		Dim TreeNode29 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Uramaki", New System.Windows.Forms.TreeNode() {TreeNode21, TreeNode22, TreeNode23, TreeNode24, TreeNode25, TreeNode26, TreeNode27, TreeNode28})
-		Dim TreeNode30 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 31")
-		Dim TreeNode31 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 32")
-		Dim TreeNode32 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Temaki", New System.Windows.Forms.TreeNode() {TreeNode30, TreeNode31})
-		Dim TreeNode33 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 34")
-		Dim TreeNode34 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 35")
-		Dim TreeNode35 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 36")
-		Dim TreeNode36 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 37")
-		Dim TreeNode37 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 38")
-		Dim TreeNode38 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 39")
-		Dim TreeNode39 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 40")
-		Dim TreeNode40 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Piatti caldi", New System.Windows.Forms.TreeNode() {TreeNode33, TreeNode34, TreeNode35, TreeNode36, TreeNode37, TreeNode38, TreeNode39})
-		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TokiDrift))
-		Me.Tb_Qnt1 = New System.Windows.Forms.TextBox()
-		Me.Bt_Inc1 = New System.Windows.Forms.Button()
-		Me.Tb_Dec1 = New System.Windows.Forms.Button()
-		Me.Bt_Inc2 = New System.Windows.Forms.Button()
-		Me.Tb_Qnt2 = New System.Windows.Forms.TextBox()
-		Me.Bt_Dec2 = New System.Windows.Forms.Button()
-		Me.Tb_Qnt3 = New System.Windows.Forms.TextBox()
-		Me.Bt_Inc3 = New System.Windows.Forms.Button()
-		Me.Bt_Dec3 = New System.Windows.Forms.Button()
-		Me.Bt_Inc4 = New System.Windows.Forms.Button()
-		Me.Tb_Qnt4 = New System.Windows.Forms.TextBox()
-		Me.Bt_Dec4 = New System.Windows.Forms.Button()
-		Me.BtnPrev01 = New System.Windows.Forms.Button()
-		Me.BtnNext01 = New System.Windows.Forms.Button()
-		Me.RefreshTimer = New System.Windows.Forms.Timer(Me.components)
-		Me.Pnl_1 = New System.Windows.Forms.Panel()
-		Me.Pnl_3 = New System.Windows.Forms.Panel()
-		Me.Pnl_2 = New System.Windows.Forms.Panel()
-		Me.Pnl_4 = New System.Windows.Forms.Panel()
-		Me.Pnl_pages = New System.Windows.Forms.Panel()
-		Me.Tv_BookMark = New System.Windows.Forms.TreeView()
-		Me.Panel1 = New System.Windows.Forms.Panel()
-		Me.Bt_StartOrdine = New System.Windows.Forms.Button()
-		Me.Txt_User = New System.Windows.Forms.TextBox()
-		Me.Bt_CancellaOrdine = New System.Windows.Forms.Button()
-		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-		Me.Pnl_1.SuspendLayout()
-		Me.Pnl_3.SuspendLayout()
-		Me.Pnl_2.SuspendLayout()
-		Me.Pnl_4.SuspendLayout()
-		Me.Pnl_pages.SuspendLayout()
-		Me.Panel1.SuspendLayout()
-		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-		Me.SuspendLayout()
-		'
-		'Tb_Qnt1
-		'
-		Me.Tb_Qnt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.Tb_Qnt1.Cursor = System.Windows.Forms.Cursors.No
-		Me.Tb_Qnt1.Location = New System.Drawing.Point(0, 20)
-		Me.Tb_Qnt1.Name = "Tb_Qnt1"
-		Me.Tb_Qnt1.Size = New System.Drawing.Size(35, 20)
-		Me.Tb_Qnt1.TabIndex = 16
-		Me.Tb_Qnt1.Text = "0"
-		Me.Tb_Qnt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-		'
-		'Bt_Inc1
-		'
-		Me.Bt_Inc1.BackColor = System.Drawing.SystemColors.Control
-		Me.Bt_Inc1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.Bt_Inc1.Location = New System.Drawing.Point(0, 0)
-		Me.Bt_Inc1.Name = "Bt_Inc1"
-		Me.Bt_Inc1.Size = New System.Drawing.Size(35, 21)
-		Me.Bt_Inc1.TabIndex = 17
-		Me.Bt_Inc1.Text = "▲"
-		Me.Bt_Inc1.UseVisualStyleBackColor = False
-		'
-		'Tb_Dec1
-		'
-		Me.Tb_Dec1.BackColor = System.Drawing.SystemColors.Control
-		Me.Tb_Dec1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.Tb_Dec1.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Tb_Dec1.Location = New System.Drawing.Point(0, 39)
-		Me.Tb_Dec1.Name = "Tb_Dec1"
-		Me.Tb_Dec1.Size = New System.Drawing.Size(35, 21)
-		Me.Tb_Dec1.TabIndex = 18
-		Me.Tb_Dec1.Text = "▼"
-		Me.Tb_Dec1.UseVisualStyleBackColor = False
-		'
-		'Bt_Inc2
-		'
-		Me.Bt_Inc2.BackColor = System.Drawing.SystemColors.Control
-		Me.Bt_Inc2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.Bt_Inc2.Location = New System.Drawing.Point(0, 0)
-		Me.Bt_Inc2.Name = "Bt_Inc2"
-		Me.Bt_Inc2.Size = New System.Drawing.Size(35, 21)
-		Me.Bt_Inc2.TabIndex = 20
-		Me.Bt_Inc2.Text = "▲"
-		Me.Bt_Inc2.UseVisualStyleBackColor = False
-		'
-		'Tb_Qnt2
-		'
-		Me.Tb_Qnt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.Tb_Qnt2.Cursor = System.Windows.Forms.Cursors.No
-		Me.Tb_Qnt2.Location = New System.Drawing.Point(0, 20)
-		Me.Tb_Qnt2.Name = "Tb_Qnt2"
-		Me.Tb_Qnt2.Size = New System.Drawing.Size(35, 20)
-		Me.Tb_Qnt2.TabIndex = 19
-		Me.Tb_Qnt2.Text = "0"
-		Me.Tb_Qnt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-		'
-		'Bt_Dec2
-		'
-		Me.Bt_Dec2.BackColor = System.Drawing.SystemColors.Control
-		Me.Bt_Dec2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.Bt_Dec2.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Bt_Dec2.Location = New System.Drawing.Point(0, 39)
-		Me.Bt_Dec2.Name = "Bt_Dec2"
-		Me.Bt_Dec2.Size = New System.Drawing.Size(35, 21)
-		Me.Bt_Dec2.TabIndex = 21
-		Me.Bt_Dec2.Text = "▼"
-		Me.Bt_Dec2.UseVisualStyleBackColor = False
-		'
-		'Tb_Qnt3
-		'
-		Me.Tb_Qnt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.Tb_Qnt3.Cursor = System.Windows.Forms.Cursors.No
-		Me.Tb_Qnt3.Location = New System.Drawing.Point(0, 20)
-		Me.Tb_Qnt3.Name = "Tb_Qnt3"
-		Me.Tb_Qnt3.Size = New System.Drawing.Size(35, 20)
-		Me.Tb_Qnt3.TabIndex = 22
-		Me.Tb_Qnt3.Text = "0"
-		Me.Tb_Qnt3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-		'
-		'Bt_Inc3
-		'
-		Me.Bt_Inc3.BackColor = System.Drawing.SystemColors.Control
-		Me.Bt_Inc3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.Bt_Inc3.Location = New System.Drawing.Point(0, 0)
-		Me.Bt_Inc3.Name = "Bt_Inc3"
-		Me.Bt_Inc3.Size = New System.Drawing.Size(35, 21)
-		Me.Bt_Inc3.TabIndex = 23
-		Me.Bt_Inc3.Text = "▲"
-		Me.Bt_Inc3.UseVisualStyleBackColor = False
-		'
-		'Bt_Dec3
-		'
-		Me.Bt_Dec3.BackColor = System.Drawing.SystemColors.Control
-		Me.Bt_Dec3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.Bt_Dec3.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Bt_Dec3.Location = New System.Drawing.Point(0, 39)
-		Me.Bt_Dec3.Name = "Bt_Dec3"
-		Me.Bt_Dec3.Size = New System.Drawing.Size(35, 21)
-		Me.Bt_Dec3.TabIndex = 24
-		Me.Bt_Dec3.Text = "▼"
-		Me.Bt_Dec3.UseVisualStyleBackColor = False
-		'
-		'Bt_Inc4
-		'
-		Me.Bt_Inc4.BackColor = System.Drawing.SystemColors.Control
-		Me.Bt_Inc4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.Bt_Inc4.Location = New System.Drawing.Point(0, 0)
-		Me.Bt_Inc4.Name = "Bt_Inc4"
-		Me.Bt_Inc4.Size = New System.Drawing.Size(35, 21)
-		Me.Bt_Inc4.TabIndex = 26
-		Me.Bt_Inc4.Text = "▲"
-		Me.Bt_Inc4.UseVisualStyleBackColor = False
-		'
-		'Tb_Qnt4
-		'
-		Me.Tb_Qnt4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.Tb_Qnt4.Cursor = System.Windows.Forms.Cursors.No
-		Me.Tb_Qnt4.Location = New System.Drawing.Point(0, 20)
-		Me.Tb_Qnt4.Name = "Tb_Qnt4"
-		Me.Tb_Qnt4.Size = New System.Drawing.Size(35, 20)
-		Me.Tb_Qnt4.TabIndex = 25
-		Me.Tb_Qnt4.Text = "0"
-		Me.Tb_Qnt4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-		'
-		'Bt_Dec4
-		'
-		Me.Bt_Dec4.BackColor = System.Drawing.SystemColors.Control
-		Me.Bt_Dec4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.Bt_Dec4.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Bt_Dec4.Location = New System.Drawing.Point(0, 39)
-		Me.Bt_Dec4.Name = "Bt_Dec4"
-		Me.Bt_Dec4.Size = New System.Drawing.Size(35, 21)
-		Me.Bt_Dec4.TabIndex = 27
-		Me.Bt_Dec4.Text = "▼"
-		Me.Bt_Dec4.UseVisualStyleBackColor = False
-		'
-		'BtnPrev01
-		'
-		Me.BtnPrev01.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.BtnPrev01.Location = New System.Drawing.Point(3, 523)
-		Me.BtnPrev01.Name = "BtnPrev01"
-		Me.BtnPrev01.Size = New System.Drawing.Size(41, 23)
-		Me.BtnPrev01.TabIndex = 15
-		Me.BtnPrev01.Text = "裏"
-		Me.BtnPrev01.UseVisualStyleBackColor = True
-		'
-		'BtnNext01
-		'
-		Me.BtnNext01.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.BtnNext01.Location = New System.Drawing.Point(310, 523)
-		Me.BtnNext01.Name = "BtnNext01"
-		Me.BtnNext01.Size = New System.Drawing.Size(41, 23)
-		Me.BtnNext01.TabIndex = 14
-		Me.BtnNext01.Text = "次"
-		Me.BtnNext01.UseVisualStyleBackColor = True
-		'
-		'RefreshTimer
-		'
-		Me.RefreshTimer.Enabled = True
-		Me.RefreshTimer.Interval = 50
-		'
-		'Pnl_1
-		'
-		Me.Pnl_1.BackColor = System.Drawing.Color.Transparent
-		Me.Pnl_1.Controls.Add(Me.Bt_Inc1)
-		Me.Pnl_1.Controls.Add(Me.Tb_Qnt1)
-		Me.Pnl_1.Controls.Add(Me.Tb_Dec1)
-		Me.Pnl_1.Location = New System.Drawing.Point(307, 64)
-		Me.Pnl_1.Name = "Pnl_1"
-		Me.Pnl_1.Size = New System.Drawing.Size(35, 62)
-		Me.Pnl_1.TabIndex = 28
-		'
-		'Pnl_3
-		'
-		Me.Pnl_3.BackColor = System.Drawing.Color.Transparent
-		Me.Pnl_3.Controls.Add(Me.Bt_Inc3)
-		Me.Pnl_3.Controls.Add(Me.Bt_Dec3)
-		Me.Pnl_3.Controls.Add(Me.Tb_Qnt3)
-		Me.Pnl_3.Location = New System.Drawing.Point(307, 274)
-		Me.Pnl_3.Name = "Pnl_3"
-		Me.Pnl_3.Size = New System.Drawing.Size(35, 62)
-		Me.Pnl_3.TabIndex = 29
-		'
-		'Pnl_2
-		'
-		Me.Pnl_2.BackColor = System.Drawing.Color.Transparent
-		Me.Pnl_2.Controls.Add(Me.Bt_Inc2)
-		Me.Pnl_2.Controls.Add(Me.Bt_Dec2)
-		Me.Pnl_2.Controls.Add(Me.Tb_Qnt2)
-		Me.Pnl_2.Location = New System.Drawing.Point(307, 175)
-		Me.Pnl_2.Name = "Pnl_2"
-		Me.Pnl_2.Size = New System.Drawing.Size(35, 62)
-		Me.Pnl_2.TabIndex = 30
-		'
-		'Pnl_4
-		'
-		Me.Pnl_4.BackColor = System.Drawing.Color.Transparent
-		Me.Pnl_4.Controls.Add(Me.Bt_Inc4)
-		Me.Pnl_4.Controls.Add(Me.Bt_Dec4)
-		Me.Pnl_4.Controls.Add(Me.Tb_Qnt4)
-		Me.Pnl_4.Location = New System.Drawing.Point(307, 386)
-		Me.Pnl_4.Name = "Pnl_4"
-		Me.Pnl_4.Size = New System.Drawing.Size(35, 62)
-		Me.Pnl_4.TabIndex = 30
-		'
-		'Pnl_pages
-		'
-		Me.Pnl_pages.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-		Me.Pnl_pages.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.Pnl_pages.Controls.Add(Me.Pnl_1)
-		Me.Pnl_pages.Controls.Add(Me.BtnPrev01)
-		Me.Pnl_pages.Controls.Add(Me.Pnl_4)
-		Me.Pnl_pages.Controls.Add(Me.Pnl_3)
-		Me.Pnl_pages.Controls.Add(Me.BtnNext01)
-		Me.Pnl_pages.Controls.Add(Me.Pnl_2)
-		Me.Pnl_pages.Location = New System.Drawing.Point(0, 0)
-		Me.Pnl_pages.Name = "Pnl_pages"
-		Me.Pnl_pages.Size = New System.Drawing.Size(356, 551)
-		Me.Pnl_pages.TabIndex = 31
-		'
-		'Tv_BookMark
-		'
-		Me.Tv_BookMark.BackColor = System.Drawing.Color.WhiteSmoke
-		Me.Tv_BookMark.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.Tv_BookMark.Cursor = System.Windows.Forms.Cursors.Default
-		Me.Tv_BookMark.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Tv_BookMark.ForeColor = System.Drawing.Color.DarkSlateBlue
-		Me.Tv_BookMark.HotTracking = True
-		Me.Tv_BookMark.ImeMode = System.Windows.Forms.ImeMode.NoControl
-		Me.Tv_BookMark.Indent = 25
-		Me.Tv_BookMark.ItemHeight = 15
-		Me.Tv_BookMark.Location = New System.Drawing.Point(355, 0)
-		Me.Tv_BookMark.Name = "Tv_BookMark"
-		TreeNode1.Name = "nd_Pag2"
-		TreeNode1.Text = "Pagina 2"
-		TreeNode2.Name = "nd_Pag3"
-		TreeNode2.Text = "Pagina 3"
-		TreeNode3.Name = "nd_Pag4"
-		TreeNode3.Text = "Pagina 4"
-		TreeNode4.Name = "nd_pag5"
-		TreeNode4.Text = "Pagina 5"
-		TreeNode5.Name = "nd_Pag6"
-		TreeNode5.Text = "Pagina 6"
-		TreeNode6.Name = "nd_Pag7"
-		TreeNode6.Text = "Pagina 7"
-		TreeNode7.Name = "nd_Antipasti"
-		TreeNode7.Text = "Antipasti"
-		TreeNode8.Name = "nd_Chirashi"
-		TreeNode8.Text = "Chirashi"
-		TreeNode9.Name = "nd_Pag10"
-		TreeNode9.Text = "Pagina 10"
-		TreeNode10.Name = "nd_Pag11"
-		TreeNode10.Text = "Pagina 11"
-		TreeNode11.Name = "nd_Pag12"
-		TreeNode11.Text = "Pagina 12"
-		TreeNode12.Name = "nd_Gunkan"
-		TreeNode12.Text = "Gunkan"
-		TreeNode13.Name = "nd_Pag14"
-		TreeNode13.Text = "Pagina 14"
-		TreeNode14.Name = "nd_Pag15"
-		TreeNode14.Text = "Pagina 15"
-		TreeNode15.Name = "nd_Hosomaki"
-		TreeNode15.Text = "Hosomaki"
-		TreeNode16.Name = "nd_Pag17"
-		TreeNode16.Text = "Pagina 17"
-		TreeNode17.Name = "nd_Pag18"
-		TreeNode17.Text = "Pagina 18"
-		TreeNode18.Name = "nd_Pag19"
-		TreeNode18.Text = "Pagina 19"
-		TreeNode19.Name = "nd_Nigiri"
-		TreeNode19.Text = "Nigiri"
-		TreeNode20.Name = "nd_Sashimi"
-		TreeNode20.Text = "Sashimi"
-		TreeNode21.Name = "nd_Pag22"
-		TreeNode21.Text = "Pagina 22"
-		TreeNode22.Name = "nd_Pag23"
-		TreeNode22.Text = "Pagina 23"
-		TreeNode23.Name = "nd_Pag24"
-		TreeNode23.Text = "Pagina 24"
-		TreeNode24.Name = "nd_Pag25"
-		TreeNode24.Text = "Pagina 25"
-		TreeNode25.Name = "nd_Pag26"
-		TreeNode25.Text = "Pagina 26"
-		TreeNode26.Name = "nd_Pag27"
-		TreeNode26.Text = "Pagina 27"
-		TreeNode27.Name = "nd_Pag28"
-		TreeNode27.Text = "Pagina 28"
-		TreeNode28.Name = "nd_Pag29"
-		TreeNode28.Text = "Pagina 29"
-		TreeNode29.Name = "nd_Uramaki"
-		TreeNode29.Text = "Uramaki"
-		TreeNode30.Name = "Nodo38"
-		TreeNode30.Text = "Pagina 31"
-		TreeNode31.Name = "Nodo39"
-		TreeNode31.Text = "Pagina 32"
-		TreeNode32.Name = "nd_Temaki"
-		TreeNode32.Text = "Temaki"
-		TreeNode33.Name = "nd_Pag34"
-		TreeNode33.Text = "Pagina 34"
-		TreeNode34.Name = "nd_Pag35"
-		TreeNode34.Text = "Pagina 35"
-		TreeNode35.Name = "nd_Pag36"
-		TreeNode35.Text = "Pagina 36"
-		TreeNode36.Name = "nd_Pag37"
-		TreeNode36.Text = "Pagina 37"
-		TreeNode37.Name = "nd_Pag38"
-		TreeNode37.Text = "Pagina 38"
-		TreeNode38.Name = "nd_Pag39"
-		TreeNode38.Text = "Pagina 39"
-		TreeNode39.Name = "nd_Pag40"
-		TreeNode39.Text = "Pagina 40"
-		TreeNode40.Name = "nd_PiattiCaldi"
-		TreeNode40.Text = "Piatti caldi"
-		Me.Tv_BookMark.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode7, TreeNode8, TreeNode12, TreeNode15, TreeNode19, TreeNode20, TreeNode29, TreeNode32, TreeNode40})
-		Me.Tv_BookMark.RightToLeft = System.Windows.Forms.RightToLeft.No
-		Me.Tv_BookMark.Size = New System.Drawing.Size(145, 286)
-		Me.Tv_BookMark.TabIndex = 32
-		'
-		'Panel1
-		'
-		Me.Panel1.BackgroundImage = Global.TokiDriftApplication.My.Resources.Resources._161a6dd8fff8fad3852cdb992e16f102
-		Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-		Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.Panel1.Controls.Add(Me.Bt_StartOrdine)
-		Me.Panel1.Controls.Add(Me.Txt_User)
-		Me.Panel1.Controls.Add(Me.Bt_CancellaOrdine)
-		Me.Panel1.Location = New System.Drawing.Point(355, 400)
-		Me.Panel1.Name = "Panel1"
-		Me.Panel1.Size = New System.Drawing.Size(145, 151)
-		Me.Panel1.TabIndex = 37
-		'
-		'Bt_StartOrdine
-		'
-		Me.Bt_StartOrdine.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.Bt_StartOrdine.Location = New System.Drawing.Point(36, 116)
-		Me.Bt_StartOrdine.Name = "Bt_StartOrdine"
-		Me.Bt_StartOrdine.Size = New System.Drawing.Size(75, 23)
-		Me.Bt_StartOrdine.TabIndex = 34
-		Me.Bt_StartOrdine.Text = "ORDINA!!!"
-		Me.Bt_StartOrdine.UseVisualStyleBackColor = True
-		'
-		'Txt_User
-		'
-		Me.Txt_User.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.Txt_User.Location = New System.Drawing.Point(16, 90)
-		Me.Txt_User.Name = "Txt_User"
-		Me.Txt_User.Size = New System.Drawing.Size(114, 20)
-		Me.Txt_User.TabIndex = 36
-		Me.Txt_User.Text = "inserisci utente"
-		'
-		'Bt_CancellaOrdine
-		'
-		Me.Bt_CancellaOrdine.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-		Me.Bt_CancellaOrdine.Location = New System.Drawing.Point(36, 7)
-		Me.Bt_CancellaOrdine.Name = "Bt_CancellaOrdine"
-		Me.Bt_CancellaOrdine.Size = New System.Drawing.Size(75, 51)
-		Me.Bt_CancellaOrdine.TabIndex = 35
-		Me.Bt_CancellaOrdine.Text = "ELIMINA TUTTE LE SELEZIONI"
-		Me.Bt_CancellaOrdine.UseVisualStyleBackColor = True
-		'
-		'PictureBox1
-		'
-		Me.PictureBox1.BackColor = System.Drawing.Color.WhiteSmoke
-		Me.PictureBox1.BackgroundImage = Global.TokiDriftApplication.My.Resources.Resources.TokiDriftFoodBkg
-		Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-		Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox1.Location = New System.Drawing.Point(355, 285)
-		Me.PictureBox1.Name = "PictureBox1"
-		Me.PictureBox1.Size = New System.Drawing.Size(145, 116)
-		Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-		Me.PictureBox1.TabIndex = 33
-		Me.PictureBox1.TabStop = False
-		'
-		'TokiDrift
-		'
-		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.BackColor = System.Drawing.SystemColors.Control
-		Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-		Me.ClientSize = New System.Drawing.Size(500, 551)
-		Me.Controls.Add(Me.Panel1)
-		Me.Controls.Add(Me.PictureBox1)
-		Me.Controls.Add(Me.Tv_BookMark)
-		Me.Controls.Add(Me.Pnl_pages)
-		Me.DoubleBuffered = True
-		Me.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-		Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-		Me.KeyPreview = True
-		Me.MaximizeBox = False
-		Me.MinimizeBox = False
-		Me.Name = "TokiDrift"
-		Me.Text = "(っ◔◡◔)っ 【 ﻿T O K I   D R I F T 】 (っ◔◡◔)っ"
-		Me.Pnl_1.ResumeLayout(False)
-		Me.Pnl_1.PerformLayout()
-		Me.Pnl_3.ResumeLayout(False)
-		Me.Pnl_3.PerformLayout()
-		Me.Pnl_2.ResumeLayout(False)
-		Me.Pnl_2.PerformLayout()
-		Me.Pnl_4.ResumeLayout(False)
-		Me.Pnl_4.PerformLayout()
-		Me.Pnl_pages.ResumeLayout(False)
-		Me.Panel1.ResumeLayout(False)
-		Me.Panel1.PerformLayout()
-		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-		Me.ResumeLayout(False)
+    Me.components = New System.ComponentModel.Container()
+    Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 2")
+    Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 3")
+    Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 4")
+    Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 5")
+    Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 6")
+    Dim TreeNode6 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 7")
+    Dim TreeNode7 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Antipasti", New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2, TreeNode3, TreeNode4, TreeNode5, TreeNode6})
+    Dim TreeNode8 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Chirashi")
+    Dim TreeNode9 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 10")
+    Dim TreeNode10 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 11")
+    Dim TreeNode11 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 12")
+    Dim TreeNode12 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gunkan", New System.Windows.Forms.TreeNode() {TreeNode9, TreeNode10, TreeNode11})
+    Dim TreeNode13 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 14")
+    Dim TreeNode14 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 15")
+    Dim TreeNode15 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Hosomaki", New System.Windows.Forms.TreeNode() {TreeNode13, TreeNode14})
+    Dim TreeNode16 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 17")
+    Dim TreeNode17 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 18")
+    Dim TreeNode18 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 19")
+    Dim TreeNode19 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Nigiri", New System.Windows.Forms.TreeNode() {TreeNode16, TreeNode17, TreeNode18})
+    Dim TreeNode20 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Sashimi")
+    Dim TreeNode21 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 22")
+    Dim TreeNode22 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 23")
+    Dim TreeNode23 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 24")
+    Dim TreeNode24 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 25")
+    Dim TreeNode25 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 26")
+    Dim TreeNode26 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 27")
+    Dim TreeNode27 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 28")
+    Dim TreeNode28 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 29")
+    Dim TreeNode29 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Uramaki", New System.Windows.Forms.TreeNode() {TreeNode21, TreeNode22, TreeNode23, TreeNode24, TreeNode25, TreeNode26, TreeNode27, TreeNode28})
+    Dim TreeNode30 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 31")
+    Dim TreeNode31 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 32")
+    Dim TreeNode32 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Temaki", New System.Windows.Forms.TreeNode() {TreeNode30, TreeNode31})
+    Dim TreeNode33 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 34")
+    Dim TreeNode34 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 35")
+    Dim TreeNode35 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 36")
+    Dim TreeNode36 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 37")
+    Dim TreeNode37 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 38")
+    Dim TreeNode38 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 39")
+    Dim TreeNode39 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 40")
+    Dim TreeNode40 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Piatti caldi", New System.Windows.Forms.TreeNode() {TreeNode33, TreeNode34, TreeNode35, TreeNode36, TreeNode37, TreeNode38, TreeNode39})
+    Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TokiDrift))
+    Me.TxtQnt1 = New System.Windows.Forms.TextBox()
+    Me.BtnInc1 = New System.Windows.Forms.Button()
+    Me.BtnDec1 = New System.Windows.Forms.Button()
+    Me.BtnInc2 = New System.Windows.Forms.Button()
+    Me.TxtQnt2 = New System.Windows.Forms.TextBox()
+    Me.BtnDec2 = New System.Windows.Forms.Button()
+    Me.TxtQnt3 = New System.Windows.Forms.TextBox()
+    Me.BtnInc3 = New System.Windows.Forms.Button()
+    Me.BtnDec3 = New System.Windows.Forms.Button()
+    Me.BtnInc4 = New System.Windows.Forms.Button()
+    Me.TxtQnt4 = New System.Windows.Forms.TextBox()
+    Me.BtnDec4 = New System.Windows.Forms.Button()
+    Me.BtnPrev01 = New System.Windows.Forms.Button()
+    Me.BtnNext01 = New System.Windows.Forms.Button()
+    Me.RefreshTimer = New System.Windows.Forms.Timer(Me.components)
+    Me.Pnl1 = New System.Windows.Forms.Panel()
+    Me.Pnl3 = New System.Windows.Forms.Panel()
+    Me.Pnl2 = New System.Windows.Forms.Panel()
+    Me.Pnl4 = New System.Windows.Forms.Panel()
+    Me.PnlPages = New System.Windows.Forms.Panel()
+    Me.TrvBookMark = New System.Windows.Forms.TreeView()
+    Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.BtnResoconto = New System.Windows.Forms.Button()
+        Me.BtnStartOrdine = New System.Windows.Forms.Button()
+        Me.TxtUser = New System.Windows.Forms.TextBox()
+        Me.BtnCancellaOrdine = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Pnl1.SuspendLayout()
+        Me.Pnl3.SuspendLayout()
+        Me.Pnl2.SuspendLayout()
+        Me.Pnl4.SuspendLayout()
+        Me.PnlPages.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'TxtQnt1
+        '
+        Me.TxtQnt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtQnt1.Cursor = System.Windows.Forms.Cursors.No
+        Me.TxtQnt1.Location = New System.Drawing.Point(0, 20)
+        Me.TxtQnt1.Name = "TxtQnt1"
+        Me.TxtQnt1.Size = New System.Drawing.Size(35, 20)
+        Me.TxtQnt1.TabIndex = 16
+        Me.TxtQnt1.Text = "0"
+        Me.TxtQnt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'BtnInc1
+        '
+        Me.BtnInc1.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnInc1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnInc1.Location = New System.Drawing.Point(0, 0)
+        Me.BtnInc1.Name = "BtnInc1"
+        Me.BtnInc1.Size = New System.Drawing.Size(35, 21)
+        Me.BtnInc1.TabIndex = 17
+        Me.BtnInc1.Text = "▲"
+        Me.BtnInc1.UseVisualStyleBackColor = False
+        '
+        'BtnDec1
+        '
+        Me.BtnDec1.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnDec1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnDec1.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnDec1.Location = New System.Drawing.Point(0, 39)
+        Me.BtnDec1.Name = "BtnDec1"
+        Me.BtnDec1.Size = New System.Drawing.Size(35, 21)
+        Me.BtnDec1.TabIndex = 18
+        Me.BtnDec1.Text = "▼"
+        Me.BtnDec1.UseVisualStyleBackColor = False
+        '
+        'BtnInc2
+        '
+        Me.BtnInc2.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnInc2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnInc2.Location = New System.Drawing.Point(0, 0)
+        Me.BtnInc2.Name = "BtnInc2"
+        Me.BtnInc2.Size = New System.Drawing.Size(35, 21)
+        Me.BtnInc2.TabIndex = 20
+        Me.BtnInc2.Text = "▲"
+        Me.BtnInc2.UseVisualStyleBackColor = False
+        '
+        'TxtQnt2
+        '
+        Me.TxtQnt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtQnt2.Cursor = System.Windows.Forms.Cursors.No
+        Me.TxtQnt2.Location = New System.Drawing.Point(0, 20)
+        Me.TxtQnt2.Name = "TxtQnt2"
+        Me.TxtQnt2.Size = New System.Drawing.Size(35, 20)
+        Me.TxtQnt2.TabIndex = 19
+        Me.TxtQnt2.Text = "0"
+        Me.TxtQnt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'BtnDec2
+        '
+        Me.BtnDec2.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnDec2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnDec2.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnDec2.Location = New System.Drawing.Point(0, 39)
+        Me.BtnDec2.Name = "BtnDec2"
+        Me.BtnDec2.Size = New System.Drawing.Size(35, 21)
+        Me.BtnDec2.TabIndex = 21
+        Me.BtnDec2.Text = "▼"
+        Me.BtnDec2.UseVisualStyleBackColor = False
+        '
+        'TxtQnt3
+        '
+        Me.TxtQnt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtQnt3.Cursor = System.Windows.Forms.Cursors.No
+        Me.TxtQnt3.Location = New System.Drawing.Point(0, 20)
+        Me.TxtQnt3.Name = "TxtQnt3"
+        Me.TxtQnt3.Size = New System.Drawing.Size(35, 20)
+        Me.TxtQnt3.TabIndex = 22
+        Me.TxtQnt3.Text = "0"
+        Me.TxtQnt3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'BtnInc3
+        '
+        Me.BtnInc3.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnInc3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnInc3.Location = New System.Drawing.Point(0, 0)
+        Me.BtnInc3.Name = "BtnInc3"
+        Me.BtnInc3.Size = New System.Drawing.Size(35, 21)
+        Me.BtnInc3.TabIndex = 23
+        Me.BtnInc3.Text = "▲"
+        Me.BtnInc3.UseVisualStyleBackColor = False
+        '
+        'BtnDec3
+        '
+        Me.BtnDec3.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnDec3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnDec3.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnDec3.Location = New System.Drawing.Point(0, 39)
+        Me.BtnDec3.Name = "BtnDec3"
+        Me.BtnDec3.Size = New System.Drawing.Size(35, 21)
+        Me.BtnDec3.TabIndex = 24
+        Me.BtnDec3.Text = "▼"
+        Me.BtnDec3.UseVisualStyleBackColor = False
+        '
+        'BtnInc4
+        '
+        Me.BtnInc4.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnInc4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnInc4.Location = New System.Drawing.Point(0, 0)
+        Me.BtnInc4.Name = "BtnInc4"
+        Me.BtnInc4.Size = New System.Drawing.Size(35, 21)
+        Me.BtnInc4.TabIndex = 26
+        Me.BtnInc4.Text = "▲"
+        Me.BtnInc4.UseVisualStyleBackColor = False
+        '
+        'TxtQnt4
+        '
+        Me.TxtQnt4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtQnt4.Cursor = System.Windows.Forms.Cursors.No
+        Me.TxtQnt4.Location = New System.Drawing.Point(0, 20)
+        Me.TxtQnt4.Name = "TxtQnt4"
+        Me.TxtQnt4.Size = New System.Drawing.Size(35, 20)
+        Me.TxtQnt4.TabIndex = 25
+        Me.TxtQnt4.Text = "0"
+        Me.TxtQnt4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'BtnDec4
+        '
+        Me.BtnDec4.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnDec4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnDec4.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnDec4.Location = New System.Drawing.Point(0, 39)
+        Me.BtnDec4.Name = "BtnDec4"
+        Me.BtnDec4.Size = New System.Drawing.Size(35, 21)
+        Me.BtnDec4.TabIndex = 27
+        Me.BtnDec4.Text = "▼"
+        Me.BtnDec4.UseVisualStyleBackColor = False
+        '
+        'BtnPrev01
+        '
+        Me.BtnPrev01.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnPrev01.Location = New System.Drawing.Point(3, 523)
+        Me.BtnPrev01.Name = "BtnPrev01"
+        Me.BtnPrev01.Size = New System.Drawing.Size(41, 23)
+        Me.BtnPrev01.TabIndex = 15
+        Me.BtnPrev01.Text = "裏"
+        Me.BtnPrev01.UseVisualStyleBackColor = True
+        '
+        'BtnNext01
+        '
+        Me.BtnNext01.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnNext01.Location = New System.Drawing.Point(310, 523)
+        Me.BtnNext01.Name = "BtnNext01"
+        Me.BtnNext01.Size = New System.Drawing.Size(41, 23)
+        Me.BtnNext01.TabIndex = 14
+        Me.BtnNext01.Text = "次"
+        Me.BtnNext01.UseVisualStyleBackColor = True
+        '
+        'RefreshTimer
+        '
+        Me.RefreshTimer.Enabled = True
+        Me.RefreshTimer.Interval = 50
+        '
+        'Pnl1
+        '
+        Me.Pnl1.BackColor = System.Drawing.Color.Transparent
+        Me.Pnl1.Controls.Add(Me.BtnInc1)
+        Me.Pnl1.Controls.Add(Me.TxtQnt1)
+        Me.Pnl1.Controls.Add(Me.BtnDec1)
+        Me.Pnl1.Location = New System.Drawing.Point(307, 64)
+        Me.Pnl1.Name = "Pnl1"
+        Me.Pnl1.Size = New System.Drawing.Size(35, 62)
+        Me.Pnl1.TabIndex = 28
+        '
+        'Pnl3
+        '
+        Me.Pnl3.BackColor = System.Drawing.Color.Transparent
+        Me.Pnl3.Controls.Add(Me.BtnInc3)
+        Me.Pnl3.Controls.Add(Me.BtnDec3)
+        Me.Pnl3.Controls.Add(Me.TxtQnt3)
+        Me.Pnl3.Location = New System.Drawing.Point(307, 274)
+        Me.Pnl3.Name = "Pnl3"
+        Me.Pnl3.Size = New System.Drawing.Size(35, 62)
+        Me.Pnl3.TabIndex = 29
+        '
+        'Pnl2
+        '
+        Me.Pnl2.BackColor = System.Drawing.Color.Transparent
+        Me.Pnl2.Controls.Add(Me.BtnInc2)
+        Me.Pnl2.Controls.Add(Me.BtnDec2)
+        Me.Pnl2.Controls.Add(Me.TxtQnt2)
+        Me.Pnl2.Location = New System.Drawing.Point(307, 175)
+        Me.Pnl2.Name = "Pnl2"
+        Me.Pnl2.Size = New System.Drawing.Size(35, 62)
+        Me.Pnl2.TabIndex = 30
+        '
+        'Pnl4
+        '
+        Me.Pnl4.BackColor = System.Drawing.Color.Transparent
+        Me.Pnl4.Controls.Add(Me.BtnInc4)
+        Me.Pnl4.Controls.Add(Me.BtnDec4)
+        Me.Pnl4.Controls.Add(Me.TxtQnt4)
+        Me.Pnl4.Location = New System.Drawing.Point(307, 386)
+        Me.Pnl4.Name = "Pnl4"
+        Me.Pnl4.Size = New System.Drawing.Size(35, 62)
+        Me.Pnl4.TabIndex = 30
+        '
+        'PnlPages
+        '
+        Me.PnlPages.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PnlPages.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PnlPages.Controls.Add(Me.Pnl1)
+        Me.PnlPages.Controls.Add(Me.BtnPrev01)
+        Me.PnlPages.Controls.Add(Me.Pnl4)
+        Me.PnlPages.Controls.Add(Me.Pnl3)
+        Me.PnlPages.Controls.Add(Me.BtnNext01)
+        Me.PnlPages.Controls.Add(Me.Pnl2)
+        Me.PnlPages.Location = New System.Drawing.Point(0, 0)
+        Me.PnlPages.Name = "PnlPages"
+        Me.PnlPages.Size = New System.Drawing.Size(356, 551)
+        Me.PnlPages.TabIndex = 31
+        '
+        'TrvBookMark
+        '
+        Me.TrvBookMark.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TrvBookMark.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TrvBookMark.Cursor = System.Windows.Forms.Cursors.Default
+        Me.TrvBookMark.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TrvBookMark.ForeColor = System.Drawing.Color.DarkSlateBlue
+        Me.TrvBookMark.HotTracking = True
+        Me.TrvBookMark.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.TrvBookMark.Indent = 25
+        Me.TrvBookMark.ItemHeight = 15
+        Me.TrvBookMark.Location = New System.Drawing.Point(355, 0)
+        Me.TrvBookMark.Name = "TrvBookMark"
+        TreeNode1.Name = "nd_Pag2"
+        TreeNode1.Text = "Pagina 2"
+        TreeNode2.Name = "nd_Pag3"
+        TreeNode2.Text = "Pagina 3"
+        TreeNode3.Name = "nd_Pag4"
+        TreeNode3.Text = "Pagina 4"
+        TreeNode4.Name = "nd_pag5"
+        TreeNode4.Text = "Pagina 5"
+        TreeNode5.Name = "nd_Pag6"
+        TreeNode5.Text = "Pagina 6"
+        TreeNode6.Name = "nd_Pag7"
+        TreeNode6.Text = "Pagina 7"
+        TreeNode7.Name = "nd_Antipasti"
+        TreeNode7.Text = "Antipasti"
+        TreeNode8.Name = "nd_Chirashi"
+        TreeNode8.Text = "Chirashi"
+        TreeNode9.Name = "nd_Pag10"
+        TreeNode9.Text = "Pagina 10"
+        TreeNode10.Name = "nd_Pag11"
+        TreeNode10.Text = "Pagina 11"
+        TreeNode11.Name = "nd_Pag12"
+        TreeNode11.Text = "Pagina 12"
+        TreeNode12.Name = "nd_Gunkan"
+        TreeNode12.Text = "Gunkan"
+        TreeNode13.Name = "nd_Pag14"
+        TreeNode13.Text = "Pagina 14"
+        TreeNode14.Name = "nd_Pag15"
+        TreeNode14.Text = "Pagina 15"
+        TreeNode15.Name = "nd_Hosomaki"
+        TreeNode15.Text = "Hosomaki"
+        TreeNode16.Name = "nd_Pag17"
+        TreeNode16.Text = "Pagina 17"
+        TreeNode17.Name = "nd_Pag18"
+        TreeNode17.Text = "Pagina 18"
+        TreeNode18.Name = "nd_Pag19"
+        TreeNode18.Text = "Pagina 19"
+        TreeNode19.Name = "nd_Nigiri"
+        TreeNode19.Text = "Nigiri"
+        TreeNode20.Name = "nd_Sashimi"
+        TreeNode20.Text = "Sashimi"
+        TreeNode21.Name = "nd_Pag22"
+        TreeNode21.Text = "Pagina 22"
+        TreeNode22.Name = "nd_Pag23"
+        TreeNode22.Text = "Pagina 23"
+        TreeNode23.Name = "nd_Pag24"
+        TreeNode23.Text = "Pagina 24"
+        TreeNode24.Name = "nd_Pag25"
+        TreeNode24.Text = "Pagina 25"
+        TreeNode25.Name = "nd_Pag26"
+        TreeNode25.Text = "Pagina 26"
+        TreeNode26.Name = "nd_Pag27"
+        TreeNode26.Text = "Pagina 27"
+        TreeNode27.Name = "nd_Pag28"
+        TreeNode27.Text = "Pagina 28"
+        TreeNode28.Name = "nd_Pag29"
+        TreeNode28.Text = "Pagina 29"
+        TreeNode29.Name = "nd_Uramaki"
+        TreeNode29.Text = "Uramaki"
+        TreeNode30.Name = "Nodo38"
+        TreeNode30.Text = "Pagina 31"
+        TreeNode31.Name = "Nodo39"
+        TreeNode31.Text = "Pagina 32"
+        TreeNode32.Name = "nd_Temaki"
+        TreeNode32.Text = "Temaki"
+        TreeNode33.Name = "nd_Pag34"
+        TreeNode33.Text = "Pagina 34"
+        TreeNode34.Name = "nd_Pag35"
+        TreeNode34.Text = "Pagina 35"
+        TreeNode35.Name = "nd_Pag36"
+        TreeNode35.Text = "Pagina 36"
+        TreeNode36.Name = "nd_Pag37"
+        TreeNode36.Text = "Pagina 37"
+        TreeNode37.Name = "nd_Pag38"
+        TreeNode37.Text = "Pagina 38"
+        TreeNode38.Name = "nd_Pag39"
+        TreeNode38.Text = "Pagina 39"
+        TreeNode39.Name = "nd_Pag40"
+        TreeNode39.Text = "Pagina 40"
+        TreeNode40.Name = "nd_PiattiCaldi"
+        TreeNode40.Text = "Piatti caldi"
+        Me.TrvBookMark.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode7, TreeNode8, TreeNode12, TreeNode15, TreeNode19, TreeNode20, TreeNode29, TreeNode32, TreeNode40})
+        Me.TrvBookMark.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.TrvBookMark.Size = New System.Drawing.Size(145, 286)
+        Me.TrvBookMark.TabIndex = 32
+        '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImage = Global.TokiDriftApplication.My.Resources.Resources._161a6dd8fff8fad3852cdb992e16f102
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.BtnResoconto)
+        Me.Panel1.Controls.Add(Me.BtnStartOrdine)
+        Me.Panel1.Controls.Add(Me.TxtUser)
+        Me.Panel1.Controls.Add(Me.BtnCancellaOrdine)
+        Me.Panel1.Location = New System.Drawing.Point(355, 400)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(145, 151)
+        Me.Panel1.TabIndex = 37
+        '
+        'BtnResoconto
+        '
+        Me.BtnResoconto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnResoconto.Location = New System.Drawing.Point(9, 37)
+        Me.BtnResoconto.Name = "BtnResoconto"
+        Me.BtnResoconto.Size = New System.Drawing.Size(126, 25)
+        Me.BtnResoconto.TabIndex = 37
+        Me.BtnResoconto.Text = "Riepilogo ordine"
+        Me.BtnResoconto.UseVisualStyleBackColor = True
+        '
+        'BtnStartOrdine
+        '
+        Me.BtnStartOrdine.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnStartOrdine.Location = New System.Drawing.Point(9, 116)
+        Me.BtnStartOrdine.Name = "BtnStartOrdine"
+        Me.BtnStartOrdine.Size = New System.Drawing.Size(126, 23)
+        Me.BtnStartOrdine.TabIndex = 34
+        Me.BtnStartOrdine.Text = "ORDINA!!!"
+        Me.BtnStartOrdine.UseVisualStyleBackColor = True
+        '
+        'TxtUser
+        '
+        Me.TxtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtUser.Location = New System.Drawing.Point(9, 90)
+        Me.TxtUser.Name = "TxtUser"
+        Me.TxtUser.Size = New System.Drawing.Size(126, 20)
+        Me.TxtUser.TabIndex = 36
+        Me.TxtUser.Text = "inserisci utente"
+        '
+        'BtnCancellaOrdine
+        '
+        Me.BtnCancellaOrdine.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCancellaOrdine.Location = New System.Drawing.Point(9, 6)
+        Me.BtnCancellaOrdine.Name = "BtnCancellaOrdine"
+        Me.BtnCancellaOrdine.Size = New System.Drawing.Size(126, 25)
+        Me.BtnCancellaOrdine.TabIndex = 35
+        Me.BtnCancellaOrdine.Text = "Elimina selezioni"
+        Me.BtnCancellaOrdine.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.PictureBox1.BackgroundImage = Global.TokiDriftApplication.My.Resources.Resources.TokiDriftFoodBkg
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Location = New System.Drawing.Point(355, 285)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(145, 116)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 33
+        Me.PictureBox1.TabStop = False
+        '
+        'TokiDrift
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.ClientSize = New System.Drawing.Size(500, 551)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.TrvBookMark)
+        Me.Controls.Add(Me.PnlPages)
+        Me.DoubleBuffered = True
+        Me.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.KeyPreview = True
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
+        Me.Name = "TokiDrift"
+        Me.Text = "(っ◔◡◔)っ 【 ﻿T O K I   D R I F T 】 (っ◔◡◔)っ"
+        Me.Pnl1.ResumeLayout(False)
+        Me.Pnl1.PerformLayout()
+        Me.Pnl3.ResumeLayout(False)
+        Me.Pnl3.PerformLayout()
+        Me.Pnl2.ResumeLayout(False)
+        Me.Pnl2.PerformLayout()
+        Me.Pnl4.ResumeLayout(False)
+        Me.Pnl4.PerformLayout()
+        Me.PnlPages.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
 
-	End Sub
+    End Sub
 
-	Friend WithEvents Tb_Qnt1 As TextBox
-    Friend WithEvents Bt_Inc1 As Button
-    Friend WithEvents Tb_Dec1 As Button
-    Friend WithEvents Bt_Inc2 As Button
-    Friend WithEvents Tb_Qnt2 As TextBox
-    Friend WithEvents Bt_Dec2 As Button
-    Friend WithEvents Tb_Qnt3 As TextBox
-    Friend WithEvents Bt_Inc3 As Button
-    Friend WithEvents Bt_Dec3 As Button
-    Friend WithEvents Bt_Inc4 As Button
-    Friend WithEvents Tb_Qnt4 As TextBox
-    Friend WithEvents Bt_Dec4 As Button
-    Friend WithEvents BtnPrev01 As Button
-    Friend WithEvents BtnNext01 As Button
-    Friend WithEvents RefreshTimer As Timer
-    Friend WithEvents Pnl_1 As Panel
-    Friend WithEvents Pnl_3 As Panel
-    Friend WithEvents Pnl_2 As Panel
-    Friend WithEvents Pnl_4 As Panel
-    Friend WithEvents Pnl_pages As Panel
-    Friend WithEvents Tv_BookMark As TreeView
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Bt_StartOrdine As Button
-    Friend WithEvents Bt_CancellaOrdine As Button
-  Friend WithEvents Txt_User As TextBox
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents bt_Resoconto As Button
+    Friend WithEvents TxtQnt1 As TextBox
+  Friend WithEvents BtnInc1 As Button
+  Friend WithEvents BtnDec1 As Button
+  Friend WithEvents BtnInc2 As Button
+  Friend WithEvents TxtQnt2 As TextBox
+  Friend WithEvents BtnDec2 As Button
+  Friend WithEvents TxtQnt3 As TextBox
+  Friend WithEvents BtnInc3 As Button
+  Friend WithEvents BtnDec3 As Button
+  Friend WithEvents BtnInc4 As Button
+  Friend WithEvents TxtQnt4 As TextBox
+  Friend WithEvents BtnDec4 As Button
+  Friend WithEvents BtnPrev01 As Button
+  Friend WithEvents BtnNext01 As Button
+  Friend WithEvents RefreshTimer As Timer
+  Friend WithEvents Pnl1 As Panel
+  Friend WithEvents Pnl3 As Panel
+  Friend WithEvents Pnl2 As Panel
+  Friend WithEvents Pnl4 As Panel
+  Friend WithEvents PnlPages As Panel
+  Friend WithEvents TrvBookMark As TreeView
+  Friend WithEvents PictureBox1 As PictureBox
+  Friend WithEvents BtnStartOrdine As Button
+  Friend WithEvents BtnCancellaOrdine As Button
+  Friend WithEvents TxtUser As TextBox
+  Friend WithEvents Panel1 As Panel
+  Friend WithEvents bt_Resoconto As Button
+  Friend WithEvents BtnResoconto As Button
 End Class

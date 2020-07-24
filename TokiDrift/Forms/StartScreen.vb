@@ -1,7 +1,7 @@
 ﻿Public Class StartScreen
 	Private Sub BtnMenuPranzo_Click(sender As Object, e As EventArgs) Handles BtnMenuPranzo.Click
 		TokiDrift.Show()
-		Dispose()
+		Close()
 	End Sub
 
 	Private Sub BtnMenuCena_Click(sender As Object, e As EventArgs) Handles BtnMenuCena.Click
@@ -11,7 +11,7 @@
 	Private Sub BtnCommandCenter_Click(sender As Object, e As EventArgs) Handles BtnCommandCenter.Click
 		If TxtPassword.Text = "Sashimi69" Then
 			CommandCenter.Show()
-			Dispose()
+			Close()
 		End If
 	End Sub
 End Class

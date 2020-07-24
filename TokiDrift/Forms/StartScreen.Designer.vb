@@ -27,6 +27,7 @@ Partial Class StartScreen
     Me.BtnMenuCena = New System.Windows.Forms.Button()
     Me.TxtPassword = New System.Windows.Forms.TextBox()
     Me.BtnCommandCenter = New System.Windows.Forms.Button()
+    Me.Label1 = New System.Windows.Forms.Label()
     Me.SuspendLayout()
     '
     'BtnMenuPranzo
@@ -69,6 +70,18 @@ Partial Class StartScreen
     Me.BtnCommandCenter.Text = "指 令 セ ン タ ー"
     Me.BtnCommandCenter.UseVisualStyleBackColor = True
     '
+    'Label1
+    '
+    Me.Label1.AutoSize = True
+    Me.Label1.BackColor = System.Drawing.Color.MediumVioletRed
+    Me.Label1.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+    Me.Label1.ForeColor = System.Drawing.Color.Gold
+    Me.Label1.Location = New System.Drawing.Point(163, 74)
+    Me.Label1.Name = "Label1"
+    Me.Label1.Size = New System.Drawing.Size(63, 15)
+    Me.Label1.TabIndex = 4
+    Me.Label1.Text = "v1.0.0.0"
+    '
     'StartScreen
     '
     Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -76,6 +89,7 @@ Partial Class StartScreen
     Me.BackgroundImage = Global.TokiDriftApplication.My.Resources.Resources.StartScreenBkg
     Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
     Me.ClientSize = New System.Drawing.Size(394, 261)
+    Me.Controls.Add(Me.Label1)
     Me.Controls.Add(Me.BtnCommandCenter)
     Me.Controls.Add(Me.TxtPassword)
     Me.Controls.Add(Me.BtnMenuCena)
@@ -93,4 +107,5 @@ Partial Class StartScreen
 	Friend WithEvents BtnMenuCena As Button
 	Friend WithEvents TxtPassword As TextBox
 	Friend WithEvents BtnCommandCenter As Button
+  Friend WithEvents Label1 As Label
 End Class

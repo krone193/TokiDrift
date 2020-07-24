@@ -23,11 +23,6 @@ Public Class CommandCenter
 
   '--- T O K I D R I F T | Structures ------------------------------------------------------------------------------------'
   '-----------------------------------------------------------------------------------------------------------------------'
-  Structure PortataStruct
-    Dim id As String
-    Dim qnt As String
-  End Structure
-  '-----------------------------------------------------------------------------------------------------------------------'
   Structure OrdineStruct
     Dim Nome As String
     Dim Ordine As String
@@ -37,6 +32,22 @@ Public Class CommandCenter
   '--- T O K I D R I F T | Variables -------------------------------------------------------------------------------------'
   '-----------------------------------------------------------------------------------------------------------------------'
   ReadOnly Ordini As New List(Of OrdineStruct)
+
+
+  '--- T O K I D R I F T | Private functions -----------------------------------------------------------------------------'
+  '-----------------------------------------------------------------------------------------------------------------------'
+  Private Function SearchNameInList(ByVal name As String) As Short
+    Dim ret As Short = -1
+    Dim idx As UShort = 0
+    For Each ordine In Ordini
+      If ordine.Nome = name Then
+        ret = idx
+        Exit For
+      End If
+      idx += 1
+    Next
+    Return ret
+  End Function
 
 
   '--- T O K I D R I F T | MQTT Service Functions ------------------------------------------------------------------------'
@@ -151,43 +162,26 @@ Public Class CommandCenter
   End Function
 
 
-
-
-  '-----------------------------------------------------------------------------------------------------------------------'
-  Private Function SearchNameInList(ByVal name As String) As Short
-    Dim ret As Short = -1
-    Dim idx As UShort = 0
-    For Each ordine In Ordini
-      If ordine.Nome = name Then
-        ret = idx
-        Exit For
-      End If
-      idx += 1
-    Next
-    Return ret
-  End Function
-
-
   '--- T O K I D R I F T | User Interface --------------------------------------------------------------------------------'
   '-----------------------------------------------------------------------------------------------------------------------'
   Private Sub CommandCenter_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     CheckForIllegalCrossThreadCalls = False
     Ordini.Clear()
   End Sub
-
+  '-----------------------------------------------------------------------------------------------------------------------'
   Private Sub BtnAvviaOrdini_Click(sender As Object, e As EventArgs) Handles BtnAvviaOrdini.Click
     If Connect("MasterSashimi") Then
       MQTTSubscribe(Encrypt(MQTTROOT, True), MQTTQOFS)
     End If
   End Sub
-
+  '-----------------------------------------------------------------------------------------------------------------------'
   Private Sub BtnFermaOrdini_Click(sender As Object, e As EventArgs) Handles BtnFermaOrdini.Click
     Disconnect()
     BtnFermaOrdini.Enabled = False
     BtnAvviaOrdini.Enabled = True
     LblStatusOrdini.Text = "Chiusi"
   End Sub
-
+  '-----------------------------------------------------------------------------------------------------------------------'
   Private Sub BtnEsportaOrdini_Click(sender As Object, e As EventArgs) Handles BtnEsportaOrdini.Click
     Dim ListaPiatti As New List(Of String)
     Dim ListaPortate As New List(Of String)
@@ -216,7 +210,9 @@ Public Class CommandCenter
       Next
       Dim index As UShort = 0
       For Each lst In ListaPiatti
-        OrdineFinale = OrdineFinale & ListaPiatti(index) & "." & ListaPortate(index) & ";"
+        If ListaPortate(index) <> 0 Then
+          OrdineFinale = OrdineFinale & ListaPiatti(index) & "." & ListaPortate(index) & ";"
+        End If
         index += 1
       Next
       MsgBox(OrdineFinale)

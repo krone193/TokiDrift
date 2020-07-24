@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("V A P O R C H A T 2 0 2 0")>
-<Assembly: AssemblyDescription("Old school online chat group")>
+<Assembly: AssemblyTitle("T O K I D R I F T")>
+<Assembly: AssemblyDescription("We love sushi")>
 <Assembly: AssemblyCompany("kronelab")>
-<Assembly: AssemblyProduct("VaporChat 2020")>
+<Assembly: AssemblyProduct("T O K I   D R I F T")>
 <Assembly: AssemblyCopyright("Copyright ©  2020")>
 <Assembly: AssemblyTrademark("")>
 
