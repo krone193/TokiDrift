@@ -12,12 +12,12 @@ Public Class TokiDrift
   Private Const MQTTPASS As String = ""
   Private Const MQTTPORT As UShort = 1883
   Private Const MQTTQOFS As Protocol.MqttQualityOfServiceLevel = Protocol.MqttQualityOfServiceLevel.AtMostOnce
-  Private Const SEPTCHAR As String = "♥"
+    Private Const SEPTCHAR As String = "♥"
 
 
-  '--- T O K I D R I F T | Variables -------------------------------------------------------------------------------------'
-  '-----------------------------------------------------------------------------------------------------------------------'
-  Dim SfondiMenu() = {My.Resources.TokiDrift01, My.Resources.TokiDrift02, My.Resources.TokiDrift03, My.Resources.TokiDrift04, My.Resources.TokiDrift05, My.Resources.TokiDrift06,
+    '--- T O K I D R I F T | Variables -------------------------------------------------------------------------------------'
+    '-----------------------------------------------------------------------------------------------------------------------'
+    Dim SfondiMenu() = {My.Resources.TokiDrift01, My.Resources.TokiDrift02, My.Resources.TokiDrift03, My.Resources.TokiDrift04, My.Resources.TokiDrift05, My.Resources.TokiDrift06,
         My.Resources.TokiDrift07, My.Resources.TokiDrift08, My.Resources.TokiDrift09, My.Resources.TokiDrift10, My.Resources.TokiDrift11, My.Resources.TokiDrift12,
         My.Resources.TokiDrift13, My.Resources.TokiDrift14, My.Resources.TokiDrift15, My.Resources.TokiDrift16, My.Resources.TokiDrift17, My.Resources.TokiDrift18,
         My.Resources.TokiDrift19, My.Resources.TokiDrift20, My.Resources.TokiDrift21, My.Resources.TokiDrift22, My.Resources.TokiDrift23, My.Resources.TokiDrift24,
@@ -30,8 +30,8 @@ Public Class TokiDrift
         191, 192, 193}
   Dim ArrayPagePointer() = {0, 4, 7, 10, 13, 17, 19, 21, 25, 27, 30, 32, 34, 37, 40, 43, 47, 51, 53, 56, 59, 62, 66, 69, 73, 76, 80, 83, 86, 88, 91, 94, 96, 99, 102, 105, 109, 112, 116,
         118}
-  Dim SelezioneTotale(ID_PiattiTot.Length)
-  Dim PagineLaunch As Integer = 40
+    Dim SelezioneTotale(ID_PiattiTot.Length - 1)
+    Dim PagineLaunch As Integer = 40
   Dim NofPiattiPerPagePRANZO() = {4, 3, 3, 3, 4, 2, 2, 4, 2, 3, 2, 2, 3, 3, 3, 4, 4, 2, 3, 3, 3, 4, 3, 4, 3, 4, 3, 3, 2, 3, 3, 2, 3, 3, 3, 4, 3, 4, 2, 2}
   Dim PageIndex As Integer = 0
   Dim CoordinateXP1() = {3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318, 3, 318}
@@ -103,40 +103,69 @@ Public Class TokiDrift
   End Sub
 
 
-  '--- T O K I D R I F T | Buttons Inc and Dec functions -----------------------------------------------------------------'
-  'Page 01 ---------------------------------------------------------------------------------------------------------------'
-  '-----------------------------------------------------------------------------------------------------------------------'
-  Private Sub BtnInc01_Click(sender As Object, e As EventArgs) Handles Bt_Inc1.Click
-    Tb_Qnt1.Text += 1
-    SelezioneTotale(ArrayPagePointer(PageIndex)) = Convert.ToInt32(Tb_Qnt1.Text)
+    '--- T O K I D R I F T | Buttons Inc and Dec functions -----------------------------------------------------------------'
+    'Page 01 ---------------------------------------------------------------------------------------------------------------'
+    '-----------------------------------------------------------------------------------------------------------------------'
+    Private Sub BtnInc01_Click(sender As Object, e As EventArgs) Handles Bt_Inc1.Click
+        If (ArrayPagePointer(PageIndex) <> 17) And (ArrayPagePointer(PageIndex) <> 56) Then
+            Tb_Qnt1.Text += 1
+            SelezioneTotale(ArrayPagePointer(PageIndex)) = Convert.ToInt32(Tb_Qnt1.Text)
+        Else
+            If Tb_Qnt1.Text = 0 Then
+                Tb_Qnt1.Text += 1
+                SelezioneTotale(ArrayPagePointer(PageIndex)) = Convert.ToInt32(Tb_Qnt1.Text)
+            Else
+                MessageBox.Show(My.Settings.Str_NmaxTxt, My.Settings.Str_NmaxTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            End If
+        End If
 
-  End Sub
-  '-----------------------------------------------------------------------------------------------------------------------'
-  Private Sub BtnDec01_Click(sender As Object, e As EventArgs) Handles Tb_Dec1.Click
+    End Sub
+    '-----------------------------------------------------------------------------------------------------------------------'
+    Private Sub BtnDec01_Click(sender As Object, e As EventArgs) Handles Tb_Dec1.Click
     If Tb_Qnt1.Text > 0 Then
       Tb_Qnt1.Text -= 1
       SelezioneTotale(ArrayPagePointer(PageIndex)) = Convert.ToInt32(Tb_Qnt1.Text)
     End If
   End Sub
-  '-----------------------------------------------------------------------------------------------------------------------'
-  Private Sub BtnInc02_Click(sender As Object, e As EventArgs) Handles Bt_Inc2.Click
-    Tb_Qnt2.Text += 1
-    SelezioneTotale(ArrayPagePointer(PageIndex) + 1) = Convert.ToInt32(Tb_Qnt2.Text)
-  End Sub
-  '-----------------------------------------------------------------------------------------------------------------------'
-  Private Sub BtnDec02_Click(sender As Object, e As EventArgs) Handles Bt_Dec2.Click
+    '-----------------------------------------------------------------------------------------------------------------------'
+    Private Sub BtnInc02_Click(sender As Object, e As EventArgs) Handles Bt_Inc2.Click
+        If (ArrayPagePointer(PageIndex) <> 17) And (ArrayPagePointer(PageIndex) <> 56) Then
+            Tb_Qnt2.Text += 1
+            SelezioneTotale(ArrayPagePointer(PageIndex) + 1) = Convert.ToInt32(Tb_Qnt2.Text)
+        Else
+            If Tb_Qnt2.Text = 0 Then
+                Tb_Qnt2.Text += 1
+                SelezioneTotale(ArrayPagePointer(PageIndex) + 1) = Convert.ToInt32(Tb_Qnt2.Text)
+            Else
+                MessageBox.Show(My.Settings.Str_NmaxTxt, My.Settings.Str_NmaxTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            End If
+        End If
+
+    End Sub
+    '-----------------------------------------------------------------------------------------------------------------------'
+    Private Sub BtnDec02_Click(sender As Object, e As EventArgs) Handles Bt_Dec2.Click
     If Tb_Qnt2.Text > 0 Then
       Tb_Qnt2.Text -= 1
       SelezioneTotale(ArrayPagePointer(PageIndex) + 1) = Convert.ToInt32(Tb_Qnt2.Text)
     End If
   End Sub
-  '-----------------------------------------------------------------------------------------------------------------------'
-  Private Sub BtnInc03_Click(sender As Object, e As EventArgs) Handles Bt_Inc3.Click
-    Tb_Qnt3.Text += 1
-    SelezioneTotale(ArrayPagePointer(PageIndex) + 2) = Convert.ToInt32(Tb_Qnt3.Text)
-  End Sub
-  '-----------------------------------------------------------------------------------------------------------------------'
-  Private Sub BtnDec03_Click(sender As Object, e As EventArgs) Handles Bt_Dec3.Click
+    '-----------------------------------------------------------------------------------------------------------------------'
+    Private Sub BtnInc03_Click(sender As Object, e As EventArgs) Handles Bt_Inc3.Click
+        If (ArrayPagePointer(PageIndex) <> 56) Then
+            Tb_Qnt3.Text += 1
+            SelezioneTotale(ArrayPagePointer(PageIndex) + 2) = Convert.ToInt32(Tb_Qnt3.Text)
+        Else
+            If Tb_Qnt3.Text = 0 Then
+                Tb_Qnt3.Text += 1
+                SelezioneTotale(ArrayPagePointer(PageIndex) + 2) = Convert.ToInt32(Tb_Qnt3.Text)
+            Else
+                MessageBox.Show(My.Settings.Str_NmaxTxt, My.Settings.Str_NmaxTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            End If
+        End If
+
+    End Sub
+    '-----------------------------------------------------------------------------------------------------------------------'
+    Private Sub BtnDec03_Click(sender As Object, e As EventArgs) Handles Bt_Dec3.Click
     If Tb_Qnt3.Text > 0 Then
       Tb_Qnt3.Text -= 1
       SelezioneTotale(ArrayPagePointer(PageIndex) + 1) = Convert.ToInt32(Tb_Qnt3.Text)
@@ -155,19 +184,18 @@ Public Class TokiDrift
     End If
   End Sub
 
-  Private Sub BtnNext01_Click_1(sender As Object, e As EventArgs) Handles BtnNext01.Click
-    If PageIndex < PagineLaunch - 1 Then
-      indexchanged = True
-      PageIndex += 1
-      'Tb_Qnt1.Text = SelezioneTotale(ArrayPagePointer(PageIndex))
-      'Tb_Qnt2.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 1)
-      'Tb_Qnt3.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 2)
-      'Tb_Qnt4.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 3)
-      RelocateButtons()
-    End If
-  End Sub
+    Private Sub BtnNext01_Click_1(sender As Object, e As EventArgs) Handles BtnNext01.Click
+        If PictureBox1.Image IsNot My.Resources.f914c4c93bbdcd9d60995acda108a77d Then
+            PictureBox1.Image = My.Resources.f914c4c93bbdcd9d60995acda108a77d
+        End If
+        If PageIndex < PagineLaunch - 1 Then
+            indexchanged = True
+            PageIndex += 1
+            RelocateButtons()
+        End If
+    End Sub
 
-  Private Sub RelocateButtons()
+    Private Sub RelocateButtons()
     Select Case NofPiattiPerPagePRANZO(PageIndex)
       Case 2
         Pnl_3.Visible = False
@@ -206,19 +234,18 @@ Public Class TokiDrift
     End If
   End Sub
 
-  Private Sub BtnPrev01_Click_1(sender As Object, e As EventArgs) Handles BtnPrev01.Click
-    If PageIndex > 0 Then
-      indexchanged = True
-      PageIndex -= 1
-      'Tb_Qnt1.Text = SelezioneTotale(ArrayPagePointer(PageIndex))
-      'Tb_Qnt2.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 1)
-      'Tb_Qnt3.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 2)
-      'Tb_Qnt4.Text = SelezioneTotale(ArrayPagePointer(PageIndex) + 3)
-      RelocateButtons()
-    End If
-  End Sub
+    Private Sub BtnPrev01_Click_1(sender As Object, e As EventArgs) Handles BtnPrev01.Click
+        If PictureBox1.Image IsNot My.Resources.f914c4c93bbdcd9d60995acda108a77d Then
+            PictureBox1.Image = My.Resources.f914c4c93bbdcd9d60995acda108a77d
+        End If
+        If PageIndex > 0 Then
+            indexchanged = True
+            PageIndex -= 1
+            RelocateButtons()
+        End If
+    End Sub
 
-  Private Sub Bt_StartOrdine_Click(sender As Object, e As EventArgs) Handles Bt_StartOrdine.Click
+    Private Sub Bt_StartOrdine_Click(sender As Object, e As EventArgs) Handles Bt_StartOrdine.Click
     If Txt_User.Text <> "inserisci utente" And Txt_User.Text <> "" Then
       Dim str_Order As String = ""
       For i As Integer = 0 To ID_PiattiTot.Length - 1
@@ -390,13 +417,26 @@ Public Class TokiDrift
     End If
   End Function
 
-  Private Sub Bt_CancellaOrdine_Click(sender As Object, e As EventArgs) Handles Bt_CancellaOrdine.Click
-    For i As Integer = 0 To SelezioneTotale.Length - 1
-      SelezioneTotale(i) = 0
-    Next
-    Tb_Qnt1.Text = "0"
-    Tb_Qnt2.Text = "0"
-    Tb_Qnt3.Text = "0"
-    Tb_Qnt4.Text = "0"
-  End Sub
+    Private Sub Bt_CancellaOrdine_Click(sender As Object, e As EventArgs) Handles Bt_CancellaOrdine.Click
+        For i As Integer = 0 To SelezioneTotale.Length - 1
+            SelezioneTotale(i) = 0
+        Next
+        Tb_Qnt1.Text = "0"
+        Tb_Qnt2.Text = "0"
+        Tb_Qnt3.Text = "0"
+        Tb_Qnt4.Text = "0"
+    End Sub
+
+    Private Sub bt_Resoconto_Click(sender As Object, e As EventArgs) Handles bt_Resoconto.Click
+        For i As Integer = 0 To SelezioneTotale.Length - 1
+            frm_Resoconto.dgv_Resoconto.Rows.Add()
+        Next
+        For i As Integer = 0 To SelezioneTotale.Length - 1
+            frm_Resoconto.dgv_Resoconto.Item(frm_Resoconto.clm_IdPiatto.Index, i).Value = ID_PiattiTot(i)
+        Next
+        For i As Integer = 0 To SelezioneTotale.Length - 1
+            frm_Resoconto.dgv_Resoconto.Item(frm_Resoconto.clm_Qnt.Index, i).Value = SelezioneTotale(i)
+        Next
+        frm_Resoconto.ShowDialog()
+    End Sub
 End Class

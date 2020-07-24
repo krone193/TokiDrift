@@ -22,72 +22,73 @@ Partial Class TokiDrift
     'Non modificarla mediante l'editor del codice.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-    Me.components = New System.ComponentModel.Container()
-    Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 2")
-    Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 3")
-    Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 4")
-    Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 5")
-    Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 6")
-    Dim TreeNode6 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 7")
-    Dim TreeNode7 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Antipasti", New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2, TreeNode3, TreeNode4, TreeNode5, TreeNode6})
-    Dim TreeNode8 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Chirashi")
-    Dim TreeNode9 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 10")
-    Dim TreeNode10 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 11")
-    Dim TreeNode11 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 12")
-    Dim TreeNode12 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gunkan", New System.Windows.Forms.TreeNode() {TreeNode9, TreeNode10, TreeNode11})
-    Dim TreeNode13 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 14")
-    Dim TreeNode14 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 15")
-    Dim TreeNode15 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Hosomaki", New System.Windows.Forms.TreeNode() {TreeNode13, TreeNode14})
-    Dim TreeNode16 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 17")
-    Dim TreeNode17 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 18")
-    Dim TreeNode18 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 19")
-    Dim TreeNode19 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Nigiri", New System.Windows.Forms.TreeNode() {TreeNode16, TreeNode17, TreeNode18})
-    Dim TreeNode20 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Sashimi")
-    Dim TreeNode21 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 22")
-    Dim TreeNode22 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 23")
-    Dim TreeNode23 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 24")
-    Dim TreeNode24 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 25")
-    Dim TreeNode25 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 26")
-    Dim TreeNode26 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 27")
-    Dim TreeNode27 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 28")
-    Dim TreeNode28 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 29")
-    Dim TreeNode29 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Uramaki", New System.Windows.Forms.TreeNode() {TreeNode21, TreeNode22, TreeNode23, TreeNode24, TreeNode25, TreeNode26, TreeNode27, TreeNode28})
-    Dim TreeNode30 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 31")
-    Dim TreeNode31 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 32")
-    Dim TreeNode32 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Temaki", New System.Windows.Forms.TreeNode() {TreeNode30, TreeNode31})
-    Dim TreeNode33 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 34")
-    Dim TreeNode34 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 35")
-    Dim TreeNode35 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 36")
-    Dim TreeNode36 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 37")
-    Dim TreeNode37 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 38")
-    Dim TreeNode38 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 39")
-    Dim TreeNode39 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 40")
-    Dim TreeNode40 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Piatti caldi", New System.Windows.Forms.TreeNode() {TreeNode33, TreeNode34, TreeNode35, TreeNode36, TreeNode37, TreeNode38, TreeNode39})
-    Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TokiDrift))
-    Me.Tb_Qnt1 = New System.Windows.Forms.TextBox()
-    Me.Bt_Inc1 = New System.Windows.Forms.Button()
-    Me.Tb_Dec1 = New System.Windows.Forms.Button()
-    Me.Bt_Inc2 = New System.Windows.Forms.Button()
-    Me.Tb_Qnt2 = New System.Windows.Forms.TextBox()
-    Me.Bt_Dec2 = New System.Windows.Forms.Button()
-    Me.Tb_Qnt3 = New System.Windows.Forms.TextBox()
-    Me.Bt_Inc3 = New System.Windows.Forms.Button()
-    Me.Bt_Dec3 = New System.Windows.Forms.Button()
-    Me.Bt_Inc4 = New System.Windows.Forms.Button()
-    Me.Tb_Qnt4 = New System.Windows.Forms.TextBox()
-    Me.Bt_Dec4 = New System.Windows.Forms.Button()
-    Me.BtnPrev01 = New System.Windows.Forms.Button()
-    Me.BtnNext01 = New System.Windows.Forms.Button()
-    Me.RefreshTimer = New System.Windows.Forms.Timer(Me.components)
-    Me.Pnl_1 = New System.Windows.Forms.Panel()
-    Me.Pnl_3 = New System.Windows.Forms.Panel()
-    Me.Pnl_2 = New System.Windows.Forms.Panel()
-    Me.Pnl_4 = New System.Windows.Forms.Panel()
-    Me.Pnl_pages = New System.Windows.Forms.Panel()
-    Me.Tv_BookMark = New System.Windows.Forms.TreeView()
+        Me.components = New System.ComponentModel.Container()
+        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 2")
+        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 3")
+        Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 4")
+        Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 5")
+        Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 6")
+        Dim TreeNode6 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 7")
+        Dim TreeNode7 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Antipasti", New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2, TreeNode3, TreeNode4, TreeNode5, TreeNode6})
+        Dim TreeNode8 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Chirashi")
+        Dim TreeNode9 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 10")
+        Dim TreeNode10 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 11")
+        Dim TreeNode11 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 12")
+        Dim TreeNode12 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gunkan", New System.Windows.Forms.TreeNode() {TreeNode9, TreeNode10, TreeNode11})
+        Dim TreeNode13 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 14")
+        Dim TreeNode14 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 15")
+        Dim TreeNode15 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Hosomaki", New System.Windows.Forms.TreeNode() {TreeNode13, TreeNode14})
+        Dim TreeNode16 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 17")
+        Dim TreeNode17 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 18")
+        Dim TreeNode18 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 19")
+        Dim TreeNode19 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Nigiri", New System.Windows.Forms.TreeNode() {TreeNode16, TreeNode17, TreeNode18})
+        Dim TreeNode20 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Sashimi")
+        Dim TreeNode21 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 22")
+        Dim TreeNode22 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 23")
+        Dim TreeNode23 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 24")
+        Dim TreeNode24 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 25")
+        Dim TreeNode25 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 26")
+        Dim TreeNode26 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 27")
+        Dim TreeNode27 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 28")
+        Dim TreeNode28 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 29")
+        Dim TreeNode29 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Uramaki", New System.Windows.Forms.TreeNode() {TreeNode21, TreeNode22, TreeNode23, TreeNode24, TreeNode25, TreeNode26, TreeNode27, TreeNode28})
+        Dim TreeNode30 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 31")
+        Dim TreeNode31 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 32")
+        Dim TreeNode32 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Temaki", New System.Windows.Forms.TreeNode() {TreeNode30, TreeNode31})
+        Dim TreeNode33 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 34")
+        Dim TreeNode34 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 35")
+        Dim TreeNode35 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 36")
+        Dim TreeNode36 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 37")
+        Dim TreeNode37 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 38")
+        Dim TreeNode38 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 39")
+        Dim TreeNode39 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pagina 40")
+        Dim TreeNode40 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Piatti caldi", New System.Windows.Forms.TreeNode() {TreeNode33, TreeNode34, TreeNode35, TreeNode36, TreeNode37, TreeNode38, TreeNode39})
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TokiDrift))
+        Me.Tb_Qnt1 = New System.Windows.Forms.TextBox()
+        Me.Bt_Inc1 = New System.Windows.Forms.Button()
+        Me.Tb_Dec1 = New System.Windows.Forms.Button()
+        Me.Bt_Inc2 = New System.Windows.Forms.Button()
+        Me.Tb_Qnt2 = New System.Windows.Forms.TextBox()
+        Me.Bt_Dec2 = New System.Windows.Forms.Button()
+        Me.Tb_Qnt3 = New System.Windows.Forms.TextBox()
+        Me.Bt_Inc3 = New System.Windows.Forms.Button()
+        Me.Bt_Dec3 = New System.Windows.Forms.Button()
+        Me.Bt_Inc4 = New System.Windows.Forms.Button()
+        Me.Tb_Qnt4 = New System.Windows.Forms.TextBox()
+        Me.Bt_Dec4 = New System.Windows.Forms.Button()
+        Me.BtnPrev01 = New System.Windows.Forms.Button()
+        Me.BtnNext01 = New System.Windows.Forms.Button()
+        Me.RefreshTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.Pnl_1 = New System.Windows.Forms.Panel()
+        Me.Pnl_3 = New System.Windows.Forms.Panel()
+        Me.Pnl_2 = New System.Windows.Forms.Panel()
+        Me.Pnl_4 = New System.Windows.Forms.Panel()
+        Me.Pnl_pages = New System.Windows.Forms.Panel()
+        Me.Tv_BookMark = New System.Windows.Forms.TreeView()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Bt_StartOrdine = New System.Windows.Forms.Button()
         Me.Txt_User = New System.Windows.Forms.TextBox()
+        Me.bt_Resoconto = New System.Windows.Forms.Button()
         Me.Bt_CancellaOrdine = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Pnl_1.SuspendLayout()
@@ -105,6 +106,7 @@ Partial Class TokiDrift
         Me.Tb_Qnt1.Cursor = System.Windows.Forms.Cursors.No
         Me.Tb_Qnt1.Location = New System.Drawing.Point(0, 20)
         Me.Tb_Qnt1.Name = "Tb_Qnt1"
+        Me.Tb_Qnt1.ReadOnly = True
         Me.Tb_Qnt1.Size = New System.Drawing.Size(35, 20)
         Me.Tb_Qnt1.TabIndex = 16
         Me.Tb_Qnt1.Text = "0"
@@ -150,6 +152,7 @@ Partial Class TokiDrift
         Me.Tb_Qnt2.Cursor = System.Windows.Forms.Cursors.No
         Me.Tb_Qnt2.Location = New System.Drawing.Point(0, 20)
         Me.Tb_Qnt2.Name = "Tb_Qnt2"
+        Me.Tb_Qnt2.ReadOnly = True
         Me.Tb_Qnt2.Size = New System.Drawing.Size(35, 20)
         Me.Tb_Qnt2.TabIndex = 19
         Me.Tb_Qnt2.Text = "0"
@@ -173,6 +176,7 @@ Partial Class TokiDrift
         Me.Tb_Qnt3.Cursor = System.Windows.Forms.Cursors.No
         Me.Tb_Qnt3.Location = New System.Drawing.Point(0, 20)
         Me.Tb_Qnt3.Name = "Tb_Qnt3"
+        Me.Tb_Qnt3.ReadOnly = True
         Me.Tb_Qnt3.Size = New System.Drawing.Size(35, 20)
         Me.Tb_Qnt3.TabIndex = 22
         Me.Tb_Qnt3.Text = "0"
@@ -218,6 +222,7 @@ Partial Class TokiDrift
         Me.Tb_Qnt4.Cursor = System.Windows.Forms.Cursors.No
         Me.Tb_Qnt4.Location = New System.Drawing.Point(0, 20)
         Me.Tb_Qnt4.Name = "Tb_Qnt4"
+        Me.Tb_Qnt4.ReadOnly = True
         Me.Tb_Qnt4.Size = New System.Drawing.Size(35, 20)
         Me.Tb_Qnt4.TabIndex = 25
         Me.Tb_Qnt4.Text = "0"
@@ -424,6 +429,7 @@ Partial Class TokiDrift
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.Bt_StartOrdine)
         Me.Panel1.Controls.Add(Me.Txt_User)
+        Me.Panel1.Controls.Add(Me.bt_Resoconto)
         Me.Panel1.Controls.Add(Me.Bt_CancellaOrdine)
         Me.Panel1.Location = New System.Drawing.Point(355, 400)
         Me.Panel1.Name = "Panel1"
@@ -433,7 +439,7 @@ Partial Class TokiDrift
         'Bt_StartOrdine
         '
         Me.Bt_StartOrdine.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bt_StartOrdine.Location = New System.Drawing.Point(36, 116)
+        Me.Bt_StartOrdine.Location = New System.Drawing.Point(36, 122)
         Me.Bt_StartOrdine.Name = "Bt_StartOrdine"
         Me.Bt_StartOrdine.Size = New System.Drawing.Size(75, 23)
         Me.Bt_StartOrdine.TabIndex = 34
@@ -443,20 +449,30 @@ Partial Class TokiDrift
         'Txt_User
         '
         Me.Txt_User.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Txt_User.Location = New System.Drawing.Point(16, 90)
+        Me.Txt_User.Location = New System.Drawing.Point(16, 100)
         Me.Txt_User.Name = "Txt_User"
         Me.Txt_User.Size = New System.Drawing.Size(114, 20)
         Me.Txt_User.TabIndex = 36
         Me.Txt_User.Text = "inserisci utente"
         '
+        'bt_Resoconto
+        '
+        Me.bt_Resoconto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.bt_Resoconto.Location = New System.Drawing.Point(11, 35)
+        Me.bt_Resoconto.Name = "bt_Resoconto"
+        Me.bt_Resoconto.Size = New System.Drawing.Size(124, 27)
+        Me.bt_Resoconto.TabIndex = 35
+        Me.bt_Resoconto.Text = "Resoconto ordini"
+        Me.bt_Resoconto.UseVisualStyleBackColor = True
+        '
         'Bt_CancellaOrdine
         '
         Me.Bt_CancellaOrdine.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Bt_CancellaOrdine.Location = New System.Drawing.Point(36, 7)
+        Me.Bt_CancellaOrdine.Location = New System.Drawing.Point(11, 2)
         Me.Bt_CancellaOrdine.Name = "Bt_CancellaOrdine"
-        Me.Bt_CancellaOrdine.Size = New System.Drawing.Size(75, 51)
+        Me.Bt_CancellaOrdine.Size = New System.Drawing.Size(124, 27)
         Me.Bt_CancellaOrdine.TabIndex = 35
-        Me.Bt_CancellaOrdine.Text = "ELIMINA TUTTE LE SELEZIONI"
+        Me.Bt_CancellaOrdine.Text = "Elimina selezioni"
         Me.Bt_CancellaOrdine.UseVisualStyleBackColor = True
         '
         'PictureBox1
@@ -534,4 +550,5 @@ Partial Class TokiDrift
     Friend WithEvents Bt_CancellaOrdine As Button
   Friend WithEvents Txt_User As TextBox
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents bt_Resoconto As Button
 End Class

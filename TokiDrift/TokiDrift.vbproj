@@ -92,7 +92,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MQTTnet">
-      <HintPath>..\packages\MQTTnet.3.0.11\lib\net452\MQTTnet.dll</HintPath>
+      <HintPath>..\packages\MQTTnet.3.0.8\lib\net452\MQTTnet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -121,6 +121,12 @@
   <ItemGroup>
     <Compile Include="Code\ApplicationEvents.vb" />
     <Compile Include="Code\Simple3Des.vb" />
+    <Compile Include="Forms\Resoconto.Designer.vb">
+      <DependentUpon>Resoconto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Resoconto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\TokiDrift.Designer.vb">
       <DependentUpon>TokiDrift.vb</DependentUpon>
     </Compile>
@@ -146,6 +152,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\Resoconto.resx">
+      <DependentUpon>Resoconto.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TokiDrift.resx">
       <DependentUpon>TokiDrift.vb</DependentUpon>
     </EmbeddedResource>
