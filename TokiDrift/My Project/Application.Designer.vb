@@ -26,13 +26,13 @@ Namespace My
             MyBase.New(Global.Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.Windows)
             Me.IsSingleInstance = false
             Me.EnableVisualStyles = false
-            Me.SaveMySettingsOnExit = true
+            Me.SaveMySettingsOnExit = false
             Me.ShutDownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterAllFormsClose
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.TokiDriftApplication.TokiDrift
+            Me.MainForm = Global.TokiDriftApplication.StartScreen
         End Sub
     End Class
 End Namespace

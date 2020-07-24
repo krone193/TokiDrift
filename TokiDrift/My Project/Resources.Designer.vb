@@ -63,6 +63,116 @@ Namespace My.Resources
         '''<summary>
         '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property _161a6dd8fff8fad3852cdb992e16f102() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("161a6dd8fff8fad3852cdb992e16f102", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property _31719f8b43290f8b0c42cbb0d2bbf1d3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("31719f8b43290f8b0c42cbb0d2bbf1d3", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property Antipasti() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Antipasti", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property Chirashi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Chirashi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property Gunkan() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Gunkan", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property Hosomaki() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Hosomaki", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property Nigiri() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Nigiri", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property PiattiCaldi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("PiattiCaldi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property Sashimi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Sashimi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property StartScreenBkg() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("StartScreenBkg", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property Temaki() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Temaki", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property TokiDrift01() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("TokiDrift01", resourceCulture)
@@ -86,6 +196,396 @@ Namespace My.Resources
         Public ReadOnly Property TokiDrift03() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("TokiDrift03", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift04() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift04", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift05() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift05", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift06() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift06", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift07() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift07", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift08() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift08", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift09() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift09", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift10() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift10", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift11() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift11", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift12() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift12", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift13() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift13", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift14() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift14", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift15() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift15", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift16() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift16", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift17() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift17", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift18() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift18", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift19() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift19", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift20() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift20", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift21() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift21", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift22() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift22", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift23() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift23", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift24() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift24", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift25() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift25", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift26() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift26", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift27() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift27", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift28() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift28", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift29() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift29", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift30() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift30", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift31() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift31", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift32() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift32", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift33() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift33", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift34() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift34", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift35() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift35", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift36() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift36", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift37() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift37", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift38() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift38", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift39() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift39", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDrift40() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDrift40", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property TokiDriftFoodBkg() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("TokiDriftFoodBkg", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property Uramaki() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Uramaki", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
