@@ -195,29 +195,31 @@ Public Class CommandCenter
     Dim tstr As String()
     Dim OrdineFinale As String = ""
 
-    ' Init lista piatti e portate
-    tstr = Ordini(0).Ordine.Split(";")
-    For i = 0 To tstr.Count - 2
-      piatto = tstr(i).Split(".")
-      ListaPiatti.Add(piatto(0))
-      ListaPortate.Add("0")
-    Next
-
-    For Each ordine In Ordini
-      tstr = ordine.Ordine.Split(";")
+    If Ordini.Count > 0 Then
+      ' Init lista piatti e portate
+      tstr = Ordini(0).Ordine.Split(";")
       For i = 0 To tstr.Count - 2
-        Dim tempint As UInt16
         piatto = tstr(i).Split(".")
-        tempint = Convert.ToUInt16(ListaPortate(i))
-        tempint += Convert.ToUInt16(piatto(1))
-        ListaPortate(i) = tempint.ToString
+        ListaPiatti.Add(piatto(0))
+        ListaPortate.Add("0")
       Next
-    Next
-    Dim index As UShort = 0
-    For Each lst In ListaPiatti
-      OrdineFinale = OrdineFinale & ListaPiatti(index) & "." & ListaPortate(index) & ";"
-      index += 1
-    Next
-    MsgBox(OrdineFinale)
+
+      For Each ordine In Ordini
+        tstr = ordine.Ordine.Split(";")
+        For i = 0 To tstr.Count - 2
+          Dim tempint As UInt16
+          piatto = tstr(i).Split(".")
+          tempint = Convert.ToUInt16(ListaPortate(i))
+          tempint += Convert.ToUInt16(piatto(1))
+          ListaPortate(i) = tempint.ToString
+        Next
+      Next
+      Dim index As UShort = 0
+      For Each lst In ListaPiatti
+        OrdineFinale = OrdineFinale & ListaPiatti(index) & "." & ListaPortate(index) & ";"
+        index += 1
+      Next
+      MsgBox(OrdineFinale)
+    End If
   End Sub
 End Class

@@ -216,9 +216,9 @@ Public Class TokiDrift
   End Sub
 
     Private Sub BtnNext01_Click_1(sender As Object, e As EventArgs) Handles BtnNext01.Click
-    'If PictureBox1.Image IsNot My.Resources.f914c4c93bbdcd9d60995acda108a77d Then
-    '    PictureBox1.Image = My.Resources.f914c4c93bbdcd9d60995acda108a77d
-    'End If
+    If PictureBox1.Image IsNot My.Resources.TokiDriftFoodBkg Then
+      PictureBox1.Image = My.Resources.TokiDriftFoodBkg
+    End If
     If PageIndex < PagineLaunch - 1 Then
             indexchanged = True
             PageIndex += 1
