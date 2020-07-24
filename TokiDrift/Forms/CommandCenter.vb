@@ -220,6 +220,10 @@ Public Class CommandCenter
         index += 1
       Next
       MsgBox(OrdineFinale)
+      Dim file As IO.StreamWriter
+      file = My.Computer.FileSystem.OpenTextFileWriter("Ordine.txt", True)
+      file.WriteLine(OrdineFinale)
+      file.Close()
     End If
   End Sub
 End Class
