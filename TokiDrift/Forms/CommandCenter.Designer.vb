@@ -30,6 +30,7 @@ Partial Class CommandCenter
 		Me.LblNumOrdini = New System.Windows.Forms.Label()
 		Me.LblStatusOrdini = New System.Windows.Forms.Label()
 		Me.Label4 = New System.Windows.Forms.Label()
+		Me.LstUsers = New System.Windows.Forms.ListView()
 		Me.SuspendLayout()
 		'
 		'BtnAvviaOrdini
@@ -69,7 +70,7 @@ Partial Class CommandCenter
 		Me.Label1.BackColor = System.Drawing.Color.Red
 		Me.Label1.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Label1.ForeColor = System.Drawing.Color.White
-		Me.Label1.Location = New System.Drawing.Point(74, 129)
+		Me.Label1.Location = New System.Drawing.Point(76, 129)
 		Me.Label1.Name = "Label1"
 		Me.Label1.Size = New System.Drawing.Size(112, 15)
 		Me.Label1.TabIndex = 4
@@ -81,7 +82,7 @@ Partial Class CommandCenter
 		Me.LblNumOrdini.BackColor = System.Drawing.Color.Red
 		Me.LblNumOrdini.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.LblNumOrdini.ForeColor = System.Drawing.Color.White
-		Me.LblNumOrdini.Location = New System.Drawing.Point(296, 129)
+		Me.LblNumOrdini.Location = New System.Drawing.Point(298, 129)
 		Me.LblNumOrdini.Name = "LblNumOrdini"
 		Me.LblNumOrdini.Size = New System.Drawing.Size(14, 15)
 		Me.LblNumOrdini.TabIndex = 5
@@ -93,7 +94,7 @@ Partial Class CommandCenter
 		Me.LblStatusOrdini.BackColor = System.Drawing.Color.Gold
 		Me.LblStatusOrdini.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.LblStatusOrdini.ForeColor = System.Drawing.Color.White
-		Me.LblStatusOrdini.Location = New System.Drawing.Point(263, 105)
+		Me.LblStatusOrdini.Location = New System.Drawing.Point(264, 105)
 		Me.LblStatusOrdini.Name = "LblStatusOrdini"
 		Me.LblStatusOrdini.Size = New System.Drawing.Size(49, 15)
 		Me.LblStatusOrdini.TabIndex = 7
@@ -105,11 +106,25 @@ Partial Class CommandCenter
 		Me.Label4.BackColor = System.Drawing.Color.Gold
 		Me.Label4.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
 		Me.Label4.ForeColor = System.Drawing.Color.White
-		Me.Label4.Location = New System.Drawing.Point(74, 105)
+		Me.Label4.Location = New System.Drawing.Point(76, 105)
 		Me.Label4.Name = "Label4"
 		Me.Label4.Size = New System.Drawing.Size(91, 15)
 		Me.Label4.TabIndex = 6
 		Me.Label4.Text = "Stato ordini"
+		'
+		'LstUsers
+		'
+		Me.LstUsers.BackColor = System.Drawing.Color.Pink
+		Me.LstUsers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.LstUsers.ForeColor = System.Drawing.Color.Teal
+		Me.LstUsers.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None
+		Me.LstUsers.HideSelection = False
+		Me.LstUsers.Location = New System.Drawing.Point(77, 148)
+		Me.LstUsers.Name = "LstUsers"
+		Me.LstUsers.Size = New System.Drawing.Size(235, 65)
+		Me.LstUsers.TabIndex = 8
+		Me.LstUsers.UseCompatibleStateImageBehavior = False
+		Me.LstUsers.View = System.Windows.Forms.View.List
 		'
 		'CommandCenter
 		'
@@ -118,6 +133,7 @@ Partial Class CommandCenter
 		Me.BackgroundImage = Global.TokiDriftApplication.My.Resources.Resources.CommandCenterBkg
 		Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
 		Me.ClientSize = New System.Drawing.Size(394, 261)
+		Me.Controls.Add(Me.LstUsers)
 		Me.Controls.Add(Me.LblStatusOrdini)
 		Me.Controls.Add(Me.Label4)
 		Me.Controls.Add(Me.LblNumOrdini)
@@ -143,4 +159,5 @@ Partial Class CommandCenter
 	Friend WithEvents LblNumOrdini As Label
 	Friend WithEvents LblStatusOrdini As Label
 	Friend WithEvents Label4 As Label
+	Friend WithEvents LstUsers As ListView
 End Class

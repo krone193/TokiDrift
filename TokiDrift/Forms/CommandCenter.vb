@@ -70,6 +70,11 @@ Public Class CommandCenter
         End If
         Ordini.Add(recv)
         LblNumOrdini.Text = Ordini.Count
+        LstUsers.Clear()
+        For Each ordine As OrdineStruct In Ordini
+          Dim user As New ListViewItem(New String() {ordine.Nome})
+          LstUsers.Items.Add(user)
+        Next
     End Select
     Return Nothing
   End Function
@@ -167,6 +172,7 @@ Public Class CommandCenter
   Private Sub CommandCenter_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     CheckForIllegalCrossThreadCalls = False
     Ordini.Clear()
+    LstUsers.Clear()
   End Sub
   '-----------------------------------------------------------------------------------------------------------------------'
   Private Sub BtnAvviaOrdini_Click(sender As Object, e As EventArgs) Handles BtnAvviaOrdini.Click
@@ -183,42 +189,48 @@ Public Class CommandCenter
   End Sub
   '-----------------------------------------------------------------------------------------------------------------------'
   Private Sub BtnEsportaOrdini_Click(sender As Object, e As EventArgs) Handles BtnEsportaOrdini.Click
+    Dim ListaUtenti As New List(Of String)
     Dim ListaPiatti As New List(Of String)
     Dim ListaPortate As New List(Of String)
     Dim piatto As String()
     Dim tstr As String()
-    Dim OrdineFinale As String = ""
+    Dim DT As String = Date.Now().ToString
+    Dim file As IO.StreamWriter
+
+    file = My.Computer.FileSystem.OpenTextFileWriter("Ordine.txt", True)
+    file.WriteLine(DT)
+    file.WriteLine("O R D I N I   S I N G O L I")
 
     If Ordini.Count > 0 Then
-      ' Init lista piatti e portate
       tstr = Ordini(0).Ordine.Split(";")
       For i = 0 To tstr.Count - 2
         piatto = tstr(i).Split(".")
         ListaPiatti.Add(piatto(0))
         ListaPortate.Add("0")
       Next
-
       For Each ordine In Ordini
-        tstr = ordine.Ordine.Split(";")
+        file.WriteLine("> " & ordine.Nome)
+        tstr = ordine.Ordine.Split(";")                 ' separazione coppie piatto.portata
         For i = 0 To tstr.Count - 2
           Dim tempint As UInt16
-          piatto = tstr(i).Split(".")
-          tempint = Convert.ToUInt16(ListaPortate(i))
-          tempint += Convert.ToUInt16(piatto(1))
-          ListaPortate(i) = tempint.ToString
+          piatto = tstr(i).Split(".")                   ' separazione piatto (piatto(0)) e portate (piatto(1))
+          tempint = Convert.ToUInt16(ListaPortate(i))   ' leggo il numero attuale di portate
+          tempint += Convert.ToUInt16(piatto(1))        ' aggiungo il numero di portate alla somma
+          ListaPortate(i) = tempint.ToString            ' converto la nuova somma portate in stringa
+          If piatto(1) <> 0 Then
+            file.WriteLine("  " & piatto(0) & " " & piatto(1))
+          End If
         Next
       Next
+      file.WriteLine("O R D I N E   F I N A L E")
       Dim index As UShort = 0
       For Each lst In ListaPiatti
         If ListaPortate(index) <> 0 Then
-          OrdineFinale = OrdineFinale & ListaPiatti(index) & "." & ListaPortate(index) & ";"
+          file.WriteLine(ListaPiatti(index) & " " & ListaPortate(index))
         End If
         index += 1
       Next
-      MsgBox(OrdineFinale)
-      Dim file As IO.StreamWriter
-      file = My.Computer.FileSystem.OpenTextFileWriter("Ordine.txt", True)
-      file.WriteLine(OrdineFinale)
+      MsgBox("Ordine esportato")
       file.Close()
     End If
   End Sub

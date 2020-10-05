@@ -16,6 +16,7 @@ Public Class TokiDrift
   Private Const MQTTPORT As UShort = 1883
   Private Const MQTTQOFS As Protocol.MqttQualityOfServiceLevel = Protocol.MqttQualityOfServiceLevel.AtMostOnce
   Private Const SEPTCHAR As String = "♥"
+  Private Const IDX16E17 As Byte = 5
 
 
   '--- T O K I D R I F T | ReadOnly --------------------------------------------------------------------------------------'
@@ -233,6 +234,9 @@ Public Class TokiDrift
     If PageIndex < PagineLaunch - 1 Then
       indexchanged = True
       PageIndex += 1
+      If PageIndex = IDX16E17 Then
+        PageIndex += 1
+      End If
       RelocateButtons()
     End If
   End Sub
@@ -244,6 +248,9 @@ Public Class TokiDrift
     If PageIndex > 0 Then
       indexchanged = True
       PageIndex -= 1
+      If PageIndex = IDX16E17 Then
+        PageIndex -= 1
+      End If
       RelocateButtons()
     End If
   End Sub
