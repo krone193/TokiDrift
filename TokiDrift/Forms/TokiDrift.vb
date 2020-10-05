@@ -102,6 +102,7 @@ Public Class TokiDrift
   '--- T O K I D R I F T | Private Functions -----------------------------------------------------------------------------'
   '-----------------------------------------------------------------------------------------------------------------------'
   Private Sub TokiDrift_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    CheckForIllegalCrossThreadCalls = False
     For i As Integer = 0 To SelezioneTotale.Length - 1
       SelezioneTotale(i) = 0
     Next

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class StartScreen
 	Inherits System.Windows.Forms.Form
 
 	'Form overrides dispose to clean up the component list.
-	<System.Diagnostics.DebuggerNonUserCode()> _
+	<System.Diagnostics.DebuggerNonUserCode()>
 	Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 		Try
 			If disposing AndAlso components IsNot Nothing Then
@@ -20,14 +20,14 @@ Partial Class StartScreen
 	'NOTE: The following procedure is required by the Windows Form Designer
 	'It can be modified using the Windows Form Designer.  
 	'Do not modify it using the code editor.
-	<System.Diagnostics.DebuggerStepThrough()> _
+	<System.Diagnostics.DebuggerStepThrough()>
 	Private Sub InitializeComponent()
 		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StartScreen))
 		Me.BtnMenuPranzo = New System.Windows.Forms.Button()
 		Me.BtnMenuCena = New System.Windows.Forms.Button()
 		Me.TxtPassword = New System.Windows.Forms.TextBox()
 		Me.BtnCommandCenter = New System.Windows.Forms.Button()
-		Me.Label1 = New System.Windows.Forms.Label()
+		Me.LblVersion = New System.Windows.Forms.Label()
 		Me.SuspendLayout()
 		'
 		'BtnMenuPranzo
@@ -70,17 +70,17 @@ Partial Class StartScreen
 		Me.BtnCommandCenter.Text = "指 令 セ ン タ ー"
 		Me.BtnCommandCenter.UseVisualStyleBackColor = True
 		'
-		'Label1
+		'LblVersion
 		'
-		Me.Label1.AutoSize = True
-		Me.Label1.BackColor = System.Drawing.Color.MediumVioletRed
-		Me.Label1.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.Label1.ForeColor = System.Drawing.Color.Gold
-		Me.Label1.Location = New System.Drawing.Point(163, 74)
-		Me.Label1.Name = "Label1"
-		Me.Label1.Size = New System.Drawing.Size(63, 15)
-		Me.Label1.TabIndex = 4
-		Me.Label1.Text = "v1.0.0.0"
+		Me.LblVersion.AutoSize = True
+		Me.LblVersion.BackColor = System.Drawing.Color.MediumVioletRed
+		Me.LblVersion.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.LblVersion.ForeColor = System.Drawing.Color.Gold
+		Me.LblVersion.Location = New System.Drawing.Point(163, 74)
+		Me.LblVersion.Name = "LblVersion"
+		Me.LblVersion.Size = New System.Drawing.Size(63, 15)
+		Me.LblVersion.TabIndex = 4
+		Me.LblVersion.Text = "v1.0.0.0"
 		'
 		'StartScreen
 		'
@@ -89,7 +89,7 @@ Partial Class StartScreen
 		Me.BackgroundImage = Global.TokiDriftApplication.My.Resources.Resources.StartScreenBkg
 		Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 		Me.ClientSize = New System.Drawing.Size(394, 261)
-		Me.Controls.Add(Me.Label1)
+		Me.Controls.Add(Me.LblVersion)
 		Me.Controls.Add(Me.BtnCommandCenter)
 		Me.Controls.Add(Me.TxtPassword)
 		Me.Controls.Add(Me.BtnMenuCena)
@@ -107,5 +107,5 @@ Partial Class StartScreen
 	Friend WithEvents BtnMenuCena As Button
 	Friend WithEvents TxtPassword As TextBox
 	Friend WithEvents BtnCommandCenter As Button
-  Friend WithEvents Label1 As Label
+	Friend WithEvents LblVersion As Label
 End Class

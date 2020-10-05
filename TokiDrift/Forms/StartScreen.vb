@@ -15,4 +15,9 @@
 			Close()
 		End If
 	End Sub
+
+	Private Sub StartScreen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+		CheckForIllegalCrossThreadCalls = False
+		LblVersion.Text = "v" & My.Application.Info.Version.ToString()
+	End Sub
 End Class
