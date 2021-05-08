@@ -53,25 +53,6 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Puoi prendere solo un massimo di 1 una portata per questo piatto. We don't wanna "& _ 
-            "spend too much, right?")>  _
-        Public ReadOnly Property Str_NmaxTxt() As String
-            Get
-                Return CType(Me("Str_NmaxTxt"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Numero massimo portate raggiunto")>  _
-        Public ReadOnly Property Str_NmaxTitle() As String
-            Get
-                Return CType(Me("Str_NmaxTitle"),String)
-            End Get
-        End Property
     End Class
 End Namespace
 
