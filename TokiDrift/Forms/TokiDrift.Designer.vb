@@ -53,6 +53,7 @@ Partial Class TokiDrift
     Me.Pnl2 = New System.Windows.Forms.Panel()
     Me.Pnl4 = New System.Windows.Forms.Panel()
     Me.PnlPages = New System.Windows.Forms.Panel()
+    Me.ProvaLista = New System.Windows.Forms.Button()
     Me.TrvBookMark = New System.Windows.Forms.TreeView()
     Me.Panel1 = New System.Windows.Forms.Panel()
     Me.BtnResoconto = New System.Windows.Forms.Button()
@@ -60,7 +61,7 @@ Partial Class TokiDrift
     Me.TxtUser = New System.Windows.Forms.TextBox()
     Me.BtnCancellaOrdine = New System.Windows.Forms.Button()
     Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-    Me.ProvaLista = New System.Windows.Forms.Button()
+    Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
     Me.Pnl1.SuspendLayout()
     Me.Pnl3.SuspendLayout()
     Me.Pnl2.SuspendLayout()
@@ -299,6 +300,15 @@ Partial Class TokiDrift
     Me.PnlPages.Size = New System.Drawing.Size(356, 551)
     Me.PnlPages.TabIndex = 31
     '
+    'ProvaLista
+    '
+    Me.ProvaLista.Location = New System.Drawing.Point(131, 523)
+    Me.ProvaLista.Name = "ProvaLista"
+    Me.ProvaLista.Size = New System.Drawing.Size(75, 23)
+    Me.ProvaLista.TabIndex = 31
+    Me.ProvaLista.Text = "Test lista"
+    Me.ProvaLista.UseVisualStyleBackColor = True
+    '
     'TrvBookMark
     '
     Me.TrvBookMark.BackColor = System.Drawing.Color.WhiteSmoke
@@ -401,14 +411,9 @@ Partial Class TokiDrift
     Me.PictureBox1.TabIndex = 33
     Me.PictureBox1.TabStop = False
     '
-    'ProvaLista
+    'PrintDialog1
     '
-    Me.ProvaLista.Location = New System.Drawing.Point(131, 523)
-    Me.ProvaLista.Name = "ProvaLista"
-    Me.ProvaLista.Size = New System.Drawing.Size(75, 23)
-    Me.ProvaLista.TabIndex = 31
-    Me.ProvaLista.Text = "Test lista"
-    Me.ProvaLista.UseVisualStyleBackColor = True
+    Me.PrintDialog1.UseEXDialog = True
     '
     'TokiDrift
     '
@@ -474,4 +479,5 @@ Partial Class TokiDrift
   Friend WithEvents bt_Resoconto As Button
   Friend WithEvents BtnResoconto As Button
   Friend WithEvents ProvaLista As Button
+  Friend WithEvents PrintDialog1 As PrintDialog
 End Class

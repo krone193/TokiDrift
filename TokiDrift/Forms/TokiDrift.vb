@@ -650,27 +650,46 @@ Public Class TokiDrift
 
   Private Sub ProvaLista_Click(sender As Object, e As EventArgs) Handles ProvaLista.Click
     Dim progCell As Integer = 0
-    Dim frmNew As New Form
-    Dim tmp_pb As New PictureBox
+    Dim Charfont As New Drawing.Font("Calibri", 12, FontStyle.Bold)
+    Dim frmNew As New Form With {
+      .Width = 410,
+      .Height = 680,
+      .BackColor = Drawing.Color.Black,
+      .FormBorderStyle = FormBorderStyle.FixedSingle,
+      .Icon = TokiDrift.ActiveForm.Icon,
+      .Text = "Ordine definitivo - お前はもう死んでいる"
+    }
+    Dim tmp_pb As New PictureBox With {
+      .Location = New Point(0, 0),
+      .Width = 395,
+      .Height = 601,
+      .BackgroundImageLayout = ImageLayout.Center
+    }
     Dim img As Bitmap = My.Resources.ListaOrdini
-    Dim font As New Drawing.Font("Calibri", 12, FontStyle.Bold)
+    Dim printbut As New Button With {
+      .Location = New Point(100, 603),
+      .Width = 200,
+      .Height = 35,
+      .Text = "Stampa",
+      .Font = Charfont,
+      .BackColor = Drawing.SystemColors.Control
+    }
+
     frmNew.Controls.Add(tmp_pb)
-    frmNew.Width = 410
-    frmNew.Height = 640
-    tmp_pb.Location = New Point(0, 0)
-    tmp_pb.Width = 395
-    tmp_pb.Height = 601
-    tmp_pb.BackgroundImageLayout = ImageLayout.Center
+    frmNew.Controls.Add(printbut)
+    AddHandler printbut.Click, Sub(s As Object, ev As EventArgs)
+                                 PrintDialog1.ShowDialog()
+                               End Sub
     For i As Integer = 0 To SelezioneTotale.Length - 1
       If SelezioneTotale(i) > 0 Then
         Using g = Graphics.FromImage(img)
-          g.DrawString(ID_PiattiTot(i).ToString, font, Brushes.Black, CommandCenter.lbl_Nomi_Points(progCell))
-          g.DrawString(SelezioneTotale(i).ToString, font, Brushes.Black, CommandCenter.lbl_Qnt_Points(progCell))
+          g.DrawString(ID_PiattiTot(i).ToString, Charfont, Brushes.Black, CommandCenter.lbl_Nomi_Points(progCell))
+          g.DrawString(SelezioneTotale(i).ToString, Charfont, Brushes.Black, CommandCenter.lbl_Qnt_Points(progCell))
         End Using
         progCell += 1
       End If
     Next
     tmp_pb.Image = img
-    frmNew.Show()
+    frmNew.ShowDialog()
   End Sub
 End Class
