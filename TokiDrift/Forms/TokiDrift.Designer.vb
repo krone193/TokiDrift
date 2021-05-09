@@ -23,15 +23,15 @@ Partial Class TokiDrift
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
     Me.components = New System.ComponentModel.Container()
-    Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Antipasti")
-    Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Chirashi")
-    Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gunkan")
-    Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Hosomaki")
-    Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Nigiri")
-    Dim TreeNode6 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Sashimi")
-    Dim TreeNode7 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Uramaki")
-    Dim TreeNode8 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Temaki")
-    Dim TreeNode9 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Piatti caldi")
+    Dim TreeNode10 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Antipasti")
+    Dim TreeNode11 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Chirashi")
+    Dim TreeNode12 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gunkan")
+    Dim TreeNode13 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Hosomaki")
+    Dim TreeNode14 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Nigiri")
+    Dim TreeNode15 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Sashimi")
+    Dim TreeNode16 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Uramaki")
+    Dim TreeNode17 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Temaki")
+    Dim TreeNode18 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Piatti caldi")
     Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TokiDrift))
     Me.TxtQnt1 = New System.Windows.Forms.TextBox()
     Me.BtnInc1 = New System.Windows.Forms.Button()
@@ -61,7 +61,8 @@ Partial Class TokiDrift
     Me.TxtUser = New System.Windows.Forms.TextBox()
     Me.BtnCancellaOrdine = New System.Windows.Forms.Button()
     Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-    Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
+    Me.PrintOptions = New System.Windows.Forms.PrintDialog()
+    Me.PrintOrder = New System.Drawing.Printing.PrintDocument()
     Me.Pnl1.SuspendLayout()
     Me.Pnl3.SuspendLayout()
     Me.Pnl2.SuspendLayout()
@@ -322,25 +323,25 @@ Partial Class TokiDrift
     Me.TrvBookMark.ItemHeight = 31
     Me.TrvBookMark.Location = New System.Drawing.Point(355, 0)
     Me.TrvBookMark.Name = "TrvBookMark"
-    TreeNode1.Name = "nd_Antipasti"
-    TreeNode1.Text = "Antipasti"
-    TreeNode2.Name = "nd_Chirashi"
-    TreeNode2.Text = "Chirashi"
-    TreeNode3.Name = "nd_Gunkan"
-    TreeNode3.Text = "Gunkan"
-    TreeNode4.Name = "nd_Hosomaki"
-    TreeNode4.Text = "Hosomaki"
-    TreeNode5.Name = "nd_Nigiri"
-    TreeNode5.Text = "Nigiri"
-    TreeNode6.Name = "nd_Sashimi"
-    TreeNode6.Text = "Sashimi"
-    TreeNode7.Name = "nd_Uramaki"
-    TreeNode7.Text = "Uramaki"
-    TreeNode8.Name = "nd_Temaki"
-    TreeNode8.Text = "Temaki"
-    TreeNode9.Name = "nd_PiattiCaldi"
-    TreeNode9.Text = "Piatti caldi"
-    Me.TrvBookMark.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2, TreeNode3, TreeNode4, TreeNode5, TreeNode6, TreeNode7, TreeNode8, TreeNode9})
+    TreeNode10.Name = "nd_Antipasti"
+    TreeNode10.Text = "Antipasti"
+    TreeNode11.Name = "nd_Chirashi"
+    TreeNode11.Text = "Chirashi"
+    TreeNode12.Name = "nd_Gunkan"
+    TreeNode12.Text = "Gunkan"
+    TreeNode13.Name = "nd_Hosomaki"
+    TreeNode13.Text = "Hosomaki"
+    TreeNode14.Name = "nd_Nigiri"
+    TreeNode14.Text = "Nigiri"
+    TreeNode15.Name = "nd_Sashimi"
+    TreeNode15.Text = "Sashimi"
+    TreeNode16.Name = "nd_Uramaki"
+    TreeNode16.Text = "Uramaki"
+    TreeNode17.Name = "nd_Temaki"
+    TreeNode17.Text = "Temaki"
+    TreeNode18.Name = "nd_PiattiCaldi"
+    TreeNode18.Text = "Piatti caldi"
+    Me.TrvBookMark.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode10, TreeNode11, TreeNode12, TreeNode13, TreeNode14, TreeNode15, TreeNode16, TreeNode17, TreeNode18})
     Me.TrvBookMark.RightToLeft = System.Windows.Forms.RightToLeft.No
     Me.TrvBookMark.Size = New System.Drawing.Size(145, 286)
     Me.TrvBookMark.TabIndex = 32
@@ -411,9 +412,11 @@ Partial Class TokiDrift
     Me.PictureBox1.TabIndex = 33
     Me.PictureBox1.TabStop = False
     '
-    'PrintDialog1
+    'PrintOptions
     '
-    Me.PrintDialog1.UseEXDialog = True
+    Me.PrintOptions.AllowPrintToFile = False
+    Me.PrintOptions.Document = Me.PrintOrder
+    Me.PrintOptions.UseEXDialog = True
     '
     'TokiDrift
     '
@@ -479,5 +482,6 @@ Partial Class TokiDrift
   Friend WithEvents bt_Resoconto As Button
   Friend WithEvents BtnResoconto As Button
   Friend WithEvents ProvaLista As Button
-  Friend WithEvents PrintDialog1 As PrintDialog
+  Friend WithEvents PrintOptions As PrintDialog
+  Friend WithEvents PrintOrder As Printing.PrintDocument
 End Class

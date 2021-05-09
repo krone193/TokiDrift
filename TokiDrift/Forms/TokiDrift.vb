@@ -1,10 +1,12 @@
 ﻿Imports MQTTnet
 Imports MQTTnet.Client.Options
 Imports MQTTnet.Client
+Imports System.Drawing.Printing
 
 Public Class TokiDrift
   Private ReadOnly Factory As New MqttFactory
   Private WithEvents MqttClient As MqttClient
+  Public PrintImage As Image
 
 
   '--- T O K I D R I F T | Constants -------------------------------------------------------------------------------------'
@@ -678,7 +680,13 @@ Public Class TokiDrift
     frmNew.Controls.Add(tmp_pb)
     frmNew.Controls.Add(printbut)
     AddHandler printbut.Click, Sub(s As Object, ev As EventArgs)
-                                 PrintDialog1.ShowDialog()
+                                 If PrintOptions.ShowDialog() = DialogResult.OK Then
+                                   PrintOrder.PrinterSettings = PrintOptions.PrinterSettings
+                                   PrintImage = img
+                                   AddHandler PrintOrder.PrintPage, AddressOf PrintDocument_PrintPage
+                                   PrintOrder.DocumentName = "Lista ordini Toki"
+                                   PrintOrder.Print()
+                                 End If
                                End Sub
     For i As Integer = 0 To SelezioneTotale.Length - 1
       If SelezioneTotale(i) > 0 Then
@@ -691,5 +699,11 @@ Public Class TokiDrift
     Next
     tmp_pb.Image = img
     frmNew.ShowDialog()
+  End Sub
+
+  Private Sub PrintDocument_PrintPage(ByVal sender As Object, ByVal e As PrintPageEventArgs)
+    e.Graphics.RenderingOrigin = New Point(e.MarginBounds.Left, e.MarginBounds.Top)
+    e.Graphics.DrawImage(PrintImage, New Rectangle(0, 0, 395, 601))
+    e.HasMorePages = False
   End Sub
 End Class
