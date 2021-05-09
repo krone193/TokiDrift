@@ -113,6 +113,16 @@ Namespace My.Resources
         '''<summary>
         '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property ListaOrdini() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ListaOrdini", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property Nigiri() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Nigiri", resourceCulture)
@@ -1015,7 +1025,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Cerca una stringa localizzata simile a Ravioli vegetali.
+        '''  Cerca una stringa localizzata simile a Samosa vegetale.
         '''</summary>
         Public ReadOnly Property str_Plate_5() As String
             Get
@@ -1024,7 +1034,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Cerca una stringa localizzata simile a Ravioli di gamberi.
+        '''  Cerca una stringa localizzata simile a Shaomai.
         '''</summary>
         Public ReadOnly Property str_Plate_6() As String
             Get
@@ -1114,7 +1124,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Cerca una stringa localizzata simile a Ravioli di carne.
+        '''  Cerca una stringa localizzata simile a Gyoza.
         '''</summary>
         Public ReadOnly Property str_Plate_7() As String
             Get

@@ -214,6 +214,7 @@
     <Content Include="Resources\CommandCenterBkg.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\ListaOrdini.png" />
     <Content Include="Resources\StartScreenBkg.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

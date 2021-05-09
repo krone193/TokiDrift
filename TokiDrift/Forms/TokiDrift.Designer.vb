@@ -60,6 +60,7 @@ Partial Class TokiDrift
     Me.TxtUser = New System.Windows.Forms.TextBox()
     Me.BtnCancellaOrdine = New System.Windows.Forms.Button()
     Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+    Me.ProvaLista = New System.Windows.Forms.Button()
     Me.Pnl1.SuspendLayout()
     Me.Pnl3.SuspendLayout()
     Me.Pnl2.SuspendLayout()
@@ -286,6 +287,7 @@ Partial Class TokiDrift
     '
     Me.PnlPages.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
     Me.PnlPages.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+    Me.PnlPages.Controls.Add(Me.ProvaLista)
     Me.PnlPages.Controls.Add(Me.Pnl1)
     Me.PnlPages.Controls.Add(Me.BtnPrev01)
     Me.PnlPages.Controls.Add(Me.Pnl4)
@@ -399,6 +401,15 @@ Partial Class TokiDrift
     Me.PictureBox1.TabIndex = 33
     Me.PictureBox1.TabStop = False
     '
+    'ProvaLista
+    '
+    Me.ProvaLista.Location = New System.Drawing.Point(131, 523)
+    Me.ProvaLista.Name = "ProvaLista"
+    Me.ProvaLista.Size = New System.Drawing.Size(75, 23)
+    Me.ProvaLista.TabIndex = 31
+    Me.ProvaLista.Text = "Test lista"
+    Me.ProvaLista.UseVisualStyleBackColor = True
+    '
     'TokiDrift
     '
     Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -462,4 +473,5 @@ Partial Class TokiDrift
   Friend WithEvents Panel1 As Panel
   Friend WithEvents bt_Resoconto As Button
   Friend WithEvents BtnResoconto As Button
+  Friend WithEvents ProvaLista As Button
 End Class

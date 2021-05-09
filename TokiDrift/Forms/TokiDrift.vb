@@ -647,4 +647,30 @@ Public Class TokiDrift
       Return cipherText
     End If
   End Function
+
+  Private Sub ProvaLista_Click(sender As Object, e As EventArgs) Handles ProvaLista.Click
+    Dim progCell As Integer = 0
+    Dim frmNew As New Form
+    Dim tmp_pb As New PictureBox
+    Dim img As Bitmap = My.Resources.ListaOrdini
+    Dim font As New Drawing.Font("Calibri", 12, FontStyle.Bold)
+    frmNew.Controls.Add(tmp_pb)
+    frmNew.Width = 410
+    frmNew.Height = 640
+    tmp_pb.Location = New Point(0, 0)
+    tmp_pb.Width = 395
+    tmp_pb.Height = 601
+    tmp_pb.BackgroundImageLayout = ImageLayout.Center
+    For i As Integer = 0 To SelezioneTotale.Length - 1
+      If SelezioneTotale(i) > 0 Then
+        Using g = Graphics.FromImage(img)
+          g.DrawString(i.ToString, font, Brushes.Black, CommandCenter.lbl_Nomi_Points(progCell))
+          g.DrawString(SelezioneTotale(i).ToString, font, Brushes.Black, CommandCenter.lbl_Qnt_Points(progCell))
+        End Using
+        progCell += 1
+      End If
+    Next
+    tmp_pb.Image = img
+    frmNew.Show()
+  End Sub
 End Class
