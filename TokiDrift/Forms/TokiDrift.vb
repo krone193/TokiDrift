@@ -664,7 +664,7 @@ Public Class TokiDrift
     For i As Integer = 0 To SelezioneTotale.Length - 1
       If SelezioneTotale(i) > 0 Then
         Using g = Graphics.FromImage(img)
-          g.DrawString(i.ToString, font, Brushes.Black, CommandCenter.lbl_Nomi_Points(progCell))
+          g.DrawString(ID_PiattiTot(i).ToString, font, Brushes.Black, CommandCenter.lbl_Nomi_Points(progCell))
           g.DrawString(SelezioneTotale(i).ToString, font, Brushes.Black, CommandCenter.lbl_Qnt_Points(progCell))
         End Using
         progCell += 1
