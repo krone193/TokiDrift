@@ -113,6 +113,16 @@ Namespace My.Resources
         '''<summary>
         '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property ListaOrdini() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ListaOrdini", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property Nigiri() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Nigiri", resourceCulture)
@@ -147,6 +157,1140 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("StartScreenBkg", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Puoi prendere solo un massimo di 3 portate per questo piatto. We don&apos;t wanna spend too much, right?.
+        '''</summary>
+        Public ReadOnly Property Str_3maxTxt() As String
+            Get
+                Return ResourceManager.GetString("Str_3maxTxt", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Numero massimo portate raggiunto.
+        '''</summary>
+        Public ReadOnly Property Str_NmaxTitle() As String
+            Get
+                Return ResourceManager.GetString("Str_NmaxTitle", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Puoi prendere solo un massimo di 1 una portata per questo piatto. We don&apos;t wanna spend too much, right?.
+        '''</summary>
+        Public ReadOnly Property Str_NmaxTxt() As String
+            Get
+                Return ResourceManager.GetString("Str_NmaxTxt", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Edamame.
+        '''</summary>
+        Public ReadOnly Property str_Plate_1() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Shrimp potato.
+        '''</summary>
+        Public ReadOnly Property str_Plate_10() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_10", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Sashimi sake.
+        '''</summary>
+        Public ReadOnly Property str_Plate_100() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_100", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Sashimi tai.
+        '''</summary>
+        Public ReadOnly Property str_Plate_101() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_101", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Sashimi butter fish.
+        '''</summary>
+        Public ReadOnly Property str_Plate_102() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_102", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gamberi butterfly.
+        '''</summary>
+        Public ReadOnly Property str_Plate_11() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_11", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki sake.
+        '''</summary>
+        Public ReadOnly Property str_Plate_110() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_110", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki spicy sake.
+        '''</summary>
+        Public ReadOnly Property str_Plate_111() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_111", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki salmone cotto.
+        '''</summary>
+        Public ReadOnly Property str_Plate_112() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_112", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki miulia.
+        '''</summary>
+        Public ReadOnly Property str_Plate_113() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_113", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki foglio di soia.
+        '''</summary>
+        Public ReadOnly Property str_Plate_114() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_114", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki maguro.
+        '''</summary>
+        Public ReadOnly Property str_Plate_115() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_115", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki tonno cotto.
+        '''</summary>
+        Public ReadOnly Property str_Plate_116() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_116", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki spicy maguro.
+        '''</summary>
+        Public ReadOnly Property str_Plate_117() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_117", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki philadelphia.
+        '''</summary>
+        Public ReadOnly Property str_Plate_118() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_118", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki unagi.
+        '''</summary>
+        Public ReadOnly Property str_Plate_119() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_119", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Tempura ika.
+        '''</summary>
+        Public ReadOnly Property str_Plate_12() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_12", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki rainbow roll.
+        '''</summary>
+        Public ReadOnly Property str_Plate_120() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_120", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a California special roll.
+        '''</summary>
+        Public ReadOnly Property str_Plate_121() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_121", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Lemon maki roll.
+        '''</summary>
+        Public ReadOnly Property str_Plate_122() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_122", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki ebiten.
+        '''</summary>
+        Public ReadOnly Property str_Plate_123() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_123", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki california.
+        '''</summary>
+        Public ReadOnly Property str_Plate_124() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_124", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki ebi tamago.
+        '''</summary>
+        Public ReadOnly Property str_Plate_125() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_125", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Toki sake roll.
+        '''</summary>
+        Public ReadOnly Property str_Plate_126() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_126", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Toki maguro roll.
+        '''</summary>
+        Public ReadOnly Property str_Plate_127() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_127", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Toki roll.
+        '''</summary>
+        Public ReadOnly Property str_Plate_128() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_128", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Special spicy sake roll.
+        '''</summary>
+        Public ReadOnly Property str_Plate_129() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_129", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Pane fritto.
+        '''</summary>
+        Public ReadOnly Property str_Plate_13() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_13", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki tempura verdure.
+        '''</summary>
+        Public ReadOnly Property str_Plate_130() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_130", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki vega.
+        '''</summary>
+        Public ReadOnly Property str_Plate_131() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_131", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Black sake roll.
+        '''</summary>
+        Public ReadOnly Property str_Plate_132() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_132", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Black ebi roll.
+        '''</summary>
+        Public ReadOnly Property str_Plate_133() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_133", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Uramaki black vega.
+        '''</summary>
+        Public ReadOnly Property str_Plate_134() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_134", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Futomaki salmone affumicato.
+        '''</summary>
+        Public ReadOnly Property str_Plate_135() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_135", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Futomaki fumo.
+        '''</summary>
+        Public ReadOnly Property str_Plate_136() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_136", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Futomaki ebiten.
+        '''</summary>
+        Public ReadOnly Property str_Plate_137() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_137", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Futomaki california.
+        '''</summary>
+        Public ReadOnly Property str_Plate_138() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_138", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Takazu.
+        '''</summary>
+        Public ReadOnly Property str_Plate_14() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_14", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Surmono.
+        '''</summary>
+        Public ReadOnly Property str_Plate_15() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_15", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Temaki sake.
+        '''</summary>
+        Public ReadOnly Property str_Plate_150() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_150", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Temaki spicy sake.
+        '''</summary>
+        Public ReadOnly Property str_Plate_151() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_151", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Temaki maguro.
+        '''</summary>
+        Public ReadOnly Property str_Plate_152() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_152", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Temaki spicy maguro.
+        '''</summary>
+        Public ReadOnly Property str_Plate_153() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_153", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Temaki california.
+        '''</summary>
+        Public ReadOnly Property str_Plate_154() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_154", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Temaki misto.
+        '''</summary>
+        Public ReadOnly Property str_Plate_155() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_155", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Temaki tempura.
+        '''</summary>
+        Public ReadOnly Property str_Plate_156() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_156", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Temaki vega.
+        '''</summary>
+        Public ReadOnly Property str_Plate_157() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_157", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Ramen con zuppa.
+        '''</summary>
+        Public ReadOnly Property str_Plate_170() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_170", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Ramen.
+        '''</summary>
+        Public ReadOnly Property str_Plate_171() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_171", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Udon.
+        '''</summary>
+        Public ReadOnly Property str_Plate_172() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_172", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Spaghetti bathai.
+        '''</summary>
+        Public ReadOnly Property str_Plate_173() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_173", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Spaghetti di riso.
+        '''</summary>
+        Public ReadOnly Property str_Plate_174() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_174", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Spaghetti di riso con gamberi.
+        '''</summary>
+        Public ReadOnly Property str_Plate_175() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_175", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Spaghetti di soia.
+        '''</summary>
+        Public ReadOnly Property str_Plate_176() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_176", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Riso con salmone.
+        '''</summary>
+        Public ReadOnly Property str_Plate_177() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_177", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Riso con gamberi.
+        '''</summary>
+        Public ReadOnly Property str_Plate_178() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_178", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Riso alla cantonese.
+        '''</summary>
+        Public ReadOnly Property str_Plate_179() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_179", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Carpaccio sake.
+        '''</summary>
+        Public ReadOnly Property str_Plate_18() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_18", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Insalata belga alla piastra.
+        '''</summary>
+        Public ReadOnly Property str_Plate_180() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_180", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gyoza di pollo alla griglia.
+        '''</summary>
+        Public ReadOnly Property str_Plate_181() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_181", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Spiedini di gamberi.
+        '''</summary>
+        Public ReadOnly Property str_Plate_182() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_182", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Spiedini di pollo.
+        '''</summary>
+        Public ReadOnly Property str_Plate_183() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_183", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Calamari agropiccanti.
+        '''</summary>
+        Public ReadOnly Property str_Plate_184() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_184", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gamberi agropiccanti.
+        '''</summary>
+        Public ReadOnly Property str_Plate_185() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_185", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gongbao pollo.
+        '''</summary>
+        Public ReadOnly Property str_Plate_186() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_186", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Pollo agrodolce.
+        '''</summary>
+        Public ReadOnly Property str_Plate_187() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_187", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Pollo con le mandorle.
+        '''</summary>
+        Public ReadOnly Property str_Plate_188() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_188", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Germogli di soia saltati.
+        '''</summary>
+        Public ReadOnly Property str_Plate_189() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_189", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Carpaccio butter fish.
+        '''</summary>
+        Public ReadOnly Property str_Plate_19() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_19", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Tempura ebi.
+        '''</summary>
+        Public ReadOnly Property str_Plate_190() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_190", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Ebi fly.
+        '''</summary>
+        Public ReadOnly Property str_Plate_191() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_191", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Tempura verdure miste.
+        '''</summary>
+        Public ReadOnly Property str_Plate_192() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_192", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Tempura misto.
+        '''</summary>
+        Public ReadOnly Property str_Plate_193() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_193", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Insalata verdure.
+        '''</summary>
+        Public ReadOnly Property str_Plate_2() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_2", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Zuppa misto.
+        '''</summary>
+        Public ReadOnly Property str_Plate_20() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_20", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Zuppa agro-piccante.
+        '''</summary>
+        Public ReadOnly Property str_Plate_21() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_21", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Zuppa di gamberetti.
+        '''</summary>
+        Public ReadOnly Property str_Plate_21B() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_21B", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gamberi sale e pepe.
+        '''</summary>
+        Public ReadOnly Property str_Plate_258() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_258", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Insalata wakame.
+        '''</summary>
+        Public ReadOnly Property str_Plate_3() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_3", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Chirashi sake.
+        '''</summary>
+        Public ReadOnly Property str_Plate_30() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_30", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Chirashi teriyaki sake.
+        '''</summary>
+        Public ReadOnly Property str_Plate_31() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_31", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Chirashi maguro donburi.
+        '''</summary>
+        Public ReadOnly Property str_Plate_32() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_32", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Chirashi misto.
+        '''</summary>
+        Public ReadOnly Property str_Plate_33() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_33", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Insalata con frutti di mare.
+        '''</summary>
+        Public ReadOnly Property str_Plate_4() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_4", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gunkan sake.
+        '''</summary>
+        Public ReadOnly Property str_Plate_40() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_40", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gunkan salmone scottato.
+        '''</summary>
+        Public ReadOnly Property str_Plate_41() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_41", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gunkan spicy sake.
+        '''</summary>
+        Public ReadOnly Property str_Plate_42() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_42", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gunkan gio.
+        '''</summary>
+        Public ReadOnly Property str_Plate_43() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_43", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gunkan spicy maguro.
+        '''</summary>
+        Public ReadOnly Property str_Plate_44() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_44", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gunkan tobiko.
+        '''</summary>
+        Public ReadOnly Property str_Plate_45() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_45", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gunkan kani.
+        '''</summary>
+        Public ReadOnly Property str_Plate_46() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_46", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gunkan ebi.
+        '''</summary>
+        Public ReadOnly Property str_Plate_47() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_47", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gunkan wakame.
+        '''</summary>
+        Public ReadOnly Property str_Plate_48() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_48", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Samosa vegetale.
+        '''</summary>
+        Public ReadOnly Property str_Plate_5() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_5", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Shaomai.
+        '''</summary>
+        Public ReadOnly Property str_Plate_6() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_6", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Hosomaki sake.
+        '''</summary>
+        Public ReadOnly Property str_Plate_60() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_60", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Hosomaki maguro.
+        '''</summary>
+        Public ReadOnly Property str_Plate_61() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_61", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Hosomaki foglio di soia.
+        '''</summary>
+        Public ReadOnly Property str_Plate_62() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_62", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Hosomaki fritti.
+        '''</summary>
+        Public ReadOnly Property str_Plate_63() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_63", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Hosomaki ebi.
+        '''</summary>
+        Public ReadOnly Property str_Plate_64() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_64", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Hosomaki tamago.
+        '''</summary>
+        Public ReadOnly Property str_Plate_65() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_65", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Hosomaki avocado.
+        '''</summary>
+        Public ReadOnly Property str_Plate_66() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_66", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Hosomaki akaya takuantaro.
+        '''</summary>
+        Public ReadOnly Property str_Plate_67() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_67", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Hosomaki kappa.
+        '''</summary>
+        Public ReadOnly Property str_Plate_68() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_68", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Gyoza.
+        '''</summary>
+        Public ReadOnly Property str_Plate_7() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_7", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Hamburger cinese.
+        '''</summary>
+        Public ReadOnly Property str_Plate_8() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_8", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Nigiri sake.
+        '''</summary>
+        Public ReadOnly Property str_Plate_80() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_80", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Nigiri salmone scottato.
+        '''</summary>
+        Public ReadOnly Property str_Plate_81() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_81", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Nigiri maguro.
+        '''</summary>
+        Public ReadOnly Property str_Plate_82() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_82", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Nigiri tonno scottato.
+        '''</summary>
+        Public ReadOnly Property str_Plate_83() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_83", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Nigiri suzuki.
+        '''</summary>
+        Public ReadOnly Property str_Plate_84() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_84", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Nigiri suzuki scottato.
+        '''</summary>
+        Public ReadOnly Property str_Plate_85() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_85", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Nigiri ika.
+        '''</summary>
+        Public ReadOnly Property str_Plate_86() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_86", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Nigiri ebi.
+        '''</summary>
+        Public ReadOnly Property str_Plate_87() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_87", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Nigiri tamago.
+        '''</summary>
+        Public ReadOnly Property str_Plate_88() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_88", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Nigiri avocado.
+        '''</summary>
+        Public ReadOnly Property str_Plate_89() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_89", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Involtini primavera.
+        '''</summary>
+        Public ReadOnly Property str_Plate_9() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_9", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Onigiri spicy sake.
+        '''</summary>
+        Public ReadOnly Property str_Plate_90() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_90", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Onigiri salmone cotto.
+        '''</summary>
+        Public ReadOnly Property str_Plate_91() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_91", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Onigiri ebiten.
+        '''</summary>
+        Public ReadOnly Property str_Plate_92() As String
+            Get
+                Return ResourceManager.GetString("str_Plate_92", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a La stampa della lista è stata annullata..
+        '''</summary>
+        Public ReadOnly Property str_PrintNotOk() As String
+            Get
+                Return ResourceManager.GetString("str_PrintNotOk", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a La stampa della lista è stata avviata correttamente.
+        '''</summary>
+        Public ReadOnly Property str_PrintOk() As String
+            Get
+                Return ResourceManager.GetString("str_PrintOk", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una stringa localizzata simile a Stato della stampa della lista.
+        '''</summary>
+        Public ReadOnly Property str_PrintState() As String
+            Get
+                Return ResourceManager.GetString("str_PrintState", resourceCulture)
             End Get
         End Property
         
@@ -206,16 +1350,6 @@ Namespace My.Resources
         Public ReadOnly Property TokiDrift05() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("TokiDrift05", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
-        '''</summary>
-        Public ReadOnly Property TokiDrift06() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("TokiDrift06", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

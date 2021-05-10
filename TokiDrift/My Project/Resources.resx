@@ -151,9 +151,6 @@
   <data name="TokiDrift01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift01.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TokiDrift06" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TokiDrift06.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="TokiDrift39" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDrift39.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -276,5 +273,386 @@
   </data>
   <data name="TokiDriftBtnBkg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TokiDriftBtnBkg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Str_3maxTxt" xml:space="preserve">
+    <value>Puoi prendere solo un massimo di 3 portate per questo piatto. We don't wanna spend too much, right?</value>
+  </data>
+  <data name="Str_NmaxTitle" xml:space="preserve">
+    <value>Numero massimo portate raggiunto</value>
+  </data>
+  <data name="Str_NmaxTxt" xml:space="preserve">
+    <value>Puoi prendere solo un massimo di 1 una portata per questo piatto. We don't wanna spend too much, right?</value>
+  </data>
+  <data name="str_Plate_1" xml:space="preserve">
+    <value>Edamame</value>
+  </data>
+  <data name="str_Plate_10" xml:space="preserve">
+    <value>Shrimp potato</value>
+  </data>
+  <data name="str_Plate_100" xml:space="preserve">
+    <value>Sashimi sake</value>
+  </data>
+  <data name="str_Plate_101" xml:space="preserve">
+    <value>Sashimi tai</value>
+  </data>
+  <data name="str_Plate_102" xml:space="preserve">
+    <value>Sashimi butter fish</value>
+  </data>
+  <data name="str_Plate_11" xml:space="preserve">
+    <value>Gamberi butterfly</value>
+  </data>
+  <data name="str_Plate_110" xml:space="preserve">
+    <value>Uramaki sake</value>
+  </data>
+  <data name="str_Plate_111" xml:space="preserve">
+    <value>Uramaki spicy sake</value>
+  </data>
+  <data name="str_Plate_112" xml:space="preserve">
+    <value>Uramaki salmone cotto</value>
+  </data>
+  <data name="str_Plate_113" xml:space="preserve">
+    <value>Uramaki miulia</value>
+  </data>
+  <data name="str_Plate_114" xml:space="preserve">
+    <value>Uramaki foglio di soia</value>
+  </data>
+  <data name="str_Plate_115" xml:space="preserve">
+    <value>Uramaki maguro</value>
+  </data>
+  <data name="str_Plate_116" xml:space="preserve">
+    <value>Uramaki tonno cotto</value>
+  </data>
+  <data name="str_Plate_117" xml:space="preserve">
+    <value>Uramaki spicy maguro</value>
+  </data>
+  <data name="str_Plate_118" xml:space="preserve">
+    <value>Uramaki philadelphia</value>
+  </data>
+  <data name="str_Plate_119" xml:space="preserve">
+    <value>Uramaki unagi</value>
+  </data>
+  <data name="str_Plate_12" xml:space="preserve">
+    <value>Tempura ika</value>
+  </data>
+  <data name="str_Plate_120" xml:space="preserve">
+    <value>Uramaki rainbow roll</value>
+  </data>
+  <data name="str_Plate_121" xml:space="preserve">
+    <value>California special roll</value>
+  </data>
+  <data name="str_Plate_122" xml:space="preserve">
+    <value>Lemon maki roll</value>
+  </data>
+  <data name="str_Plate_123" xml:space="preserve">
+    <value>Uramaki ebiten</value>
+  </data>
+  <data name="str_Plate_124" xml:space="preserve">
+    <value>Uramaki california</value>
+  </data>
+  <data name="str_Plate_125" xml:space="preserve">
+    <value>Uramaki ebi tamago</value>
+  </data>
+  <data name="str_Plate_126" xml:space="preserve">
+    <value>Toki sake roll</value>
+  </data>
+  <data name="str_Plate_127" xml:space="preserve">
+    <value>Toki maguro roll</value>
+  </data>
+  <data name="str_Plate_128" xml:space="preserve">
+    <value>Toki roll</value>
+  </data>
+  <data name="str_Plate_129" xml:space="preserve">
+    <value>Special spicy sake roll</value>
+  </data>
+  <data name="str_Plate_13" xml:space="preserve">
+    <value>Pane fritto</value>
+  </data>
+  <data name="str_Plate_130" xml:space="preserve">
+    <value>Uramaki tempura verdure</value>
+  </data>
+  <data name="str_Plate_131" xml:space="preserve">
+    <value>Uramaki vega</value>
+  </data>
+  <data name="str_Plate_132" xml:space="preserve">
+    <value>Black sake roll</value>
+  </data>
+  <data name="str_Plate_133" xml:space="preserve">
+    <value>Black ebi roll</value>
+  </data>
+  <data name="str_Plate_134" xml:space="preserve">
+    <value>Uramaki black vega</value>
+  </data>
+  <data name="str_Plate_135" xml:space="preserve">
+    <value>Futomaki salmone affumicato</value>
+  </data>
+  <data name="str_Plate_136" xml:space="preserve">
+    <value>Futomaki fumo</value>
+  </data>
+  <data name="str_Plate_137" xml:space="preserve">
+    <value>Futomaki ebiten</value>
+  </data>
+  <data name="str_Plate_138" xml:space="preserve">
+    <value>Futomaki california</value>
+  </data>
+  <data name="str_Plate_14" xml:space="preserve">
+    <value>Takazu</value>
+  </data>
+  <data name="str_Plate_15" xml:space="preserve">
+    <value>Surmono</value>
+  </data>
+  <data name="str_Plate_150" xml:space="preserve">
+    <value>Temaki sake</value>
+  </data>
+  <data name="str_Plate_151" xml:space="preserve">
+    <value>Temaki spicy sake</value>
+  </data>
+  <data name="str_Plate_152" xml:space="preserve">
+    <value>Temaki maguro</value>
+  </data>
+  <data name="str_Plate_153" xml:space="preserve">
+    <value>Temaki spicy maguro</value>
+  </data>
+  <data name="str_Plate_154" xml:space="preserve">
+    <value>Temaki california</value>
+  </data>
+  <data name="str_Plate_155" xml:space="preserve">
+    <value>Temaki misto</value>
+  </data>
+  <data name="str_Plate_156" xml:space="preserve">
+    <value>Temaki tempura</value>
+  </data>
+  <data name="str_Plate_157" xml:space="preserve">
+    <value>Temaki vega</value>
+  </data>
+  <data name="str_Plate_170" xml:space="preserve">
+    <value>Ramen con zuppa</value>
+  </data>
+  <data name="str_Plate_171" xml:space="preserve">
+    <value>Ramen</value>
+  </data>
+  <data name="str_Plate_172" xml:space="preserve">
+    <value>Udon</value>
+  </data>
+  <data name="str_Plate_173" xml:space="preserve">
+    <value>Spaghetti bathai</value>
+  </data>
+  <data name="str_Plate_174" xml:space="preserve">
+    <value>Spaghetti di riso</value>
+  </data>
+  <data name="str_Plate_175" xml:space="preserve">
+    <value>Spaghetti di riso con gamberi</value>
+  </data>
+  <data name="str_Plate_176" xml:space="preserve">
+    <value>Spaghetti di soia</value>
+  </data>
+  <data name="str_Plate_177" xml:space="preserve">
+    <value>Riso con salmone</value>
+  </data>
+  <data name="str_Plate_178" xml:space="preserve">
+    <value>Riso con gamberi</value>
+  </data>
+  <data name="str_Plate_179" xml:space="preserve">
+    <value>Riso alla cantonese</value>
+  </data>
+  <data name="str_Plate_18" xml:space="preserve">
+    <value>Carpaccio sake</value>
+  </data>
+  <data name="str_Plate_180" xml:space="preserve">
+    <value>Insalata belga alla piastra</value>
+  </data>
+  <data name="str_Plate_181" xml:space="preserve">
+    <value>Gyoza di pollo alla griglia</value>
+  </data>
+  <data name="str_Plate_182" xml:space="preserve">
+    <value>Spiedini di gamberi</value>
+  </data>
+  <data name="str_Plate_183" xml:space="preserve">
+    <value>Spiedini di pollo</value>
+  </data>
+  <data name="str_Plate_184" xml:space="preserve">
+    <value>Calamari agropiccanti</value>
+  </data>
+  <data name="str_Plate_185" xml:space="preserve">
+    <value>Gamberi agropiccanti</value>
+  </data>
+  <data name="str_Plate_186" xml:space="preserve">
+    <value>Gongbao pollo</value>
+  </data>
+  <data name="str_Plate_187" xml:space="preserve">
+    <value>Pollo agrodolce</value>
+  </data>
+  <data name="str_Plate_188" xml:space="preserve">
+    <value>Pollo con le mandorle</value>
+  </data>
+  <data name="str_Plate_189" xml:space="preserve">
+    <value>Germogli di soia saltati</value>
+  </data>
+  <data name="str_Plate_19" xml:space="preserve">
+    <value>Carpaccio butter fish</value>
+  </data>
+  <data name="str_Plate_190" xml:space="preserve">
+    <value>Tempura ebi</value>
+  </data>
+  <data name="str_Plate_191" xml:space="preserve">
+    <value>Ebi fly</value>
+  </data>
+  <data name="str_Plate_192" xml:space="preserve">
+    <value>Tempura verdure miste</value>
+  </data>
+  <data name="str_Plate_193" xml:space="preserve">
+    <value>Tempura misto</value>
+  </data>
+  <data name="str_Plate_2" xml:space="preserve">
+    <value>Insalata verdure</value>
+  </data>
+  <data name="str_Plate_20" xml:space="preserve">
+    <value>Zuppa misto</value>
+  </data>
+  <data name="str_Plate_21" xml:space="preserve">
+    <value>Zuppa agro-piccante</value>
+  </data>
+  <data name="str_Plate_21B" xml:space="preserve">
+    <value>Zuppa di gamberetti</value>
+  </data>
+  <data name="str_Plate_258" xml:space="preserve">
+    <value>Gamberi sale e pepe</value>
+  </data>
+  <data name="str_Plate_3" xml:space="preserve">
+    <value>Insalata wakame</value>
+  </data>
+  <data name="str_Plate_30" xml:space="preserve">
+    <value>Chirashi sake</value>
+  </data>
+  <data name="str_Plate_31" xml:space="preserve">
+    <value>Chirashi teriyaki sake</value>
+  </data>
+  <data name="str_Plate_32" xml:space="preserve">
+    <value>Chirashi maguro donburi</value>
+  </data>
+  <data name="str_Plate_33" xml:space="preserve">
+    <value>Chirashi misto</value>
+  </data>
+  <data name="str_Plate_4" xml:space="preserve">
+    <value>Insalata con frutti di mare</value>
+  </data>
+  <data name="str_Plate_40" xml:space="preserve">
+    <value>Gunkan sake</value>
+  </data>
+  <data name="str_Plate_41" xml:space="preserve">
+    <value>Gunkan salmone scottato</value>
+  </data>
+  <data name="str_Plate_42" xml:space="preserve">
+    <value>Gunkan spicy sake</value>
+  </data>
+  <data name="str_Plate_43" xml:space="preserve">
+    <value>Gunkan gio</value>
+  </data>
+  <data name="str_Plate_44" xml:space="preserve">
+    <value>Gunkan spicy maguro</value>
+  </data>
+  <data name="str_Plate_45" xml:space="preserve">
+    <value>Gunkan tobiko</value>
+  </data>
+  <data name="str_Plate_46" xml:space="preserve">
+    <value>Gunkan kani</value>
+  </data>
+  <data name="str_Plate_47" xml:space="preserve">
+    <value>Gunkan ebi</value>
+  </data>
+  <data name="str_Plate_48" xml:space="preserve">
+    <value>Gunkan wakame</value>
+  </data>
+  <data name="str_Plate_5" xml:space="preserve">
+    <value>Samosa vegetale</value>
+  </data>
+  <data name="str_Plate_6" xml:space="preserve">
+    <value>Shaomai</value>
+  </data>
+  <data name="str_Plate_60" xml:space="preserve">
+    <value>Hosomaki sake</value>
+  </data>
+  <data name="str_Plate_61" xml:space="preserve">
+    <value>Hosomaki maguro</value>
+  </data>
+  <data name="str_Plate_62" xml:space="preserve">
+    <value>Hosomaki foglio di soia</value>
+  </data>
+  <data name="str_Plate_63" xml:space="preserve">
+    <value>Hosomaki fritti</value>
+  </data>
+  <data name="str_Plate_64" xml:space="preserve">
+    <value>Hosomaki ebi</value>
+  </data>
+  <data name="str_Plate_65" xml:space="preserve">
+    <value>Hosomaki tamago</value>
+  </data>
+  <data name="str_Plate_66" xml:space="preserve">
+    <value>Hosomaki avocado</value>
+  </data>
+  <data name="str_Plate_67" xml:space="preserve">
+    <value>Hosomaki akaya takuantaro</value>
+  </data>
+  <data name="str_Plate_68" xml:space="preserve">
+    <value>Hosomaki kappa</value>
+  </data>
+  <data name="str_Plate_7" xml:space="preserve">
+    <value>Gyoza</value>
+  </data>
+  <data name="str_Plate_8" xml:space="preserve">
+    <value>Hamburger cinese</value>
+  </data>
+  <data name="str_Plate_80" xml:space="preserve">
+    <value>Nigiri sake</value>
+  </data>
+  <data name="str_Plate_81" xml:space="preserve">
+    <value>Nigiri salmone scottato</value>
+  </data>
+  <data name="str_Plate_82" xml:space="preserve">
+    <value>Nigiri maguro</value>
+  </data>
+  <data name="str_Plate_83" xml:space="preserve">
+    <value>Nigiri tonno scottato</value>
+  </data>
+  <data name="str_Plate_84" xml:space="preserve">
+    <value>Nigiri suzuki</value>
+  </data>
+  <data name="str_Plate_85" xml:space="preserve">
+    <value>Nigiri suzuki scottato</value>
+  </data>
+  <data name="str_Plate_86" xml:space="preserve">
+    <value>Nigiri ika</value>
+  </data>
+  <data name="str_Plate_87" xml:space="preserve">
+    <value>Nigiri ebi</value>
+  </data>
+  <data name="str_Plate_88" xml:space="preserve">
+    <value>Nigiri tamago</value>
+  </data>
+  <data name="str_Plate_89" xml:space="preserve">
+    <value>Nigiri avocado</value>
+  </data>
+  <data name="str_Plate_9" xml:space="preserve">
+    <value>Involtini primavera</value>
+  </data>
+  <data name="str_Plate_90" xml:space="preserve">
+    <value>Onigiri spicy sake</value>
+  </data>
+  <data name="str_Plate_91" xml:space="preserve">
+    <value>Onigiri salmone cotto</value>
+  </data>
+  <data name="str_Plate_92" xml:space="preserve">
+    <value>Onigiri ebiten</value>
+  </data>
+  <data name="ListaOrdini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ListaOrdini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="str_PrintNotOk" xml:space="preserve">
+    <value>La stampa della lista è stata annullata.</value>
+  </data>
+  <data name="str_PrintOk" xml:space="preserve">
+    <value>La stampa della lista è stata avviata correttamente</value>
+  </data>
+  <data name="str_PrintState" xml:space="preserve">
+    <value>Stato della stampa della lista</value>
   </data>
 </root>
