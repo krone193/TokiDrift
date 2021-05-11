@@ -19,5 +19,11 @@
 	Private Sub StartScreen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 		CheckForIllegalCrossThreadCalls = False
 		LblVersion.Text = "v" & My.Application.Info.Version.ToString()
+		Dim CommandLineArguments As String() = Environment.GetCommandLineArgs()
+		If My.Application.CommandLineArgs.Count > 0 Then
+			If My.Application.CommandLineArgs.ElementAt(0) <> "" Then
+				My.Settings.Str_Username = My.Application.CommandLineArgs.ElementAt(0)
+			End If
+		End If
 	End Sub
 End Class

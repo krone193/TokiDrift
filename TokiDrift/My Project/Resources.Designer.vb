@@ -93,6 +93,26 @@ Namespace My.Resources
         '''<summary>
         '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property conveybelt() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("conveybelt", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property EatEverything() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("EatEverything", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property Gunkan() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Gunkan", resourceCulture)
@@ -117,6 +137,16 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("ListaOrdini", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Drawing.Icon simile a (Icona).
+        '''</summary>
+        Public ReadOnly Property logo() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logo", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
             End Get
         End Property
         

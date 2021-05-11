@@ -143,4 +143,8 @@
     End Using
     pb_ImagePlate.Image = CropImage
   End Sub
+
+	Private Sub Resoconto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+		PictureBox1.Image = My.Resources.EatEverything
+	End Sub
 End Class

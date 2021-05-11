@@ -54,7 +54,6 @@ Partial Class TokiDrift
         Me.Pnl4 = New System.Windows.Forms.Panel()
         Me.PnlPages = New System.Windows.Forms.Panel()
         Me.TrvBookMark = New System.Windows.Forms.TreeView()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BtnResoconto = New System.Windows.Forms.Button()
         Me.BtnStartOrdine = New System.Windows.Forms.Button()
         Me.TxtUser = New System.Windows.Forms.TextBox()
@@ -62,33 +61,37 @@ Partial Class TokiDrift
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PrintOptions = New System.Windows.Forms.PrintDialog()
         Me.PrintOrder = New System.Drawing.Printing.PrintDocument()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Pnl1.SuspendLayout()
         Me.Pnl3.SuspendLayout()
         Me.Pnl2.SuspendLayout()
         Me.Pnl4.SuspendLayout()
         Me.PnlPages.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TxtQnt1
         '
-        Me.TxtQnt1.BackColor = System.Drawing.Color.White
-        Me.TxtQnt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtQnt1.BackColor = System.Drawing.Color.DeepPink
+        Me.TxtQnt1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtQnt1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.TxtQnt1.Location = New System.Drawing.Point(0, 20)
+        Me.TxtQnt1.ForeColor = System.Drawing.Color.Lavender
+        Me.TxtQnt1.Location = New System.Drawing.Point(0, 23)
         Me.TxtQnt1.Name = "TxtQnt1"
         Me.TxtQnt1.ReadOnly = True
-        Me.TxtQnt1.Size = New System.Drawing.Size(35, 20)
+        Me.TxtQnt1.Size = New System.Drawing.Size(35, 13)
         Me.TxtQnt1.TabIndex = 16
         Me.TxtQnt1.Text = "0"
         Me.TxtQnt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'BtnInc1
         '
-        Me.BtnInc1.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnInc1.BackColor = System.Drawing.Color.Pink
+        Me.BtnInc1.FlatAppearance.BorderSize = 0
         Me.BtnInc1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnInc1.Location = New System.Drawing.Point(0, 0)
+        Me.BtnInc1.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.BtnInc1.Location = New System.Drawing.Point(0, 1)
         Me.BtnInc1.Name = "BtnInc1"
         Me.BtnInc1.Size = New System.Drawing.Size(35, 21)
         Me.BtnInc1.TabIndex = 17
@@ -97,10 +100,12 @@ Partial Class TokiDrift
         '
         'BtnDec1
         '
-        Me.BtnDec1.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnDec1.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.BtnDec1.FlatAppearance.BorderSize = 0
         Me.BtnDec1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnDec1.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDec1.Location = New System.Drawing.Point(0, 39)
+        Me.BtnDec1.ForeColor = System.Drawing.Color.LightGoldenrodYellow
+        Me.BtnDec1.Location = New System.Drawing.Point(0, 37)
         Me.BtnDec1.Name = "BtnDec1"
         Me.BtnDec1.Size = New System.Drawing.Size(35, 21)
         Me.BtnDec1.TabIndex = 18
@@ -109,9 +114,11 @@ Partial Class TokiDrift
         '
         'BtnInc2
         '
-        Me.BtnInc2.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnInc2.BackColor = System.Drawing.Color.Pink
+        Me.BtnInc2.FlatAppearance.BorderSize = 0
         Me.BtnInc2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnInc2.Location = New System.Drawing.Point(0, 0)
+        Me.BtnInc2.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.BtnInc2.Location = New System.Drawing.Point(0, 1)
         Me.BtnInc2.Name = "BtnInc2"
         Me.BtnInc2.Size = New System.Drawing.Size(35, 21)
         Me.BtnInc2.TabIndex = 20
@@ -120,23 +127,26 @@ Partial Class TokiDrift
         '
         'TxtQnt2
         '
-        Me.TxtQnt2.BackColor = System.Drawing.Color.White
-        Me.TxtQnt2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtQnt2.BackColor = System.Drawing.Color.DeepPink
+        Me.TxtQnt2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtQnt2.Cursor = System.Windows.Forms.Cursors.Default
-        Me.TxtQnt2.Location = New System.Drawing.Point(0, 20)
+        Me.TxtQnt2.ForeColor = System.Drawing.Color.Lavender
+        Me.TxtQnt2.Location = New System.Drawing.Point(0, 23)
         Me.TxtQnt2.Name = "TxtQnt2"
         Me.TxtQnt2.ReadOnly = True
-        Me.TxtQnt2.Size = New System.Drawing.Size(35, 20)
+        Me.TxtQnt2.Size = New System.Drawing.Size(35, 13)
         Me.TxtQnt2.TabIndex = 19
         Me.TxtQnt2.Text = "0"
         Me.TxtQnt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'BtnDec2
         '
-        Me.BtnDec2.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnDec2.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.BtnDec2.FlatAppearance.BorderSize = 0
         Me.BtnDec2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnDec2.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDec2.Location = New System.Drawing.Point(0, 39)
+        Me.BtnDec2.ForeColor = System.Drawing.Color.LightGoldenrodYellow
+        Me.BtnDec2.Location = New System.Drawing.Point(0, 37)
         Me.BtnDec2.Name = "BtnDec2"
         Me.BtnDec2.Size = New System.Drawing.Size(35, 21)
         Me.BtnDec2.TabIndex = 21
@@ -145,22 +155,25 @@ Partial Class TokiDrift
         '
         'TxtQnt3
         '
-        Me.TxtQnt3.BackColor = System.Drawing.Color.White
-        Me.TxtQnt3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtQnt3.BackColor = System.Drawing.Color.DeepPink
+        Me.TxtQnt3.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtQnt3.Cursor = System.Windows.Forms.Cursors.Default
-        Me.TxtQnt3.Location = New System.Drawing.Point(0, 20)
+        Me.TxtQnt3.ForeColor = System.Drawing.Color.Lavender
+        Me.TxtQnt3.Location = New System.Drawing.Point(0, 23)
         Me.TxtQnt3.Name = "TxtQnt3"
         Me.TxtQnt3.ReadOnly = True
-        Me.TxtQnt3.Size = New System.Drawing.Size(35, 20)
+        Me.TxtQnt3.Size = New System.Drawing.Size(35, 13)
         Me.TxtQnt3.TabIndex = 22
         Me.TxtQnt3.Text = "0"
         Me.TxtQnt3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'BtnInc3
         '
-        Me.BtnInc3.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnInc3.BackColor = System.Drawing.Color.Pink
+        Me.BtnInc3.FlatAppearance.BorderSize = 0
         Me.BtnInc3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnInc3.Location = New System.Drawing.Point(0, 0)
+        Me.BtnInc3.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.BtnInc3.Location = New System.Drawing.Point(0, 1)
         Me.BtnInc3.Name = "BtnInc3"
         Me.BtnInc3.Size = New System.Drawing.Size(35, 21)
         Me.BtnInc3.TabIndex = 23
@@ -169,10 +182,12 @@ Partial Class TokiDrift
         '
         'BtnDec3
         '
-        Me.BtnDec3.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnDec3.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.BtnDec3.FlatAppearance.BorderSize = 0
         Me.BtnDec3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnDec3.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDec3.Location = New System.Drawing.Point(0, 39)
+        Me.BtnDec3.ForeColor = System.Drawing.Color.LightGoldenrodYellow
+        Me.BtnDec3.Location = New System.Drawing.Point(0, 37)
         Me.BtnDec3.Name = "BtnDec3"
         Me.BtnDec3.Size = New System.Drawing.Size(35, 21)
         Me.BtnDec3.TabIndex = 24
@@ -181,9 +196,11 @@ Partial Class TokiDrift
         '
         'BtnInc4
         '
-        Me.BtnInc4.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnInc4.BackColor = System.Drawing.Color.Pink
+        Me.BtnInc4.FlatAppearance.BorderSize = 0
         Me.BtnInc4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnInc4.Location = New System.Drawing.Point(0, 0)
+        Me.BtnInc4.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.BtnInc4.Location = New System.Drawing.Point(0, 1)
         Me.BtnInc4.Name = "BtnInc4"
         Me.BtnInc4.Size = New System.Drawing.Size(35, 21)
         Me.BtnInc4.TabIndex = 26
@@ -192,23 +209,26 @@ Partial Class TokiDrift
         '
         'TxtQnt4
         '
-        Me.TxtQnt4.BackColor = System.Drawing.Color.White
-        Me.TxtQnt4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TxtQnt4.BackColor = System.Drawing.Color.DeepPink
+        Me.TxtQnt4.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TxtQnt4.Cursor = System.Windows.Forms.Cursors.Default
-        Me.TxtQnt4.Location = New System.Drawing.Point(0, 20)
+        Me.TxtQnt4.ForeColor = System.Drawing.Color.Lavender
+        Me.TxtQnt4.Location = New System.Drawing.Point(0, 23)
         Me.TxtQnt4.Name = "TxtQnt4"
         Me.TxtQnt4.ReadOnly = True
-        Me.TxtQnt4.Size = New System.Drawing.Size(35, 20)
+        Me.TxtQnt4.Size = New System.Drawing.Size(35, 13)
         Me.TxtQnt4.TabIndex = 25
         Me.TxtQnt4.Text = "0"
         Me.TxtQnt4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'BtnDec4
         '
-        Me.BtnDec4.BackColor = System.Drawing.SystemColors.Control
+        Me.BtnDec4.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.BtnDec4.FlatAppearance.BorderSize = 0
         Me.BtnDec4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnDec4.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDec4.Location = New System.Drawing.Point(0, 39)
+        Me.BtnDec4.ForeColor = System.Drawing.Color.LightGoldenrodYellow
+        Me.BtnDec4.Location = New System.Drawing.Point(0, 37)
         Me.BtnDec4.Name = "BtnDec4"
         Me.BtnDec4.Size = New System.Drawing.Size(35, 21)
         Me.BtnDec4.TabIndex = 27
@@ -217,23 +237,29 @@ Partial Class TokiDrift
         '
         'BtnPrev01
         '
+        Me.BtnPrev01.BackColor = System.Drawing.Color.Orchid
+        Me.BtnPrev01.FlatAppearance.BorderSize = 0
         Me.BtnPrev01.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnPrev01.ForeColor = System.Drawing.Color.Gold
         Me.BtnPrev01.Location = New System.Drawing.Point(3, 523)
         Me.BtnPrev01.Name = "BtnPrev01"
         Me.BtnPrev01.Size = New System.Drawing.Size(41, 23)
         Me.BtnPrev01.TabIndex = 15
         Me.BtnPrev01.Text = "裏"
-        Me.BtnPrev01.UseVisualStyleBackColor = True
+        Me.BtnPrev01.UseVisualStyleBackColor = False
         '
         'BtnNext01
         '
+        Me.BtnNext01.BackColor = System.Drawing.Color.Crimson
+        Me.BtnNext01.FlatAppearance.BorderSize = 0
         Me.BtnNext01.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnNext01.ForeColor = System.Drawing.Color.Lavender
         Me.BtnNext01.Location = New System.Drawing.Point(310, 523)
         Me.BtnNext01.Name = "BtnNext01"
         Me.BtnNext01.Size = New System.Drawing.Size(41, 23)
         Me.BtnNext01.TabIndex = 14
         Me.BtnNext01.Text = "次"
-        Me.BtnNext01.UseVisualStyleBackColor = True
+        Me.BtnNext01.UseVisualStyleBackColor = False
         '
         'RefreshTimer
         '
@@ -294,23 +320,24 @@ Partial Class TokiDrift
         Me.PnlPages.Controls.Add(Me.Pnl3)
         Me.PnlPages.Controls.Add(Me.BtnNext01)
         Me.PnlPages.Controls.Add(Me.Pnl2)
-        Me.PnlPages.Location = New System.Drawing.Point(0, 0)
+        Me.PnlPages.Location = New System.Drawing.Point(12, 12)
         Me.PnlPages.Name = "PnlPages"
         Me.PnlPages.Size = New System.Drawing.Size(356, 551)
         Me.PnlPages.TabIndex = 31
         '
         'TrvBookMark
         '
-        Me.TrvBookMark.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TrvBookMark.BackColor = System.Drawing.Color.Salmon
         Me.TrvBookMark.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TrvBookMark.Cursor = System.Windows.Forms.Cursors.Default
         Me.TrvBookMark.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TrvBookMark.ForeColor = System.Drawing.Color.DarkSlateBlue
+        Me.TrvBookMark.ForeColor = System.Drawing.Color.Moccasin
         Me.TrvBookMark.HotTracking = True
         Me.TrvBookMark.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.TrvBookMark.Indent = 25
         Me.TrvBookMark.ItemHeight = 31
-        Me.TrvBookMark.Location = New System.Drawing.Point(355, 0)
+        Me.TrvBookMark.LineColor = System.Drawing.Color.Aquamarine
+        Me.TrvBookMark.Location = New System.Drawing.Point(379, 12)
         Me.TrvBookMark.Name = "TrvBookMark"
         TreeNode1.Name = "nd_Antipasti"
         TreeNode1.Text = "Antipasti"
@@ -332,71 +359,71 @@ Partial Class TokiDrift
         TreeNode9.Text = "Piatti caldi"
         Me.TrvBookMark.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2, TreeNode3, TreeNode4, TreeNode5, TreeNode6, TreeNode7, TreeNode8, TreeNode9})
         Me.TrvBookMark.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.TrvBookMark.Size = New System.Drawing.Size(145, 286)
+        Me.TrvBookMark.Scrollable = False
+        Me.TrvBookMark.Size = New System.Drawing.Size(133, 276)
         Me.TrvBookMark.TabIndex = 32
-        '
-        'Panel1
-        '
-        Me.Panel1.BackgroundImage = Global.TokiDriftApplication.My.Resources.Resources.TokiDriftBtnBkg
-        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.BtnResoconto)
-        Me.Panel1.Controls.Add(Me.BtnStartOrdine)
-        Me.Panel1.Controls.Add(Me.TxtUser)
-        Me.Panel1.Controls.Add(Me.BtnCancellaOrdine)
-        Me.Panel1.Location = New System.Drawing.Point(355, 400)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(145, 151)
-        Me.Panel1.TabIndex = 37
         '
         'BtnResoconto
         '
+        Me.BtnResoconto.BackColor = System.Drawing.Color.Orchid
+        Me.BtnResoconto.FlatAppearance.BorderSize = 0
         Me.BtnResoconto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnResoconto.Location = New System.Drawing.Point(9, 37)
+        Me.BtnResoconto.ForeColor = System.Drawing.Color.Yellow
+        Me.BtnResoconto.Location = New System.Drawing.Point(523, 186)
         Me.BtnResoconto.Name = "BtnResoconto"
-        Me.BtnResoconto.Size = New System.Drawing.Size(126, 25)
+        Me.BtnResoconto.Size = New System.Drawing.Size(159, 25)
         Me.BtnResoconto.TabIndex = 37
         Me.BtnResoconto.Text = "Riepilogo ordine"
-        Me.BtnResoconto.UseVisualStyleBackColor = True
+        Me.BtnResoconto.UseVisualStyleBackColor = False
         '
         'BtnStartOrdine
         '
+        Me.BtnStartOrdine.BackColor = System.Drawing.Color.Crimson
+        Me.BtnStartOrdine.FlatAppearance.BorderSize = 0
         Me.BtnStartOrdine.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnStartOrdine.Location = New System.Drawing.Point(9, 116)
+        Me.BtnStartOrdine.ForeColor = System.Drawing.Color.Yellow
+        Me.BtnStartOrdine.Location = New System.Drawing.Point(523, 264)
         Me.BtnStartOrdine.Name = "BtnStartOrdine"
-        Me.BtnStartOrdine.Size = New System.Drawing.Size(126, 23)
+        Me.BtnStartOrdine.Size = New System.Drawing.Size(159, 23)
         Me.BtnStartOrdine.TabIndex = 34
         Me.BtnStartOrdine.Text = "ORDINA!!!"
-        Me.BtnStartOrdine.UseVisualStyleBackColor = True
+        Me.BtnStartOrdine.UseVisualStyleBackColor = False
         '
         'TxtUser
         '
+        Me.TxtUser.BackColor = System.Drawing.Color.Pink
         Me.TxtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TxtUser.Location = New System.Drawing.Point(9, 90)
+        Me.TxtUser.ForeColor = System.Drawing.Color.LightCoral
+        Me.TxtUser.Location = New System.Drawing.Point(523, 245)
+        Me.TxtUser.MaxLength = 10
         Me.TxtUser.Name = "TxtUser"
-        Me.TxtUser.Size = New System.Drawing.Size(126, 20)
+        Me.TxtUser.Size = New System.Drawing.Size(159, 20)
         Me.TxtUser.TabIndex = 36
         Me.TxtUser.Text = "inserisci utente"
+        Me.TxtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'BtnCancellaOrdine
         '
+        Me.BtnCancellaOrdine.BackColor = System.Drawing.Color.Teal
+        Me.BtnCancellaOrdine.FlatAppearance.BorderSize = 0
         Me.BtnCancellaOrdine.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnCancellaOrdine.Location = New System.Drawing.Point(9, 6)
+        Me.BtnCancellaOrdine.ForeColor = System.Drawing.Color.Cyan
+        Me.BtnCancellaOrdine.Location = New System.Drawing.Point(523, 162)
         Me.BtnCancellaOrdine.Name = "BtnCancellaOrdine"
-        Me.BtnCancellaOrdine.Size = New System.Drawing.Size(126, 25)
+        Me.BtnCancellaOrdine.Size = New System.Drawing.Size(159, 25)
         Me.BtnCancellaOrdine.TabIndex = 35
         Me.BtnCancellaOrdine.Text = "Elimina selezioni"
-        Me.BtnCancellaOrdine.UseVisualStyleBackColor = True
+        Me.BtnCancellaOrdine.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.PictureBox1.BackgroundImage = Global.TokiDriftApplication.My.Resources.Resources.TokiDriftFoodBkg
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Location = New System.Drawing.Point(355, 285)
+        Me.PictureBox1.Location = New System.Drawing.Point(523, 12)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(145, 116)
+        Me.PictureBox1.Size = New System.Drawing.Size(159, 143)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 33
         Me.PictureBox1.TabStop = False
@@ -407,17 +434,31 @@ Partial Class TokiDrift
         Me.PrintOptions.Document = Me.PrintOrder
         Me.PrintOptions.UseEXDialog = True
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(697, 578)
+        Me.PictureBox2.TabIndex = 38
+        Me.PictureBox2.TabStop = False
+        '
         'TokiDrift
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(500, 551)
-        Me.Controls.Add(Me.Panel1)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(697, 578)
+        Me.Controls.Add(Me.BtnResoconto)
+        Me.Controls.Add(Me.BtnStartOrdine)
+        Me.Controls.Add(Me.TxtUser)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.BtnCancellaOrdine)
         Me.Controls.Add(Me.TrvBookMark)
         Me.Controls.Add(Me.PnlPages)
+        Me.Controls.Add(Me.PictureBox2)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -435,10 +476,10 @@ Partial Class TokiDrift
         Me.Pnl4.ResumeLayout(False)
         Me.Pnl4.PerformLayout()
         Me.PnlPages.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -467,9 +508,9 @@ Partial Class TokiDrift
   Friend WithEvents BtnStartOrdine As Button
   Friend WithEvents BtnCancellaOrdine As Button
   Friend WithEvents TxtUser As TextBox
-  Friend WithEvents Panel1 As Panel
-  Friend WithEvents bt_Resoconto As Button
-  Friend WithEvents BtnResoconto As Button
+    Friend WithEvents bt_Resoconto As Button
+    Friend WithEvents BtnResoconto As Button
     Friend WithEvents PrintOptions As PrintDialog
     Friend WithEvents PrintOrder As Printing.PrintDocument
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

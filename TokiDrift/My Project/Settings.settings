@@ -8,5 +8,8 @@
     <Setting Name="Str_NmaxTitle" Type="System.String" Scope="Application">
       <Value Profile="(Default)">Numero massimo portate raggiunto</Value>
     </Setting>
+    <Setting Name="Str_Username" Type="System.String" Scope="User">
+      <Value Profile="(Default)">inserisci utente</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

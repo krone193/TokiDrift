@@ -281,8 +281,10 @@ Public Class TokiDrift
     Pnl1.Location = New Point(CoordinateXP1(0), CoordinateYP1(0))
     Pnl2.Location = New Point(CoordinateXP2(0), CoordinateYP2(0))
     Pnl3.Location = New Point(CoordinateXP3(0), CoordinateYP3(0))
-    Pnl4.Location = New Point(CoordinateXP4(0), CoordinateYP4(0))
-  End Sub
+		Pnl4.Location = New Point(CoordinateXP4(0), CoordinateYP4(0))
+		PictureBox2.Image = My.Resources.conveybelt
+		TxtUser.Text = My.Settings.Str_Username
+	End Sub
   '-----------------------------------------------------------------------------------------------------------------------'
   Private Sub BtnInc01_Click(sender As Object, e As EventArgs) Handles BtnInc1.Click
     If (ArrayPagePointer(PageIndex) <> 56) Then
@@ -677,4 +679,10 @@ Public Class TokiDrift
       Return cipherText
     End If
   End Function
+
+	Private Sub TxtUser_TextChanged(sender As Object, e As EventArgs) Handles TxtUser.TextChanged
+		If sender.Text <> "inserisci utente" Then
+			sender.ForeColor = Color.Crimson
+		End If
+	End Sub
 End Class

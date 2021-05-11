@@ -29,7 +29,7 @@
     <PublisherName>kronelab</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.2.0</ApplicationVersion>
+    <ApplicationVersion>2.0.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -67,7 +67,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\logo.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\Icons\logo.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
@@ -145,17 +145,17 @@
     <Compile Include="Forms\TokiDrift.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Code\Settings.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -200,7 +200,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 e x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -211,165 +211,61 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Resources\CommandCenterBkg.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\StartScreenBkg.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDriftBtnBkg.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDriftFoodBkg.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Uramaki.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Temaki.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Sashimi.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\PiattiCaldi.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Nigiri.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Antipasti.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Chirashi.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Gunkan.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\Hosomaki.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\logo.ico">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift22.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift21.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift20.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift19.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift18.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift17.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift16.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift15.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift14.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift13.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift12.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift11.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift10.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift09.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift08.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift07.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift05.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift04.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift40.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift39.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift38.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift37.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift36.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift35.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift34.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift33.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift32.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift31.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift30.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift29.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift28.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift27.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift26.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift25.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift24.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift23.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift03.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift02.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\TokiDrift01.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Resources\Backgrounds\CommandCenterBkg.jpg" />
+    <None Include="Resources\Backgrounds\conveybelt.gif" />
+    <Content Include="Resources\Backgrounds\EatEverything.gif" />
+    <Content Include="Resources\Backgrounds\StartScreenBkg.jpg" />
+    <Content Include="Resources\Backgrounds\TokiDriftBtnBkg.png" />
+    <Content Include="Resources\Backgrounds\TokiDriftFoodBkg.jpg" />
+    <Content Include="Resources\Menu\Descriptors\Uramaki.jpg" />
+    <Content Include="Resources\Menu\Descriptors\Temaki.jpg" />
+    <Content Include="Resources\Menu\Descriptors\Sashimi.jpg" />
+    <Content Include="Resources\Menu\Descriptors\PiattiCaldi.jpg" />
+    <Content Include="Resources\Menu\Descriptors\Nigiri.jpg" />
+    <Content Include="Resources\Menu\Descriptors\Antipasti.jpg" />
+    <Content Include="Resources\Menu\Descriptors\Chirashi.jpg" />
+    <Content Include="Resources\Menu\Descriptors\Gunkan.png" />
+    <Content Include="Resources\Menu\Descriptors\Hosomaki.jpg" />
+    <Content Include="Resources\Icons\logo.ico" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift22.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift21.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift20.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift19.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift18.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift17.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift16.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift15.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift14.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift13.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift12.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift11.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift10.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift09.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift08.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift07.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift05.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift04.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift40.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift39.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift38.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift37.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift36.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift35.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift34.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift33.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift32.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift31.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift30.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift29.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift28.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift27.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift26.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift25.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift24.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift23.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift03.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift02.jpg" />
+    <Content Include="Resources\Menu\Lunch\TokiDrift01.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
