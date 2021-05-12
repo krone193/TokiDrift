@@ -3,16 +3,16 @@
     Dispose()
   End Sub
 
-  Private Sub dgv_Resoconto_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_Resoconto.CellClick
-    Dim idx = e.RowIndex
-    Dim plate As String = ""
-    If idx >= 0 Then
-      plate = dgv_Resoconto.Rows(e.RowIndex).Cells(0).Value
-      ChopImage(plate)
-    End If
-  End Sub
+	Private Sub DGV_Resoconto_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_Resoconto.CellClick
+		Dim idx = e.RowIndex
+		Dim plate As String
+		If idx >= 0 Then
+			plate = dgv_Resoconto.Rows(e.RowIndex).Cells(0).Value
+			ChopImage(plate)
+		End If
+	End Sub
 
-  Private Sub ChopImage(Piatto As String)
+	Private Sub ChopImage(Piatto As String)
     Dim ModImage As Image = Nothing
     Dim CropRect As Rectangle
     Dim CropImage As Bitmap

@@ -16,12 +16,12 @@ Public Class TokiDrift
   Private Const MQTTPASS As String = ""
   Private Const MQTTPORT As UShort = 1883
   Private Const MQTTQOFS As Protocol.MqttQualityOfServiceLevel = Protocol.MqttQualityOfServiceLevel.AtMostOnce
-  Private Const SEPTCHAR As String = "♥"
+	Public Const SEPTCHAR As String = "ヿーニ"
 
 
-  '--- T O K I D R I F T | ReadOnly --------------------------------------------------------------------------------------'
-  '-----------------------------------------------------------------------------------------------------------------------'
-  Public ReadOnly SfondiMenu() = {
+	'--- T O K I D R I F T | ReadOnly --------------------------------------------------------------------------------------'
+	'-----------------------------------------------------------------------------------------------------------------------'
+	Public ReadOnly SfondiMenu() = {
     My.Resources.TokiDrift01, My.Resources.TokiDrift02, My.Resources.TokiDrift03, My.Resources.TokiDrift04, My.Resources.TokiDrift05, My.Resources.TokiDrift07,
     My.Resources.TokiDrift08, My.Resources.TokiDrift09, My.Resources.TokiDrift10, My.Resources.TokiDrift11, My.Resources.TokiDrift12, My.Resources.TokiDrift13,
     My.Resources.TokiDrift14, My.Resources.TokiDrift15, My.Resources.TokiDrift16, My.Resources.TokiDrift17, My.Resources.TokiDrift18, My.Resources.TokiDrift19,

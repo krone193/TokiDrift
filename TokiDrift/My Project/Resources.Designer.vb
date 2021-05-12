@@ -151,6 +151,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Cerca una risorsa localizzata di tipo System.Byte[].
+        '''</summary>
+        Public ReadOnly Property MQTTnet() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("MQTTnet", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
         '''</summary>
         Public ReadOnly Property Nigiri() As System.Drawing.Bitmap

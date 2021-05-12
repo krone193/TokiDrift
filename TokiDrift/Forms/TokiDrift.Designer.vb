@@ -395,7 +395,7 @@ Partial Class TokiDrift
         Me.TxtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TxtUser.ForeColor = System.Drawing.Color.LightCoral
         Me.TxtUser.Location = New System.Drawing.Point(523, 245)
-        Me.TxtUser.MaxLength = 10
+        Me.TxtUser.MaxLength = 20
         Me.TxtUser.Name = "TxtUser"
         Me.TxtUser.Size = New System.Drawing.Size(159, 20)
         Me.TxtUser.TabIndex = 36

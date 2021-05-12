@@ -30,51 +30,52 @@ Public Class CommandCenter
       New Point(270, 237)
   }
 
-  Public lbl_Nomi_Points = New List(Of Point) From {
-    New Point(33, 332),
-    New Point(33, 351),
-    New Point(33, 369),
-    New Point(33, 388),
-    New Point(33, 407),
-    New Point(33, 426),
-    New Point(33, 445),
-    New Point(33, 464),
-    New Point(33, 483),
-    New Point(33, 502),
-    New Point(33, 521),
-    New Point(33, 540),
-    New Point(33, 559),
-    New Point(33, 578),
-    New Point(163, 332),
-    New Point(163, 351),
-    New Point(163, 369),
-    New Point(163, 388),
-    New Point(163, 407),
-    New Point(163, 426),
-    New Point(163, 445),
-    New Point(163, 464),
-    New Point(163, 483),
-    New Point(163, 502),
-    New Point(163, 521),
-    New Point(163, 540),
-    New Point(163, 559),
-    New Point(163, 578),
-    New Point(295, 332),
-    New Point(295, 351),
-    New Point(295, 369),
-    New Point(295, 388),
-    New Point(295, 407),
-    New Point(295, 426),
-    New Point(295, 445),
-    New Point(295, 464),
-    New Point(295, 483),
-    New Point(295, 502),
-    New Point(295, 521),
-    New Point(295, 540),
-    New Point(295, 559),
-    New Point(295, 578)
-  }
-  Public lbl_Qnt_Points = New List(Of Point) From {
+	Public lbl_Nomi_Points = New List(Of Point) From {
+		New Point(33, 332),
+		New Point(33, 351),
+		New Point(33, 369),
+		New Point(33, 388),
+		New Point(33, 407),
+		New Point(33, 426),
+		New Point(33, 445),
+		New Point(33, 464),
+		New Point(33, 483),
+		New Point(33, 502),
+		New Point(33, 521),
+		New Point(33, 540),
+		New Point(33, 559),
+		New Point(33, 578),
+		New Point(163, 332),
+		New Point(163, 351),
+		New Point(163, 369),
+		New Point(163, 388),
+		New Point(163, 407),
+		New Point(163, 426),
+		New Point(163, 445),
+		New Point(163, 464),
+		New Point(163, 483),
+		New Point(163, 502),
+		New Point(163, 521),
+		New Point(163, 540),
+		New Point(163, 559),
+		New Point(163, 578),
+		New Point(295, 332),
+		New Point(295, 351),
+		New Point(295, 369),
+		New Point(295, 388),
+		New Point(295, 407),
+		New Point(295, 426),
+		New Point(295, 445),
+		New Point(295, 464),
+		New Point(295, 483),
+		New Point(295, 502),
+		New Point(295, 521),
+		New Point(295, 540),
+		New Point(295, 559),
+		New Point(295, 578)
+	}
+
+	Public lbl_Qnt_Points = New List(Of Point) From {
     New Point(101, 332),
     New Point(101, 351),
     New Point(101, 369),
@@ -119,23 +120,22 @@ Public Class CommandCenter
     New Point(363, 578)
   }
 
-  Dim MaxRepBevande As Integer = 10
-  Dim MaxAddBevande As Integer = lbl_Bevande_Points.Count - 1
+	ReadOnly MaxRepBevande As Integer = 10
+	ReadOnly MaxAddBevande As Integer = lbl_Bevande_Points.Count - 1
 
-  '--- T O K I D R I F T | Constants -------------------------------------------------------------------------------------'
-  '-----------------------------------------------------------------------------------------------------------------------'
-  Private Const MQTTROOT As String = "kronelab/tokidrift/"
+	'--- T O K I D R I F T | Constants -------------------------------------------------------------------------------------'
+	'-----------------------------------------------------------------------------------------------------------------------'
+	Private Const MQTTROOT As String = "kronelab/tokidrift/"
   Private Const MQTTHOST As String = "broker.hivemq.com"
   Private Const MQTTUSER As String = ""
   Private Const MQTTPASS As String = ""
   Private Const MQTTPORT As UShort = 1883
-  Private Const MQTTQOFS As Protocol.MqttQualityOfServiceLevel = Protocol.MqttQualityOfServiceLevel.AtMostOnce
-  Private Const SEPTCHAR As String = "♥"
+	Private Const MQTTQOFS As Protocol.MqttQualityOfServiceLevel = Protocol.MqttQualityOfServiceLevel.AtMostOnce
 
 
-  '--- T O K I D R I F T | Structures ------------------------------------------------------------------------------------'
-  '-----------------------------------------------------------------------------------------------------------------------'
-  Structure OrdineStruct
+	'--- T O K I D R I F T | Structures ------------------------------------------------------------------------------------'
+	'-----------------------------------------------------------------------------------------------------------------------'
+	Structure OrdineStruct
     Dim Nome As String
     Dim Ordine As String
   End Structure
@@ -172,10 +172,10 @@ Public Class CommandCenter
         Dim recv As OrdineStruct
         Dim idxv As Short
         trusted_payload = Decrypt(System.Text.Encoding.UTF8.GetString(eventArgs.ApplicationMessage.Payload), False)
-        payload = trusted_payload.Split(SEPTCHAR)
-        recv.Nome = payload(0)
-        recv.Ordine = payload(1)
-        idxv = SearchNameInList(recv.Nome)
+				payload = trusted_payload.Split(TokiDrift.SEPTCHAR)
+				recv.Nome = payload(0)
+				recv.Ordine = payload(1).Remove(0, TokiDrift.SEPTCHAR.Length - 1)
+				idxv = SearchNameInList(recv.Nome)
         If idxv >= 0 Then
           Ordini.RemoveAt(idxv)
         End If
@@ -214,11 +214,10 @@ Public Class CommandCenter
   End Sub
   '-----------------------------------------------------------------------------------------------------------------------'
   Private Async Sub MQTTSubscribe(ByVal topic As String, qos As Protocol.MqttQualityOfServiceLevel)
-    Dim mqttTopicFilterBuilder As New TopicFilterBuilder
-    mqttTopicFilterBuilder.WithTopic(topic)
-    mqttTopicFilterBuilder.WithQualityOfServiceLevel(qos)
-    mqttTopicFilterBuilder.Build()
-    Try
+		Dim mqttTopicFilterBuilder As New MqttTopicFilterBuilder
+		mqttTopicFilterBuilder.WithTopic(topic)
+		mqttTopicFilterBuilder.WithQualityOfServiceLevel(qos)
+		Try
       Await MqttClient.SubscribeAsync(mqttTopicFilterBuilder.Build())
     Catch ex As Exception
       LblStatusOrdini.Text = "Chiusi"
@@ -298,154 +297,149 @@ Public Class CommandCenter
     BtnAvviaOrdini.Enabled = True
     LblStatusOrdini.Text = "Chiusi"
   End Sub
-  '-----------------------------------------------------------------------------------------------------------------------'
-  Private Sub BtnEsportaOrdini_Click(sender As Object, e As EventArgs) Handles BtnEsportaOrdini.Click
-    Dim progCell As Integer = 0
-    Dim nOfBevande As Integer = 0
-    Dim Charfont As New Drawing.Font("Calibri", 12, FontStyle.Bold)
-    Dim BevFont As New Drawing.Font("Arial", 10, FontStyle.Bold)
-    Dim DarkPanel As New Panel With {
-      .Width = 304,
-      .Height = 29,
-      .Location = New Point(60, 17),
-      .BackColor = Drawing.Color.Black
-    }
-    Dim bt_AddBev As New Button With {
-      .Width = 87,
-      .Height = 23,
-      .Location = New Point(274, 20),
-      .Text = "Aggiungi",
-      .BackColor = Drawing.SystemColors.Control
-    }
-    Dim cb_IdBev As New ComboBox With {
-      .Width = 165,
-      .Height = 23,
-      .Location = New Point(106, 21),
-    .BackColor = Drawing.Color.LightPink,
-      .DropDownStyle = ComboBoxStyle.DropDownList
-    }
-    Dim cb_QntBev As New ComboBox With {
-      .Width = 36,
-      .Height = 23,
-      .Location = New Point(63, 21),
-      .BackColor = Drawing.Color.LightPink,
-      .DropDownStyle = ComboBoxStyle.DropDownList
-    }
-    For i As Integer = 1 To MaxRepBevande
-      cb_QntBev.Items.Add(i)
-    Next
-    For i As Integer = 0 To lbl_Bevande_Name.count - 1
-      cb_IdBev.Items.Add(lbl_Bevande_Name(i))
-    Next
+	'-----------------------------------------------------------------------------------------------------------------------'
+	Private Sub BtnEsportaOrdini_Click(sender As Object, e As EventArgs) Handles BtnEsportaOrdini.Click
+		Dim img As Bitmap = My.Resources.ListaOrdini
 
-    Dim frmNew As New Form With {
-      .Width = 410,
-      .Height = 680,
-      .BackColor = Drawing.Color.Black,
-      .FormBorderStyle = FormBorderStyle.FixedSingle,
-      .Icon = TokiDrift.ActiveForm.Icon,
-      .Text = "Ordine definitivo - お前はもう死んでいる"
-    }
-    Dim tmp_pb As New PictureBox With {
-      .Location = New Point(0, 0),
-      .Width = 395,
-      .Height = 601,
-      .BackgroundImageLayout = ImageLayout.Center
-    }
-    Dim img As Bitmap = My.Resources.ListaOrdini
-    Dim printbut As New Button With {
-      .Location = New Point(100, 603),
-      .Width = 200,
-      .Height = 35,
-      .Text = "Stampa",
-      .Font = Charfont,
-      .BackColor = Drawing.SystemColors.Control
-    }
-    frmNew.Controls.Add(tmp_pb)
-    frmNew.Controls.Add(printbut)
-    frmNew.Controls.Add(cb_QntBev)
-    frmNew.Controls.Add(cb_IdBev)
-    frmNew.Controls.Add(bt_AddBev)
-    frmNew.Controls.Add(DarkPanel)
+		Dim ListaUtenti As New List(Of String)
+		Dim ListaPiatti As New List(Of String)
+		Dim ListaPortate As New List(Of String)
+		Dim piatto As String()
+		Dim tstr As String()
+		Dim index As UShort = 0
 
-    AddHandler bt_AddBev.Click, Sub(s As Object, ev As EventArgs)
-                                  If nOfBevande <= MaxAddBevande Then
-                                    Using g = Graphics.FromImage(img)
-                                      g.DrawString(cb_QntBev.Text & "x " & cb_IdBev.Text, BevFont, Brushes.Black, lbl_Bevande_Points(nOfBevande))
-                                    End Using
-                                    tmp_pb.Image = img
-                                    nOfBevande += 1
-                                  End If
-                                End Sub
+		Dim progCell As Integer = 0
+		Dim nOfBevande As Integer = 0
+		Dim Charfont As New Drawing.Font("Calibri", 12, FontStyle.Bold)
+		Dim BevFont As New Drawing.Font("Arial", 10, FontStyle.Bold)
 
-    AddHandler printbut.Click, Sub(s As Object, ev As EventArgs)
-                                 If PrintOptions.ShowDialog() = DialogResult.OK Then
-                                   PrintOrder.PrinterSettings = PrintOptions.PrinterSettings
-                                   TokiDrift.PrintImage = img
-                                   AddHandler PrintOrder.PrintPage, AddressOf PrintDocument_PrintPage
-                                   PrintOrder.DocumentName = "Lista ordini Toki"
-                                   PrintOrder.Print()
-                                 End If
-                               End Sub
+		Dim DarkPanel As New Panel With {
+			.Width = 304,
+			.Height = 29,
+			.Location = New Point(60, 17),
+			.BackColor = Drawing.Color.Black
+		}
+		Dim bt_AddBev As New Button With {
+			.Width = 87,
+			.Height = 23,
+			.Location = New Point(274, 20),
+			.Text = "Aggiungi",
+			.BackColor = Drawing.SystemColors.Control
+		}
+		Dim cb_IdBev As New ComboBox With {
+			.Width = 165,
+			.Height = 23,
+			.Location = New Point(106, 21),
+		.BackColor = Drawing.Color.LightPink,
+			.DropDownStyle = ComboBoxStyle.DropDownList
+		}
+		Dim cb_QntBev As New ComboBox With {
+			.Width = 36,
+			.Height = 23,
+			.Location = New Point(63, 21),
+			.BackColor = Drawing.Color.LightPink,
+			.DropDownStyle = ComboBoxStyle.DropDownList
+		}
+		Dim frmNew As New Form With {
+			.Width = 410,
+			.Height = 680,
+			.BackColor = Drawing.Color.Black,
+			.FormBorderStyle = FormBorderStyle.FixedSingle,
+			.Icon = TokiDrift.ActiveForm.Icon,
+			.Text = "Ordine definitivo - お前はもう死んでいる"
+		}
+		Dim tmp_pb As New PictureBox With {
+			.Location = New Point(0, 0),
+			.Width = 395,
+			.Height = 601,
+			.BackgroundImageLayout = ImageLayout.Center
+		}
+		Dim printbut As New Button With {
+			.Location = New Point(100, 603),
+			.Width = 200,
+			.Height = 35,
+			.Text = "Stampa",
+			.Font = Charfont,
+			.BackColor = Drawing.SystemColors.Control
+		}
 
-    Dim ListaUtenti As New List(Of String)
-    Dim ListaPiatti As New List(Of String)
-    Dim ListaPortate As New List(Of String)
-    Dim piatto As String()
-    Dim tstr As String()
-    Dim DT As String = Date.Now().ToString
-    Dim file As IO.StreamWriter
+		For i As Integer = 1 To MaxRepBevande
+			cb_QntBev.Items.Add(i)
+		Next
 
-    file = My.Computer.FileSystem.OpenTextFileWriter("Ordine.txt", True)
-    file.WriteLine(DT)
-    file.WriteLine("O R D I N I   S I N G O L I")
+		For i As Integer = 0 To lbl_Bevande_Name.count - 1
+			cb_IdBev.Items.Add(lbl_Bevande_Name(i))
+		Next
 
-    If Ordini.Count > 0 Then
-      tstr = Ordini(0).Ordine.Split(";")
-      For i = 0 To tstr.Count - 2
-        piatto = tstr(i).Split(".")
-        ListaPiatti.Add(piatto(0))
-        ListaPortate.Add("0")
-      Next
-      For Each ordine In Ordini
-        file.WriteLine("> " & ordine.Nome)
-        tstr = ordine.Ordine.Split(";")                 ' separazione coppie piatto.portata
-        For i = 0 To tstr.Count - 2
-          Dim tempint As UInt16
-          piatto = tstr(i).Split(".")                   ' separazione piatto (piatto(0)) e portate (piatto(1))
-          tempint = Convert.ToUInt16(ListaPortate(i))   ' leggo il numero attuale di portate
-          tempint += Convert.ToUInt16(piatto(1))        ' aggiungo il numero di portate alla somma
-          ListaPortate(i) = tempint.ToString            ' converto la nuova somma portate in stringa
-          If piatto(1) <> 0 Then
-            file.WriteLine("  " & piatto(0) & " " & piatto(1))
-          End If
-        Next
-      Next
-      file.WriteLine("O R D I N E   F I N A L E")
-      Dim index As UShort = 0
-      For Each lst In ListaPiatti
-        If ListaPortate(index) <> 0 Then
-          file.WriteLine(ListaPiatti(index) & " " & ListaPortate(index))
-          Using g = Graphics.FromImage(img)
-            g.DrawString(ListaPiatti(index).ToString, Charfont, Brushes.Black, lbl_Nomi_Points(progCell))
-            g.DrawString(ListaPortate(index).ToString, Charfont, Brushes.Black, lbl_Qnt_Points(progCell))
-          End Using
-          progCell += 1
-        End If
-        index += 1
-      Next
-      MsgBox("Ordine esportato")
-      file.Close()
-      tmp_pb.Image = img
-      DarkPanel.BringToFront()
-      bt_AddBev.BringToFront()
-      cb_IdBev.BringToFront()
-      cb_QntBev.BringToFront()
-      frmNew.ShowDialog()
-    End If
-  End Sub
+		frmNew.Controls.Add(tmp_pb)
+		frmNew.Controls.Add(printbut)
+		frmNew.Controls.Add(cb_QntBev)
+		frmNew.Controls.Add(cb_IdBev)
+		frmNew.Controls.Add(bt_AddBev)
+		frmNew.Controls.Add(DarkPanel)
 
-  Private Sub PrintDocument_PrintPage(ByVal sender As Object, ByVal e As PrintPageEventArgs)
+		AddHandler bt_AddBev.Click,
+			Sub(s As Object, ev As EventArgs)
+				If nOfBevande <= MaxAddBevande Then
+					Using g = Graphics.FromImage(img)
+						g.DrawString(cb_QntBev.Text & "x " & cb_IdBev.Text, BevFont, Brushes.Black, lbl_Bevande_Points(nOfBevande))
+					End Using
+					tmp_pb.Image = img
+					nOfBevande += 1
+				End If
+			End Sub
+
+		AddHandler printbut.Click,
+			Sub(s As Object, ev As EventArgs)
+				If PrintOptions.ShowDialog() = DialogResult.OK Then
+					PrintOrder.PrinterSettings = PrintOptions.PrinterSettings
+					TokiDrift.PrintImage = img
+					AddHandler PrintOrder.PrintPage, AddressOf PrintDocument_PrintPage
+					PrintOrder.DocumentName = "Lista ordini Toki"
+					PrintOrder.Print()
+				End If
+			End Sub
+
+		If Ordini.Count > 0 Then
+			tstr = Ordini(0).Ordine.Split(";")
+			For i = 0 To tstr.Count - 2
+				piatto = tstr(i).Split(".")
+				ListaPiatti.Add(piatto(0))
+				ListaPortate.Add("0")
+			Next
+
+			For Each ordine In Ordini
+				tstr = ordine.Ordine.Split(";")                 ' separazione coppie piatto.portata
+				For i = 0 To tstr.Count - 2
+					Dim tempint As UShort
+					piatto = tstr(i).Split(".")                   ' separazione piatto (piatto(0)) e portate (piatto(1))
+					tempint = Convert.ToUInt16(ListaPortate(i))   ' leggo il numero attuale di portate
+					tempint += Convert.ToUInt16(piatto(1))        ' aggiungo il numero di portate alla somma
+					ListaPortate(i) = tempint.ToString            ' converto la nuova somma portate in stringa
+				Next
+			Next
+
+			For Each lst In ListaPiatti
+				If ListaPortate(index) <> 0 Then
+					Using g = Graphics.FromImage(img)
+						g.DrawString(ListaPiatti(index).ToString, Charfont, Brushes.Black, lbl_Nomi_Points(progCell))
+						g.DrawString(ListaPortate(index).ToString, Charfont, Brushes.Black, lbl_Qnt_Points(progCell))
+					End Using
+					progCell += 1
+				End If
+				index += 1
+			Next
+
+			tmp_pb.Image = img
+			DarkPanel.BringToFront()
+			bt_AddBev.BringToFront()
+			cb_IdBev.BringToFront()
+			cb_QntBev.BringToFront()
+			frmNew.ShowDialog()
+		End If
+	End Sub
+
+	Private Sub PrintDocument_PrintPage(ByVal sender As Object, ByVal e As PrintPageEventArgs)
     e.Graphics.RenderingOrigin = New Point(e.MarginBounds.Left, e.MarginBounds.Top)
     e.Graphics.DrawImage(TokiDrift.PrintImage, New Rectangle(0, 0, 395, 601))
     e.HasMorePages = False
