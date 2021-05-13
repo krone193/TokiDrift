@@ -22,7 +22,14 @@
 		Dim CommandLineArguments As String() = Environment.GetCommandLineArgs()
 		If My.Application.CommandLineArgs.Count > 0 Then
 			If My.Application.CommandLineArgs.ElementAt(0) <> "" Then
-				My.Settings.Str_Username = My.Application.CommandLineArgs.ElementAt(0)
+				Dim PassedUser As String = My.Application.CommandLineArgs.ElementAt(0)
+				If PassedUser.First() = ControlChars.Quote Then
+					PassedUser = PassedUser.Substring(1)
+				End If
+				If PassedUser.Last() = ControlChars.Quote Then
+					PassedUser = PassedUser.Substring(0, PassedUser.Length - 1)
+				End If
+				My.Settings.Str_Username = PassedUser
 			End If
 		End If
 	End Sub
